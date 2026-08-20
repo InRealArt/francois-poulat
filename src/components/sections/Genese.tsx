@@ -1,10 +1,11 @@
 import Image from "next/image";
+import Reveal from "@/components/Reveal";
 
 export default function Genese() {
   return (
     <section
       id="genese"
-      className="border-b border-white/10 bg-background py-20 md:py-28"
+      className="section-light border-b border-black/10 py-20 md:py-28"
     >
       <div className="mx-auto max-w-[1440px] px-3 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-2xl text-center">
@@ -14,7 +15,7 @@ export default function Genese() {
           <h2 className="serif text-3xl italic sm:text-4xl">
             L&rsquo;Alliance du Stream &amp; de l&rsquo;Art Physique
           </h2>
-          <p className="mt-4 text-sm leading-loose text-gray-300 md:text-base">
+          <p className="mt-4 text-sm leading-loose text-[var(--light-text-muted)] md:text-base">
             Pour parfaire l&rsquo;atmosphère de son studio, Grim recherchait
             une pièce d&rsquo;art contemporain forte, vivante et capable
             d&rsquo;accaparer le regard sous le rendu caméra.
@@ -22,7 +23,10 @@ export default function Genese() {
         </div>
 
         <div className="mt-14 grid gap-10 lg:grid-cols-2 lg:items-center">
-          <div className="artwork-image relative aspect-[4/3] w-full overflow-hidden rounded-sm border-white/10 bg-card">
+          <Reveal
+            direction="left"
+            className="artwork-image relative aspect-[4/3] w-full overflow-hidden rounded-sm"
+          >
             <Image
               src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?q=80&w=1400&auto=format&fit=crop"
               alt="Grim installant la toile Pokepoulat"
@@ -59,16 +63,16 @@ export default function Genese() {
                 Replay Extract • Twitch
               </p>
             </div>
-          </div>
+          </Reveal>
 
-          <div>
-            <p className="serif text-xl italic text-white">
+          <Reveal direction="right" delay={0.15}>
+            <p className="serif text-xl italic text-[var(--light-text)]">
               Grim installe « Pokepoulat » dans son Setup
             </p>
-            <p className="mt-2 text-xs uppercase tracking-[0.2em] text-gray-500">
+            <p className="mt-2 text-xs uppercase tracking-[0.2em] text-[var(--light-text-muted)]">
               Le dévoilement en direct devant des milliers de passionnés
             </p>
-            <p className="mt-6 text-sm leading-loose text-gray-300 md:text-base">
+            <p className="mt-6 text-sm leading-loose text-[var(--light-text-muted)] md:text-base">
               L&rsquo;Agence InRealArt a orchestré l&rsquo;expédition
               sécurisée de l&rsquo;œuvre depuis l&rsquo;atelier de François
               Poulat jusqu&rsquo;au studio de Grim. Du déballage de la caisse
@@ -80,11 +84,14 @@ export default function Genese() {
               <a href="#genese" className="btn-action text-center">
                 Lancer la vidéo de l&rsquo;Unboxing
               </a>
-              <a href="#formats" className="btn-mag self-center">
+              <a
+                href="#formats"
+                className="border-b-[1.5px] border-[var(--light-text)] self-center text-[0.7rem] font-semibold uppercase tracking-[0.15em] transition-colors hover:text-gold hover:border-gold"
+              >
                 Voir les tarifs →
               </a>
             </div>
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>

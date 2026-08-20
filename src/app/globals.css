@@ -26,6 +26,13 @@
   --shadow-color: rgba(255, 255, 255, 0.08);
   --gray-text: #9ca3af;
   --background-grey: #1a1a1a;
+
+  /* Alternance de sections claires */
+  --light-bg: #ffffff;
+  --light-text: #131313;
+  --light-text-muted: #6b6b6b;
+  --light-border: rgba(19, 19, 19, 0.1);
+  --light-card: #f7f6f4;
 }
 
 @theme inline {
@@ -212,6 +219,36 @@ h6 {
   line-height: 1;
 }
 
+/* Light section alternance (à la Artitude) */
+.section-light {
+  background: var(--light-bg);
+  color: var(--light-text);
+}
+
+.section-light .section-number {
+  color: #999;
+}
+
+.section-light .serif {
+  color: var(--light-text);
+}
+
+.section-light .advantage-box {
+  background: var(--light-card);
+  border-top: 1px solid var(--light-border);
+}
+
+.section-light .advantage-box:hover {
+  background: #efece7;
+  border-top-color: var(--gold-accent);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+}
+
+.section-light .tag-badge {
+  border-color: var(--light-border);
+  color: var(--light-text);
+}
+
 /* Footer links */
 .footer-link {
   font-size: 0.8rem;
@@ -225,37 +262,6 @@ h6 {
 .footer-link:hover {
   color: var(--text);
   transform: translateX(4px);
-}
-
-/* Animations */
-@keyframes fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fade-right {
-  from {
-    opacity: 0;
-    transform: translateX(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.animate-fade-up {
-  animation: fade-up 0.8s cubic-bezier(0.19, 1, 0.22, 1) both;
-}
-
-.animate-fade-right {
-  animation: fade-right 0.9s cubic-bezier(0.19, 1, 0.22, 1) both;
 }
 
 /* Text effects */

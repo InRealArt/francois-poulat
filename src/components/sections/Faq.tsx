@@ -9,7 +9,7 @@ export default function Faq() {
   return (
     <section
       id="faq"
-      className="border-b border-white/10 bg-background py-20 md:py-28"
+      className="section-light border-b border-black/10 py-20 md:py-28"
     >
       <div className="mx-auto max-w-3xl px-3 sm:px-6 lg:px-10">
         <div className="text-center">
@@ -21,7 +21,7 @@ export default function Faq() {
           </h2>
         </div>
 
-        <div className="mt-12 flex flex-col divide-y divide-white/10 border-y border-white/10">
+        <div className="mt-12 flex flex-col divide-y divide-black/10 border-y border-black/10">
           {faqItems.map((item, index) => {
             const isOpen = openIndex === index;
             return (
@@ -32,7 +32,7 @@ export default function Faq() {
                   aria-expanded={isOpen}
                   className="flex w-full items-center justify-between gap-4 py-6 text-left"
                 >
-                  <span className="serif text-lg italic text-white sm:text-xl">
+                  <span className="serif text-lg italic text-[var(--light-text)] sm:text-xl">
                     {item.question}
                   </span>
                   <span
@@ -45,7 +45,7 @@ export default function Faq() {
                   </span>
                 </button>
                 <div className={`accordion-content ${isOpen ? "open" : ""}`}>
-                  <p className="pb-6 text-sm leading-loose text-gray-300">
+                  <p className="pb-6 text-sm leading-loose text-[var(--light-text-muted)]">
                     {item.answer}
                   </p>
                 </div>

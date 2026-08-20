@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { galleryDetails } from "@/lib/content";
 import { useModalBehavior } from "@/hooks/useModalBehavior";
+import Reveal from "@/components/Reveal";
 
 export default function GalleryDetails() {
   const [lightbox, setLightbox] = useState<
@@ -29,7 +30,10 @@ export default function GalleryDetails() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <Reveal
+          stagger
+          className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4"
+        >
           {galleryDetails.map((item) => (
             <button
               key={item.id}
@@ -54,7 +58,7 @@ export default function GalleryDetails() {
               </p>
             </button>
           ))}
-        </div>
+        </Reveal>
       </div>
 
       {lightbox && (

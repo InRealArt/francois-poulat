@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { heroFeatures } from "@/lib/content";
+import Reveal from "@/components/Reveal";
 
 export default function Hero() {
   return (
@@ -8,7 +9,7 @@ export default function Hero() {
       className="relative overflow-hidden border-b border-white/10 bg-background pt-28 pb-20 md:pt-40 md:pb-28"
     >
       <div className="mx-auto grid max-w-[1440px] gap-14 px-3 sm:px-6 lg:grid-cols-2 lg:px-10 lg:gap-20">
-        <div className="animate-fade-up">
+        <Reveal direction="up">
           <span className="section-number">
             Curation Exclusive Grim x François Poulat
           </span>
@@ -55,12 +56,12 @@ export default function Hero() {
             <span>Google Pay</span>
             <span>Garantie InRealArt</span>
           </div>
-        </div>
+        </Reveal>
 
-        <div className="animate-fade-right relative">
+        <Reveal direction="right" delay={0.15} className="relative">
           <div className="artwork-image relative aspect-square w-full overflow-hidden rounded-sm border-white/10 bg-card">
             <Image
-              src="https://images.unsplash.com/photo-1616588589676-62b3bd4ff6d2?q=80&w=1400&auto=format&fit=crop"
+              src="/images/PokePoulat.webp"
               alt="Pokepoulat dans le Setup de Grim"
               fill
               priority
@@ -96,7 +97,7 @@ export default function Hero() {
               Réserver
             </a>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

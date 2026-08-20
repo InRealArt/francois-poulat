@@ -1,4 +1,5 @@
 import { guarantees } from "@/lib/content";
+import Reveal from "@/components/Reveal";
 
 const icons: Record<string, React.ReactNode> = {
   certificate: (
@@ -15,7 +16,7 @@ export default function Guarantees() {
   return (
     <section
       id="garanties"
-      className="border-b border-white/10 bg-[var(--background-grey)] py-20 md:py-28"
+      className="section-light border-b border-black/10 py-20 md:py-28"
     >
       <div className="mx-auto max-w-[1440px] px-3 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-2xl text-center">
@@ -25,13 +26,16 @@ export default function Guarantees() {
           <h2 className="serif text-3xl italic sm:text-4xl">
             Garanties &amp; Confiance InRealArt
           </h2>
-          <p className="mt-4 text-sm leading-loose text-gray-300 md:text-base">
+          <p className="mt-4 text-sm leading-loose text-[var(--light-text-muted)] md:text-base">
             Chaque tirage physique est une pièce de collection préparée avec
             une rigueur d&rsquo;ingénierie et d&rsquo;artisanat d&rsquo;art.
           </p>
         </div>
 
-        <div className="mt-14 grid gap-px overflow-hidden rounded-sm border border-white/10 sm:grid-cols-2 lg:grid-cols-4">
+        <Reveal
+          stagger
+          className="mt-14 grid gap-px overflow-hidden rounded-sm border border-black/10 sm:grid-cols-2 lg:grid-cols-4"
+        >
           {guarantees.map((item) => (
             <div key={item.title} className="advantage-box">
               <svg
@@ -46,15 +50,15 @@ export default function Guarantees() {
               >
                 {icons[item.icon]}
               </svg>
-              <h3 className="serif mt-4 text-lg italic text-white">
+              <h3 className="serif mt-4 text-lg italic text-[var(--light-text)]">
                 {item.title}
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-gray-400">
+              <p className="mt-2 text-sm leading-relaxed text-[var(--light-text-muted)]">
                 {item.description}
               </p>
             </div>
           ))}
-        </div>
+        </Reveal>
       </div>
     </section>
   );
