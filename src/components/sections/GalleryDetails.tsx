@@ -147,6 +147,12 @@ export default function GalleryDetails() {
   const DRAG_NAV_THRESHOLD = 50;
 
   const handlePointerDown = (event: React.PointerEvent) => {
+    // Ignore drags starting on the nav arrows so they keep receiving their
+    // own click normally instead of the region capturing the pointer out
+    // from under them.
+    if ((event.target as HTMLElement).closest("[data-carousel-nav]")) {
+      return;
+    }
     dragState.current = {
       startX: event.clientX,
       startY: event.clientY,
@@ -287,6 +293,7 @@ export default function GalleryDetails() {
 
             <button
               type="button"
+              data-carousel-nav
               onClick={() => {
                 pauseAutoplay();
                 prev();
@@ -307,6 +314,7 @@ export default function GalleryDetails() {
             </button>
             <button
               type="button"
+              data-carousel-nav
               onClick={() => {
                 pauseAutoplay();
                 next();
