@@ -166,29 +166,31 @@ export const galleryDetails = [
     id: "matieres",
     title: "Texturing & Matière",
     caption: "Couches d'acrylique appliquées au couteau",
-    image:
-      "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=1200&auto=format&fit=crop",
+    image: "/images/carousel/PokePoulat1.webp",
   },
   {
     id: "pigments",
     title: "Vibration des Pigments",
     caption: "Contraste vif optimisé pour écran & studio",
-    image:
-      "https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=1200&auto=format&fit=crop",
+    image: "/images/carousel/PokePoulat2.webp",
   },
   {
     id: "chassis",
     title: "Châssis Sur-Mesure",
     caption: "Bois résineux renforcé haute stabilité",
-    image:
-      "https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=1200&auto=format&fit=crop",
+    image: "/images/carousel/PokePoulat3.webp",
   },
   {
     id: "signature",
     title: "Signature Poulat",
     caption: "Signée au dos avec certificat d'authenticité",
-    image:
-      "https://images.unsplash.com/photo-1579965342575-16428a7c8881?q=80&w=1200&auto=format&fit=crop",
+    image: "/images/carousel/PokePoulat4.webp",
+  },
+  {
+    id: "finition",
+    title: "Finition & Vernis",
+    caption: "Protection UV, rendu profond et durable",
+    image: "/images/carousel/PokePoulat5.webp",
   },
 ];
 
