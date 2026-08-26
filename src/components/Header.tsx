@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { nav } from "@/lib/content";
 import { useModalBehavior } from "@/hooks/useModalBehavior";
 
@@ -10,6 +11,10 @@ export default function Header() {
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
+  const t = useTranslations();
+  const locale = useLocale();
+  const pathname = usePathname();
+  const router = useRouter();
 
   useModalBehavior(menuOpen, () => setMenuOpen(false));
 
@@ -48,6 +53,10 @@ export default function Header() {
     return () => document.removeEventListener("keydown", handleTab);
   }, [menuOpen]);
 
+  function switchLocale(nextLocale: "en" | "fr") {
+    router.replace(pathname + window.location.hash, { locale: nextLocale });
+  }
+
   return (
     <>
       <header className="fixed inset-x-0 top-0 z-[70] h-16 md:h-[90px] border-b border-white/10 bg-[rgb(var(--background-rgb))]/95 backdrop-blur-md">
@@ -62,9 +71,9 @@ export default function Header() {
             IRA
           </span>
           <span className="hidden sm:flex flex-col leading-tight normal-case">
-            <span className="tracking-[0.4em] uppercase">InRealArt</span>
+            <span className="tracking-[0.4em] uppercase">{t("header.brand")}</span>
             <span className="font-montserrat text-[0.55rem] tracking-[0.3em] uppercase text-gray-400">
-              Agence d&rsquo;Art
+              {t("header.tagline")}
             </span>
           </span>
         </Link>
@@ -76,19 +85,41 @@ export default function Header() {
               href={item.href}
               className="text-[13px] uppercase tracking-[0.25em] text-white/80 transition-colors hover:text-gold"
             >
-              {item.label}
+              {t(`nav.${item.id}`)}
             </a>
           ))}
         </nav>
 
         <div className="flex items-center gap-4">
+          <div
+            role="group"
+            aria-label={t("languageSwitcher.label")}
+            className="hidden md:flex items-center gap-1 text-[11px] uppercase tracking-[0.15em]"
+          >
+            {(["en", "fr"] as const).map((loc) => (
+              <button
+                key={loc}
+                type="button"
+                onClick={() => switchLocale(loc)}
+                aria-current={locale === loc}
+                className={
+                  locale === loc
+                    ? "text-gold"
+                    : "text-white/50 transition-colors hover:text-white"
+                }
+              >
+                {t(`languageSwitcher.${loc}`)}
+              </button>
+            ))}
+          </div>
+
           <a
             href="#formats"
             aria-hidden={menuOpen}
             tabIndex={menuOpen ? -1 : undefined}
             className="btn-cta hidden md:inline-flex"
           >
-            Réserver mon Tirage
+            {t("header.reserveLong")}
           </a>
           <a
             href="#formats"
@@ -96,7 +127,7 @@ export default function Header() {
             tabIndex={menuOpen ? -1 : undefined}
             className="md:hidden text-[11px] uppercase tracking-[0.15em] text-gold"
           >
-            Réserver
+            {t("header.reserveShort")}
           </a>
 
           <button
@@ -105,7 +136,7 @@ export default function Header() {
             onClick={() => setMenuOpen(true)}
             aria-expanded={menuOpen}
             aria-controls="mobile-nav"
-            aria-label="Ouvrir le menu"
+            aria-label={t("header.openMenu")}
             aria-hidden={menuOpen}
             tabIndex={menuOpen ? -1 : undefined}
             className="lg:hidden flex h-9 w-9 flex-col items-center justify-center gap-[5px]"
@@ -124,14 +155,14 @@ export default function Header() {
           id="mobile-nav"
           role="dialog"
           aria-modal="true"
-          aria-label="Menu de navigation"
+          aria-label={t("header.menuLabel")}
           className="fixed inset-0 top-16 z-[80] flex flex-col bg-[rgb(var(--background-rgb))] md:top-[90px] lg:hidden"
         >
           <button
             ref={closeButtonRef}
             type="button"
             onClick={() => setMenuOpen(false)}
-            aria-label="Fermer le menu"
+            aria-label={t("header.closeMenu")}
             className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center text-2xl text-white"
           >
             &times;
@@ -145,7 +176,7 @@ export default function Header() {
                 onClick={() => setMenuOpen(false)}
                 className="serif text-2xl italic text-white transition-colors hover:text-gold"
               >
-                {item.label}
+                {t(`nav.${item.id}`)}
               </a>
             ))}
 
@@ -154,9 +185,26 @@ export default function Header() {
               onClick={() => setMenuOpen(false)}
               className="btn-cta mt-6"
             >
-              Réserver mon Tirage
+              {t("header.reserveLong")}
             </a>
           </nav>
+
+          <div className="flex items-center justify-center gap-4 pb-8 text-xs uppercase tracking-[0.15em]">
+            {(["en", "fr"] as const).map((loc) => (
+              <button
+                key={loc}
+                type="button"
+                onClick={() => {
+                  setMenuOpen(false);
+                  switchLocale(loc);
+                }}
+                aria-current={locale === loc}
+                className={locale === loc ? "text-gold" : "text-white/50"}
+              >
+                {t(`languageSwitcher.${loc}`)}
+              </button>
+            ))}
+          </div>
         </div>
       )}
     </>
