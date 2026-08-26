@@ -111,6 +111,8 @@
     "galleryContact": "Contacter la Galerie",
     "totalLabel": "Total",
     "depositLabel": "Acompte",
+    "totalWithAmount": "Total : {amount}",
+    "depositWithAmount": "Acompte : {amount}",
     "items": {
       "intime": {
         "name": "Édition Intime",
@@ -147,6 +149,7 @@
       "sur-mesure": {
         "name": "Projet Dédié",
         "tag": "Commande Spéciale",
+        "size": "Sur-Mesure",
         "description": "Dimension personnalisée, encadrement spécifique ou projet privé.",
         "extra": "InRealArt Private Curation — Étude architecturale & chiffrage personnalisé par nos curateurs sous 24h."
       }
@@ -255,6 +258,8 @@
     "title": "Réserver Votre Tirage",
     "totalLabel": "Total",
     "depositLabel": "Acompte",
+    "totalWithAmount": "Total : {amount}",
+    "depositWithAmount": "Acompte : {amount}",
     "success": "Réservation enregistrée ! Notre équipe reviendra vers vous sous 24h pour finaliser le paiement de l’acompte.",
     "nameLabel": "Nom Complet",
     "emailLabel": "Email de Confirmation",

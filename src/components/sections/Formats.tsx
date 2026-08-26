@@ -64,7 +64,9 @@ export default function Formats() {
                 {t(`items.${format.id}.name`)}
               </h3>
               <p className="mt-1 font-mono text-xs uppercase tracking-[0.1em] text-gray-400">
-                {format.size}
+                {t.has(`items.${format.id}.size`)
+                  ? t(`items.${format.id}.size`)
+                  : format.size}
               </p>
               <p className="mt-4 flex-1 text-sm leading-relaxed text-gray-300">
                 {t(`items.${format.id}.description`)}
@@ -89,8 +91,13 @@ export default function Formats() {
                       {formatPrice(format.priceTotal!, currency, locale)}
                     </p>
                     <p className="mt-1 text-[0.65rem] uppercase tracking-[0.15em] text-gray-500">
-                      {t("depositLabel")}&nbsp;:{" "}
-                      {formatPrice(format.priceDeposit!, currency, locale)}
+                      {t("depositWithAmount", {
+                        amount: formatPrice(
+                          format.priceDeposit!,
+                          currency,
+                          locale
+                        ),
+                      })}
                     </p>
                   </div>
                   <button

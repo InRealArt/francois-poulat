@@ -61,10 +61,14 @@ export default function ReservationModal({ format, currency, onClose }: Props) {
           {format.priceTotal && format.priceDeposit && (
             <div className="mt-3 flex items-center justify-between border-t border-white/10 pt-3 text-xs uppercase tracking-[0.1em]">
               <span className="text-gray-400">
-                {t("totalLabel")}&nbsp;: {formatPrice(format.priceTotal, currency, locale)}
+                {t("totalWithAmount", {
+                  amount: formatPrice(format.priceTotal, currency, locale),
+                })}
               </span>
               <span className="text-gold">
-                {t("depositLabel")}&nbsp;: {formatPrice(format.priceDeposit, currency, locale)}
+                {t("depositWithAmount", {
+                  amount: formatPrice(format.priceDeposit, currency, locale),
+                })}
               </span>
             </div>
           )}
