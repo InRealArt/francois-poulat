@@ -1,0 +1,266 @@
+{
+  "meta": {
+    "title": "InRealArt — Grim x François Poulat \"Pokepoulat\" Official Collection",
+    "description": "The contemporary energy of streaming and the Pop Art icon united on a masterful physical canvas. Official \"Pokepoulat\" edition by François Poulat, curated by InRealArt Agency."
+  },
+  "nav": {
+    "genese": "The Live Genesis",
+    "artiste": "François Poulat",
+    "formats": "Formats & Deposit",
+    "garanties": "Guarantees",
+    "galerie": "Detailed Gallery",
+    "faq": "FAQ"
+  },
+  "announcementBar": {
+    "text": "Official \"Pokepoulat\" Physical Art Edition — Reservations Open (50% Deposit)",
+    "cta": "Explore the 7 formats →"
+  },
+  "header": {
+    "brand": "InRealArt",
+    "tagline": "Art Agency",
+    "reserveLong": "Reserve My Print",
+    "reserveShort": "Reserve",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "menuLabel": "Navigation menu"
+  },
+  "languageSwitcher": {
+    "label": "Language",
+    "en": "EN",
+    "fr": "FR"
+  },
+  "hero": {
+    "eyebrow": "Exclusive Curation Grim x François Poulat",
+    "titleLine1": "The Ultimate Setup Artwork.",
+    "titleLine2": "\"Pokepoulat\"",
+    "description": "The contemporary energy of streaming and the Pop Art icon united on a masterful physical canvas. Selected by Grim to dress the background of his studio, the original artwork by François Poulat is produced on a noble wood frame by InRealArt Agency.",
+    "features": [
+      "7 Custom Physical Dimensions",
+      "Physically Sealed & Signed Certificate",
+      "50% Deposit Secured via Stripe",
+      "Armored Wood Crate & Insured Transport"
+    ],
+    "ctaPrimary": "Secure my print (50% Deposit)",
+    "ctaSecondary": "Watch the Live Unboxing",
+    "badges": ["Stripe SSL", "Apple Pay", "Google Pay", "InRealArt Guarantee"],
+    "imageAlt": "Pokepoulat in Grim's Setup",
+    "tagSetup": "Grim Setup",
+    "tagDetail": "Canvas Detail",
+    "formatOfficial": "Grim's Official Format: 100 × 100 cm",
+    "technique": "Mixed Technique: Acrylic & Varnish",
+    "unboxingTitle": "Official Live Unboxing",
+    "unboxingSubtitle": "Presented live by Grim on Twitch",
+    "unboxingCta": "Reserve"
+  },
+  "genese": {
+    "eyebrow": "// The Genesis of the Project",
+    "title": "The Alliance of Streaming & Physical Art",
+    "intro": "To perfect the atmosphere of his studio, Grim was looking for a strong, vivid contemporary art piece capable of grabbing attention on camera.",
+    "imageAlt": "Grim installing the Pokepoulat canvas",
+    "tagReview": "Studio Review",
+    "tagFormat": "100×100 cm Format",
+    "videoAria": "Watch the unboxing video",
+    "replayLabel": "Replay Extract • Twitch",
+    "quote": "Grim installs \"Pokepoulat\" in his Setup",
+    "quoteSub": "The live unveiling in front of thousands of fans",
+    "body": "InRealArt Agency orchestrated the secure shipment of the artwork from François Poulat's studio to Grim's setup. From unboxing the armored wood crate to the final placement under the setup, relive the behind-the-scenes of this creation.",
+    "ctaPrimary": "Watch the Unboxing Video",
+    "ctaSecondary": "See pricing →"
+  },
+  "process": {
+    "items": {
+      "01": {
+        "eyebrow": "Concept",
+        "title": "The Studio's Standard",
+        "description": "A balanced Pop Art composition designed to stand out vividly under Grim's stream lighting."
+      },
+      "02": {
+        "eyebrow": "Creation",
+        "title": "Poulat's Gesture",
+        "description": "Layers of material, coats of acrylic and meticulous stenciling applied by hand in the studio."
+      },
+      "03": {
+        "eyebrow": "Certification",
+        "title": "Physical Certificate",
+        "description": "Each print comes with an official numbered certificate hand-signed by François Poulat."
+      }
+    }
+  },
+  "artist": {
+    "eyebrow": "// Visual Artist",
+    "title": "The Pop Art Material of François Poulat",
+    "body": "Exhibited internationally, François Poulat stands out for his mastery of color contrasts and his poetic rearrangement of Pop Culture icons. His canvases combine graphic rigor with the raw energy of palette-knife painting.",
+    "quote": "\"Reinventing Pop iconography for Grim's studio was a captivating challenge: blending gaming energy with the nobility of a canvas worked in thick layers.\"",
+    "imageAlt": "François Poulat in his studio",
+    "name": "François Poulat",
+    "role": "Partner Visual Artist",
+    "cta": "Reserve a piece from the collection →",
+    "stats": {
+      "handmade": { "value": "100%", "label": "Studio Handmade" },
+      "canvas": { "value": "Museum", "label": "Canvas Quality" },
+      "certificate": { "value": "Signed", "label": "InRealArt Certificate" }
+    }
+  },
+  "formats": {
+    "eyebrow": "// Dimension & Deposit Selection",
+    "title": "Choose Your Format",
+    "description": "Secure reservation with a 50% deposit at order. The remaining 50% balance is charged only before your piece ships.",
+    "featuredBadge": "Grim's Official Format",
+    "reserveDefault": "Reserve the Deposit",
+    "reserveFeatured": "Reserve Grim's Format",
+    "galleryContact": "Contact the Gallery",
+    "totalLabel": "Total",
+    "depositLabel": "Deposit",
+    "items": {
+      "intime": {
+        "name": "Intimate Edition",
+        "tag": "Wood Frame",
+        "description": "Ideal format for a collector's shelf or exhibition desk."
+      },
+      "standard": {
+        "name": "Standard Format",
+        "tag": "Classic",
+        "description": "Perfect balance to dress a contemporary interior wall.",
+        "extra": "Reinforced packaging included"
+      },
+      "studio": {
+        "name": "Studio Format",
+        "tag": "Must-Have",
+        "description": "Strong presence and vibrant detail without overwhelming the space."
+      },
+      "collector": {
+        "name": "Studio Collector Edition",
+        "tag": "Fan Favorite",
+        "description": "The exact same dimension as the artwork sitting behind Grim's setup.",
+        "extra": "Numbered certificate of authenticity included"
+      },
+      "galerie": {
+        "name": "Gallery Format",
+        "tag": "Large Format",
+        "description": "Immersive — this dimension showcases the relief textures of the acrylic."
+      },
+      "monumentale": {
+        "name": "Monumental Edition",
+        "tag": "Exhibition",
+        "description": "An imposing museum-grade presence for large spaces & lofts."
+      },
+      "sur-mesure": {
+        "name": "Dedicated Project",
+        "tag": "Special Order",
+        "description": "Custom dimension, specific framing, or private project.",
+        "extra": "InRealArt Private Curation — Architectural study & personalized quote from our curators within 24h."
+      }
+    }
+  },
+  "guarantees": {
+    "eyebrow": "// Excellence & Commitment",
+    "title": "InRealArt Guarantees & Trust",
+    "description": "Every physical print is a collector's piece prepared with engineering rigor and artisanal craftsmanship.",
+    "items": {
+      "certificate": {
+        "title": "Numbered Certificate",
+        "description": "Official document physically sealed and hand-signed by François Poulat certifying the authenticity of the artwork."
+      },
+      "crate": {
+        "title": "Armored Wood Crate",
+        "description": "Secure shipment in a reinforced wooden crate, specifically designed to absorb shocks during transit."
+      },
+      "shield": {
+        "title": "100% Transport Insurance",
+        "description": "Your delivery is covered up to 100% of its value with real-time tracking and mandatory signature on receipt."
+      },
+      "wallet": {
+        "title": "50% Deposit",
+        "description": "Pay only 50% to start production. The remaining 50% balance is charged only once the artwork is ready to ship."
+      }
+    }
+  },
+  "gallery": {
+    "eyebrow": "// Close-up on the Materials",
+    "title": "Detailed Gallery of the Artwork",
+    "hint": "Swipe or click to explore — click a visual to enlarge it",
+    "ariaLabel": "Detailed gallery of the artwork",
+    "prevLabel": "Previous visual",
+    "nextLabel": "Next visual",
+    "closeLabel": "Close",
+    "dotLabel": "Go to visual {index}: {title}",
+    "items": {
+      "matieres": {
+        "title": "Texturing & Material",
+        "caption": "Layers of acrylic applied with a palette knife"
+      },
+      "pigments": {
+        "title": "Pigment Vibration",
+        "caption": "Vivid contrast optimized for screen & studio"
+      },
+      "chassis": {
+        "title": "Custom Frame",
+        "caption": "High-stability reinforced resinous wood"
+      },
+      "signature": {
+        "title": "Poulat's Signature",
+        "caption": "Signed on the back with certificate of authenticity"
+      },
+      "finition": {
+        "title": "Finish & Varnish",
+        "caption": "UV protection, deep and durable finish"
+      }
+    }
+  },
+  "faq": {
+    "eyebrow": "// Questions?",
+    "title": "Customer FAQ",
+    "items": {
+      "payment": {
+        "question": "How does the 50% deposit payment work?",
+        "answer": "When you make your reservation, you only pay 50% of your print's total value through our secure checkout. This first payment immediately secures your spot in the production queue. The remaining 50% balance is only requested once the piece is finished, inspected, and ready to ship."
+      },
+      "delivery": {
+        "question": "What are the production and delivery times?",
+        "answer": "Since each artwork is carefully prepared and varnished on its frame, expect 2 to 3 weeks of production. Shipping then takes 48 to 72h via a carrier specialized in artwork, with priority tracking."
+      },
+      "packaging": {
+        "question": "How is the artwork packaged?",
+        "answer": "All our physical art editions are wrapped in moisture-protective film, cushioned in high-density foam, then locked in a reinforced armored wood crate specifically sized for the selected dimensions."
+      },
+      "certificate": {
+        "question": "Does the artwork come with a certificate of authenticity?",
+        "answer": "Yes, absolutely. Every physical print delivered by InRealArt Agency includes its Physical Certificate of Authenticity, sealed, numbered, and hand-signed by the artist François Poulat."
+      }
+    }
+  },
+  "footer": {
+    "description": "InRealArt is a contemporary art agency specialized in the creation, editing, and curation of physical artworks for collectors and content creators.",
+    "agencyHeading": "InRealArt Agency",
+    "contactHeading": "Contact & Support",
+    "contactQuestion": "A custom project or a question about your order?",
+    "followHeading": "Follow us",
+    "copyright": "© 2026 InRealArt. All rights reserved. Official Curation Grim x François Poulat.",
+    "agencyLinks": {
+      "site": "Official Website",
+      "genese": "Pokepoulat Genesis",
+      "artist": "François Poulat",
+      "formats": "Formats & Deposit"
+    },
+    "legalLinks": {
+      "mentions": "Legal Notice",
+      "privacy": "Privacy Policy",
+      "cgv": "Terms & Guarantees"
+    }
+  },
+  "reservationModal": {
+    "ariaLabel": "Reserve your print",
+    "closeLabel": "Close",
+    "badge": "50% Secured Deposit",
+    "title": "Reserve Your Print",
+    "totalLabel": "Total",
+    "depositLabel": "Deposit",
+    "success": "Reservation recorded! Our team will get back to you within 24h to finalize the deposit payment.",
+    "nameLabel": "Full Name",
+    "emailLabel": "Confirmation Email",
+    "addressLabel": "Shipping Address",
+    "paymentPreview": "Secure payment (preview): •••• •••• •••• 4242",
+    "submit": "Confirm & Reserve the Deposit",
+    "sslNote": "256-bit SSL encrypted transaction"
+  }
+}
