@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "InRealArt — Grim x François Poulat « Pokepoulat » Collection Officielle",
-    "description": "L’énergie contemporaine du stream et l’icône Pop Art réunies sur une toile physique magistrale. Édition officielle « Pokepoulat » par François Poulat, curée par l’Agence InRealArt."
+    "title": "InRealArt — Grim x François Poulat « Pikapoulat » Collection Officielle",
+    "description": "L’énergie contemporaine du stream et l’icône Pop Art réunies sur une toile physique magistrale. Édition officielle « Pikapoulat » par François Poulat, curée par l’Agence InRealArt."
   },
   "nav": {
     "genese": "La Genèse Live",
@@ -12,7 +12,7 @@
     "faq": "FAQ"
   },
   "announcementBar": {
-    "text": "Édition d’Art Physique Officielle « Pokepoulat » — Réservation Ouverte (Acompte 50 %)",
+    "text": "Édition d’Art Physique Officielle « Pikapoulat » — Réservation Ouverte (Acompte 50 %)",
     "cta": "Explorer les 7 formats →"
   },
   "header": {
@@ -32,7 +32,7 @@
   "hero": {
     "eyebrow": "Curation Exclusive Grim x François Poulat",
     "titleLine1": "L’Œuvre Ultime du Setup.",
-    "titleLine2": "« Pokepoulat »",
+    "titleLine2": "« Pikapoulat »",
     "description": "L’énergie contemporaine du stream et l’icône Pop Art réunies sur une toile physique magistrale. Sélectionnée par Grim pour habiller l’arrière-plan de son studio, l’œuvre originale de François Poulat est éditée sur châssis bois noble par l’Agence InRealArt.",
     "features": [
       "7 Dimensions Physiques Sur-Mesure",
@@ -43,7 +43,7 @@
     "ctaPrimary": "Sécuriser mon tirage (Acompte 50 %)",
     "ctaSecondary": "Voir l’Unboxing Live",
     "badges": ["Stripe SSL", "Apple Pay", "Google Pay", "Garantie InRealArt"],
-    "imageAlt": "Pokepoulat dans le Setup de Grim",
+    "imageAlt": "Pikapoulat dans le Setup de Grim",
     "tagSetup": "Setup Grim",
     "tagDetail": "Détail Toile",
     "formatOfficial": "Format Officiel Grim : 100 × 100 cm",
@@ -56,12 +56,12 @@
     "eyebrow": "// La Genèse du Projet",
     "title": "L’Alliance du Stream & de l’Art Physique",
     "intro": "Pour parfaire l’atmosphère de son studio, Grim recherchait une pièce d’art contemporain forte, vivante et capable d’accaparer le regard sous le rendu caméra.",
-    "imageAlt": "Grim installant la toile Pokepoulat",
+    "imageAlt": "Grim installant la toile Pikapoulat",
     "tagReview": "Studio Review",
     "tagFormat": "Format 100×100 cm",
     "videoAria": "Visionner le déballage en vidéo",
     "replayLabel": "Replay Extract • Twitch",
-    "quote": "Grim installe « Pokepoulat » dans son Setup",
+    "quote": "Grim installe « Pikapoulat » dans son Setup",
     "quoteSub": "Le dévoilement en direct devant des milliers de passionnés",
     "body": "L’Agence InRealArt a orchestré l’expédition sécurisée de l’œuvre depuis l’atelier de François Poulat jusqu’au studio de Grim. Du déballage de la caisse en bois blindée au placement définitif sous le setup, revivez les coulisses de cette création.",
     "ctaPrimary": "Lancer la vidéo de l’Unboxing",
@@ -241,7 +241,7 @@
     "copyright": "© 2026 InRealArt. Tous droits réservés. Curation Officielle Grim x François Poulat.",
     "agencyLinks": {
       "site": "Site Officiel",
-      "genese": "Genèse Pokepoulat",
+      "genese": "Genèse Pikapoulat",
       "artist": "François Poulat",
       "formats": "Formats & Acompte"
     },
