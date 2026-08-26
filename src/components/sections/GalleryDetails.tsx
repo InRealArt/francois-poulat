@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import gsap from "gsap";
+import { useTranslations } from "next-intl";
 import { galleryDetails } from "@/lib/content";
 import { useModalBehavior } from "@/hooks/useModalBehavior";
 import Reveal from "@/components/Reveal";
@@ -11,6 +12,7 @@ const AUTOPLAY_DELAY = 5500;
 
 export default function GalleryDetails() {
   const [active, setActive] = useState(0);
+  const t = useTranslations("gallery");
   const [lightbox, setLightbox] = useState<
     (typeof galleryDetails)[number] | null
   >(null);
@@ -221,16 +223,9 @@ export default function GalleryDetails() {
     >
       <div className="mx-auto max-w-[1440px] px-3 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="section-number mx-auto">
-            {"// Zoom sur les Matières"}
-          </span>
-          <h2 className="serif text-3xl italic sm:text-4xl">
-            Galerie Détaillée de l&rsquo;Œuvre
-          </h2>
-          <p className="mt-4 text-sm text-gray-400">
-            Glissez ou cliquez pour explorer &mdash; cliquez sur un visuel
-            pour l&rsquo;agrandir
-          </p>
+          <span className="section-number mx-auto">{t("eyebrow")}</span>
+          <h2 className="serif text-3xl italic sm:text-4xl">{t("title")}</h2>
+          <p className="mt-4 text-sm text-gray-400">{t("hint")}</p>
         </div>
 
         <Reveal className="mt-14">
@@ -238,7 +233,7 @@ export default function GalleryDetails() {
             className="relative mx-auto h-[380px] max-w-4xl select-none sm:h-[440px] md:h-[520px]"
             role="region"
             aria-roledescription="carousel"
-            aria-label="Galerie détaillée de l'œuvre"
+            aria-label={t("ariaLabel")}
             tabIndex={0}
             onKeyDown={handleKeyDown}
             onMouseEnter={stopAutoplay}
@@ -273,7 +268,7 @@ export default function GalleryDetails() {
                     <div className="artwork-image relative h-[calc(100%-4.5rem)] w-full overflow-hidden rounded-sm border-white/10 bg-card shadow-[0_30px_60px_-15px_rgba(0,0,0,0.6)]">
                       <Image
                         src={item.image}
-                        alt={item.title}
+                        alt={t(`items.${item.id}.title`)}
                         fill
                         sizes="(min-width: 1024px) 45vw, 80vw"
                         className="object-cover"
@@ -281,10 +276,10 @@ export default function GalleryDetails() {
                       />
                     </div>
                     <p className="serif mt-3 text-base italic text-white sm:text-lg">
-                      {item.title}
+                      {t(`items.${item.id}.title`)}
                     </p>
                     <p className="mt-1 text-xs leading-relaxed text-gray-400">
-                      {item.caption}
+                      {t(`items.${item.id}.caption`)}
                     </p>
                   </button>
                 </div>
@@ -298,7 +293,7 @@ export default function GalleryDetails() {
                 pauseAutoplay();
                 prev();
               }}
-              aria-label="Visuel précédent"
+              aria-label={t("prevLabel")}
               className="absolute left-0 top-[calc(50%-2.25rem)] z-40 flex h-10 w-10 -translate-x-1 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/40 text-white/80 backdrop-blur-sm transition-colors hover:border-[var(--gold-accent)] hover:text-[var(--gold-accent)] sm:left-2"
             >
               <svg
@@ -319,7 +314,7 @@ export default function GalleryDetails() {
                 pauseAutoplay();
                 next();
               }}
-              aria-label="Visuel suivant"
+              aria-label={t("nextLabel")}
               className="absolute right-0 top-[calc(50%-2.25rem)] z-40 flex h-10 w-10 translate-x-1 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/40 text-white/80 backdrop-blur-sm transition-colors hover:border-[var(--gold-accent)] hover:text-[var(--gold-accent)] sm:right-2"
             >
               <svg
@@ -344,7 +339,7 @@ export default function GalleryDetails() {
                   pauseAutoplay();
                   goTo(index);
                 }}
-                aria-label={`Aller au visuel ${index + 1} : ${item.title}`}
+                aria-label={t("dotLabel", { index: index + 1, title: t(`items.${item.id}.title`) })}
                 aria-current={index === active}
                 className="group flex h-6 w-6 items-center justify-center"
               >
@@ -366,13 +361,13 @@ export default function GalleryDetails() {
           className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-4"
           role="dialog"
           aria-modal="true"
-          aria-label={lightbox.title}
+          aria-label={t(`items.${lightbox.id}.title`)}
           onClick={() => setLightbox(null)}
         >
           <button
             type="button"
             onClick={() => setLightbox(null)}
-            aria-label="Fermer"
+            aria-label={t("closeLabel")}
             className="absolute right-6 top-6 text-white/70 transition-colors hover:text-white"
           >
             <svg
@@ -392,7 +387,7 @@ export default function GalleryDetails() {
           >
             <Image
               src={lightbox.image}
-              alt={lightbox.title}
+              alt={t(`items.${lightbox.id}.title`)}
               fill
               sizes="90vw"
               className="object-contain"
