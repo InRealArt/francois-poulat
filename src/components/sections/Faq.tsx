@@ -1,10 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { faqItems } from "@/lib/content";
 
 export default function Faq() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const t = useTranslations("faq");
 
   return (
     <section
@@ -13,19 +15,15 @@ export default function Faq() {
     >
       <div className="mx-auto max-w-3xl px-3 sm:px-6 lg:px-10">
         <div className="text-center">
-          <span className="section-number mx-auto">
-            {"// Des Questions ?"}
-          </span>
-          <h2 className="serif text-3xl italic sm:text-4xl">
-            Foire Aux Questions Client
-          </h2>
+          <span className="section-number mx-auto">{t("eyebrow")}</span>
+          <h2 className="serif text-3xl italic sm:text-4xl">{t("title")}</h2>
         </div>
 
         <div className="mt-12 flex flex-col divide-y divide-black/10 border-y border-black/10">
           {faqItems.map((item, index) => {
             const isOpen = openIndex === index;
             return (
-              <div key={item.question}>
+              <div key={item.id}>
                 <button
                   type="button"
                   onClick={() => setOpenIndex(isOpen ? null : index)}
@@ -33,7 +31,7 @@ export default function Faq() {
                   className="flex w-full items-center justify-between gap-4 py-6 text-left"
                 >
                   <span className="serif text-lg italic text-[var(--light-text)] sm:text-xl">
-                    {item.question}
+                    {t(`items.${item.id}.question`)}
                   </span>
                   <span
                     className={`shrink-0 text-2xl text-gold transition-transform duration-300 ${
@@ -46,7 +44,7 @@ export default function Faq() {
                 </button>
                 <div className={`accordion-content ${isOpen ? "open" : ""}`}>
                   <p className="pb-6 text-sm leading-loose text-[var(--light-text-muted)]">
-                    {item.answer}
+                    {t(`items.${item.id}.answer`)}
                   </p>
                 </div>
               </div>
