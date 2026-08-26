@@ -1,3 +1,4 @@
+import { getTranslations } from "next-intl/server";
 import { guarantees } from "@/lib/content";
 import Reveal from "@/components/Reveal";
 
@@ -12,7 +13,9 @@ const icons: Record<string, React.ReactNode> = {
   ),
 };
 
-export default function Guarantees() {
+export default async function Guarantees() {
+  const t = await getTranslations("guarantees");
+
   return (
     <section
       id="garanties"
@@ -20,15 +23,10 @@ export default function Guarantees() {
     >
       <div className="mx-auto max-w-[1440px] px-3 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="section-number mx-auto">
-            {"// Excellence & Engagement"}
-          </span>
-          <h2 className="serif text-3xl italic sm:text-4xl">
-            Garanties &amp; Confiance InRealArt
-          </h2>
+          <span className="section-number mx-auto">{t("eyebrow")}</span>
+          <h2 className="serif text-3xl italic sm:text-4xl">{t("title")}</h2>
           <p className="mt-4 text-sm leading-loose text-[var(--light-text-muted)] md:text-base">
-            Chaque tirage physique est une pièce de collection préparée avec
-            une rigueur d&rsquo;ingénierie et d&rsquo;artisanat d&rsquo;art.
+            {t("description")}
           </p>
         </div>
 
@@ -37,7 +35,7 @@ export default function Guarantees() {
           className="mt-14 grid gap-px overflow-hidden rounded-sm border border-black/10 sm:grid-cols-2 lg:grid-cols-4"
         >
           {guarantees.map((item) => (
-            <div key={item.title} className="advantage-box">
+            <div key={item.id} className="advantage-box">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
@@ -51,10 +49,10 @@ export default function Guarantees() {
                 {icons[item.icon]}
               </svg>
               <h3 className="serif mt-4 text-lg italic text-[var(--light-text)]">
-                {item.title}
+                {t(`items.${item.id}.title`)}
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-[var(--light-text-muted)]">
-                {item.description}
+                {t(`items.${item.id}.description`)}
               </p>
             </div>
           ))}
