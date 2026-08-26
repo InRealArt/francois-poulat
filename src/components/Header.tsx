@@ -78,35 +78,46 @@ export default function Header() {
           </span>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-8">
-          {nav.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className="text-[13px] uppercase tracking-[0.25em] text-white/80 transition-colors hover:text-gold"
-            >
-              {t(`nav.${item.id}`)}
-            </a>
+        <nav className="hidden lg:flex items-center gap-3">
+          {nav.map((item, index) => (
+            <span key={item.href} className="flex items-center gap-3">
+              {index > 0 && (
+                <span
+                  aria-hidden
+                  className="h-[3px] w-[3px] rounded-full bg-gold/50"
+                />
+              )}
+              <a
+                href={item.href}
+                className="text-[13px] uppercase tracking-[0.25em] text-white/80 transition-colors hover:text-gold"
+              >
+                {t(`nav.${item.id}`)}
+              </a>
+            </span>
           ))}
         </nav>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-5">
           <div
             role="group"
             aria-label={t("languageSwitcher.label")}
-            className="hidden md:flex items-center gap-1 text-[11px] uppercase tracking-[0.15em]"
+            className="relative hidden items-center rounded-full border border-white/20 p-[3px] text-[11px] md:flex"
           >
+            <span
+              aria-hidden
+              className={`absolute top-[3px] h-[calc(100%-6px)] w-9 rounded-full bg-gold transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] ${
+                locale === "fr" ? "translate-x-9" : "translate-x-0"
+              }`}
+            />
             {(["en", "fr"] as const).map((loc) => (
               <button
                 key={loc}
                 type="button"
                 onClick={() => switchLocale(loc)}
                 aria-current={locale === loc}
-                className={
-                  locale === loc
-                    ? "text-gold"
-                    : "text-white/50 transition-colors hover:text-white"
-                }
+                className={`relative z-10 w-9 py-1.5 uppercase tracking-[0.1em] transition-colors ${
+                  locale === loc ? "text-background" : "text-white/60 hover:text-white"
+                }`}
               >
                 {t(`languageSwitcher.${loc}`)}
               </button>
@@ -189,21 +200,35 @@ export default function Header() {
             </a>
           </nav>
 
-          <div className="flex items-center justify-center gap-4 pb-8 text-xs uppercase tracking-[0.15em]">
-            {(["en", "fr"] as const).map((loc) => (
-              <button
-                key={loc}
-                type="button"
-                onClick={() => {
-                  setMenuOpen(false);
-                  switchLocale(loc);
-                }}
-                aria-current={locale === loc}
-                className={locale === loc ? "text-gold" : "text-white/50"}
-              >
-                {t(`languageSwitcher.${loc}`)}
-              </button>
-            ))}
+          <div className="flex items-center justify-center pb-8">
+            <div
+              role="group"
+              aria-label={t("languageSwitcher.label")}
+              className="relative flex items-center rounded-full border border-white/20 p-[3px] text-xs"
+            >
+              <span
+                aria-hidden
+                className={`absolute top-[3px] h-[calc(100%-6px)] w-10 rounded-full bg-gold transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] ${
+                  locale === "fr" ? "translate-x-10" : "translate-x-0"
+                }`}
+              />
+              {(["en", "fr"] as const).map((loc) => (
+                <button
+                  key={loc}
+                  type="button"
+                  onClick={() => {
+                    setMenuOpen(false);
+                    switchLocale(loc);
+                  }}
+                  aria-current={locale === loc}
+                  className={`relative z-10 w-10 py-2 uppercase tracking-[0.1em] transition-colors ${
+                    locale === loc ? "text-background" : "text-white/60"
+                  }`}
+                >
+                  {t(`languageSwitcher.${loc}`)}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
       )}
