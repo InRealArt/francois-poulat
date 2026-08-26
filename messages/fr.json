@@ -12,12 +12,12 @@
     "faq": "FAQ"
   },
   "announcementBar": {
-    "text": "Édition d'Art Physique Officielle « Pokepoulat » — Réservation Ouverte (Acompte 50 %)",
+    "text": "Édition d’Art Physique Officielle « Pokepoulat » — Réservation Ouverte (Acompte 50 %)",
     "cta": "Explorer les 7 formats →"
   },
   "header": {
     "brand": "InRealArt",
-    "tagline": "Agence d'Art",
+    "tagline": "Agence d’Art",
     "reserveLong": "Réserver mon Tirage",
     "reserveShort": "Réserver",
     "openMenu": "Ouvrir le menu",
@@ -31,9 +31,9 @@
   },
   "hero": {
     "eyebrow": "Curation Exclusive Grim x François Poulat",
-    "titleLine1": "L'Œuvre Ultime du Setup.",
+    "titleLine1": "L’Œuvre Ultime du Setup.",
     "titleLine2": "« Pokepoulat »",
-    "description": "L'énergie contemporaine du stream et l'icône Pop Art réunies sur une toile physique magistrale. Sélectionnée par Grim pour habiller l'arrière-plan de son studio, l'œuvre originale de François Poulat est éditée sur châssis bois noble par l'Agence InRealArt.",
+    "description": "L’énergie contemporaine du stream et l’icône Pop Art réunies sur une toile physique magistrale. Sélectionnée par Grim pour habiller l’arrière-plan de son studio, l’œuvre originale de François Poulat est éditée sur châssis bois noble par l’Agence InRealArt.",
     "features": [
       "7 Dimensions Physiques Sur-Mesure",
       "Certificat Physiquement Scellé & Signé",
@@ -41,7 +41,7 @@
       "Caisse Bois Blindée & Transport Assuré"
     ],
     "ctaPrimary": "Sécuriser mon tirage (Acompte 50 %)",
-    "ctaSecondary": "Voir l'Unboxing Live",
+    "ctaSecondary": "Voir l’Unboxing Live",
     "badges": ["Stripe SSL", "Apple Pay", "Google Pay", "Garantie InRealArt"],
     "imageAlt": "Pokepoulat dans le Setup de Grim",
     "tagSetup": "Setup Grim",
@@ -54,8 +54,8 @@
   },
   "genese": {
     "eyebrow": "// La Genèse du Projet",
-    "title": "L'Alliance du Stream & de l'Art Physique",
-    "intro": "Pour parfaire l'atmosphère de son studio, Grim recherchait une pièce d'art contemporain forte, vivante et capable d'accaparer le regard sous le rendu caméra.",
+    "title": "L’Alliance du Stream & de l’Art Physique",
+    "intro": "Pour parfaire l’atmosphère de son studio, Grim recherchait une pièce d’art contemporain forte, vivante et capable d’accaparer le regard sous le rendu caméra.",
     "imageAlt": "Grim installant la toile Pokepoulat",
     "tagReview": "Studio Review",
     "tagFormat": "Format 100×100 cm",
@@ -63,21 +63,21 @@
     "replayLabel": "Replay Extract • Twitch",
     "quote": "Grim installe « Pokepoulat » dans son Setup",
     "quoteSub": "Le dévoilement en direct devant des milliers de passionnés",
-    "body": "L'Agence InRealArt a orchestré l'expédition sécurisée de l'œuvre depuis l'atelier de François Poulat jusqu'au studio de Grim. Du déballage de la caisse en bois blindée au placement définitif sous le setup, revivez les coulisses de cette création.",
-    "ctaPrimary": "Lancer la vidéo de l'Unboxing",
+    "body": "L’Agence InRealArt a orchestré l’expédition sécurisée de l’œuvre depuis l’atelier de François Poulat jusqu’au studio de Grim. Du déballage de la caisse en bois blindée au placement définitif sous le setup, revivez les coulisses de cette création.",
+    "ctaPrimary": "Lancer la vidéo de l’Unboxing",
     "ctaSecondary": "Voir les tarifs →"
   },
   "process": {
     "items": {
       "01": {
         "eyebrow": "Conception",
-        "title": "L'Exigence du Studio",
-        "description": "Une composition Pop Art équilibrée pensée pour ressortir avec éclat sous l'éclairage de stream de Grim."
+        "title": "L’Exigence du Studio",
+        "description": "Une composition Pop Art équilibrée pensée pour ressortir avec éclat sous l’éclairage de stream de Grim."
       },
       "02": {
         "eyebrow": "Réalisation",
         "title": "Le Geste de Poulat",
-        "description": "Superposition de matière, couches d'acrylique et pochoirs minutieux appliqués à la main en atelier."
+        "description": "Superposition de matière, couches d’acrylique et pochoirs minutieux appliqués à la main en atelier."
       },
       "03": {
         "eyebrow": "Certification",
@@ -89,8 +89,8 @@
   "artist": {
     "eyebrow": "// Artiste Plasticien",
     "title": "La Matière Pop Art de François Poulat",
-    "body": "Exposé à l'échelle internationale, François Poulat s'impose par sa maîtrise des contrastes de couleurs et son réagencement poétique des icônes Pop Culture. Ses toiles allient la rigueur graphique à l'énergie brute de la peinture au couteau.",
-    "quote": "« Réinventer l'iconographie Pop pour le studio de Grim était un défi captivant : allier l'énergie gaming à la noblesse d'une toile travaillée en épaisseur. »",
+    "body": "Exposé à l’échelle internationale, François Poulat s’impose par sa maîtrise des contrastes de couleurs et son réagencement poétique des icônes Pop Culture. Ses toiles allient la rigueur graphique à l’énergie brute de la peinture au couteau.",
+    "quote": "« Réinventer l’iconographie Pop pour le studio de Grim était un défi captivant : allier l’énergie gaming à la noblesse d’une toile travaillée en épaisseur. »",
     "imageAlt": "François Poulat dans son atelier",
     "name": "François Poulat",
     "role": "Artiste Plasticien Partenaire",
@@ -104,7 +104,7 @@
   "formats": {
     "eyebrow": "// Sélection des Dimensions & Acompte",
     "title": "Choisissez Votre Format",
-    "description": "Réservation sécurisée avec acompte de 50 % à la commande. Le solde de 50 % est réglé uniquement avant l'expédition de votre pièce.",
+    "description": "Réservation sécurisée avec acompte de 50 % à la commande. Le solde de 50 % est réglé uniquement avant l’expédition de votre pièce.",
     "featuredBadge": "Format Officiel Grim",
     "reserveDefault": "Réserver l'Acompte",
     "reserveFeatured": "Réserver le Format Grim",
@@ -155,7 +155,7 @@
   "guarantees": {
     "eyebrow": "// Excellence & Engagement",
     "title": "Garanties & Confiance InRealArt",
-    "description": "Chaque tirage physique est une pièce de collection préparée avec une rigueur d'ingénierie et d'artisanat d'art.",
+    "description": "Chaque tirage physique est une pièce de collection préparée avec une rigueur d’ingénierie et d’artisanat d’art.",
     "items": {
       "certificate": {
         "title": "Certificat Numéroté",
@@ -177,8 +177,8 @@
   },
   "gallery": {
     "eyebrow": "// Zoom sur les Matières",
-    "title": "Galerie Détaillée de l'Œuvre",
-    "hint": "Glissez ou cliquez pour explorer — cliquez sur un visuel pour l'agrandir",
+    "title": "Galerie Détaillée de l’Œuvre",
+    "hint": "Glissez ou cliquez pour explorer — cliquez sur un visuel pour l’agrandir",
     "ariaLabel": "Galerie détaillée de l'œuvre",
     "prevLabel": "Visuel précédent",
     "nextLabel": "Visuel suivant",
@@ -230,7 +230,7 @@
     }
   },
   "footer": {
-    "description": "InRealArt est une agence d'art contemporain spécialisée dans la création, l'édition et la curation d'œuvres physiques pour collectionneurs et créateurs de contenu.",
+    "description": "InRealArt est une agence d’art contemporain spécialisée dans la création, l’édition et la curation d’œuvres physiques pour collectionneurs et créateurs de contenu.",
     "agencyHeading": "InRealArt Agency",
     "contactHeading": "Contact & Assistance",
     "contactQuestion": "Un projet sur-mesure ou une question sur votre commande ?",
@@ -255,12 +255,12 @@
     "title": "Réserver Votre Tirage",
     "totalLabel": "Total",
     "depositLabel": "Acompte",
-    "success": "Réservation enregistrée ! Notre équipe reviendra vers vous sous 24h pour finaliser le paiement de l'acompte.",
+    "success": "Réservation enregistrée ! Notre équipe reviendra vers vous sous 24h pour finaliser le paiement de l’acompte.",
     "nameLabel": "Nom Complet",
     "emailLabel": "Email de Confirmation",
     "addressLabel": "Adresse de Livraison",
     "paymentPreview": "Paiement sécurisé (aperçu) : •••• •••• •••• 4242",
-    "submit": "Valider & Réserver l'Acompte",
+    "submit": "Valider & Réserver l’Acompte",
     "sslNote": "Transaction chiffrée SSL 256 bits"
   }
 }
