@@ -139,35 +139,35 @@
     "depositWithAmount": "Deposit: {amount}",
     "items": {
       "intime": {
-        "name": "Intimate Edition",
-        "tag": "Wood Frame",
+        "name": "Édition Intime",
+        "tag": "Le Compact",
         "description": "Ideal format for a collector's shelf or exhibition desk."
       },
       "standard": {
-        "name": "Standard Format",
-        "tag": "Classic",
+        "name": "Format Standard",
+        "tag": "Édition Grim (Officiel)",
         "description": "Perfect balance to dress a contemporary interior wall.",
         "extra": "Reinforced packaging included"
       },
       "studio": {
-        "name": "Studio Format",
-        "tag": "Must-Have",
+        "name": "Format Studio",
+        "tag": "L'Incontournable",
         "description": "Strong presence and vibrant detail without overwhelming the space."
       },
       "collector": {
-        "name": "Studio Collector Edition",
-        "tag": "Fan Favorite",
+        "name": "Édition Collector",
+        "tag": "Format Studio XL",
         "description": "The exact same dimension as the artwork sitting behind Grim's setup.",
         "extra": "Numbered certificate of authenticity included"
       },
       "galerie": {
-        "name": "Gallery Format",
-        "tag": "Large Format",
+        "name": "Format Galerie",
+        "tag": "Coup de Cœur",
         "description": "Immersive — this dimension showcases the relief textures of the acrylic."
       },
       "monumentale": {
-        "name": "Monumental Edition",
-        "tag": "Exhibition",
+        "name": "Édition Galerie",
+        "tag": "Monumental",
         "description": "An imposing museum-grade presence for large spaces & lofts."
       },
       "sur-mesure": {

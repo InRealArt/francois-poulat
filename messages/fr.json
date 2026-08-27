@@ -140,34 +140,34 @@
     "items": {
       "intime": {
         "name": "Édition Intime",
-        "tag": "Châssis Bois",
+        "tag": "Le Compact",
         "description": "Format idéal pour étagère collector ou bureau d’exposition."
       },
       "standard": {
         "name": "Format Standard",
-        "tag": "Classique",
+        "tag": "Édition Grim (Officiel)",
         "description": "Équilibre parfait pour habiller un mur d’intérieur contemporain.",
         "extra": "Emballage renforcé inclus"
       },
       "studio": {
         "name": "Format Studio",
-        "tag": "Incontournable",
+        "tag": "L'Incontournable",
         "description": "Presence forte et détails vibrants sans encombrer l’espace."
       },
       "collector": {
-        "name": "Édition Collector Studio",
-        "tag": "Coup de Cœur",
+        "name": "Édition Collector",
+        "tag": "Format Studio XL",
         "description": "Exactement la même dimension que l’œuvre trônant derrière le setup de Grim.",
         "extra": "Certificat d’authenticité numéroté inclus"
       },
       "galerie": {
         "name": "Format Galerie",
-        "tag": "Grand Format",
+        "tag": "Coup de Cœur",
         "description": "Immersive, cette dimension sublime les textures relief d’acrylique."
       },
       "monumentale": {
-        "name": "Édition Monumentale",
-        "tag": "Exposition",
+        "name": "Édition Galerie",
+        "tag": "Monumental",
         "description": "Une présence muséale imposante pour grands espaces & lofts."
       },
       "sur-mesure": {

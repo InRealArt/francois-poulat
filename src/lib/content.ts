@@ -35,6 +35,7 @@ export const formats: Format[] = [
     size: "50 × 50 cm",
     priceTotal: 1800,
     priceDeposit: 900,
+    featured: true,
   },
   { id: "studio", size: "70 × 70 cm", priceTotal: 2600, priceDeposit: 1300 },
   {
@@ -42,7 +43,6 @@ export const formats: Format[] = [
     size: "100 × 100 cm",
     priceTotal: 3800,
     priceDeposit: 1900,
-    featured: true,
   },
   {
     id: "galerie",
