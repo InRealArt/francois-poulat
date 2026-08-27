@@ -59,6 +59,12 @@ export const formats: Format[] = [
   { id: "sur-mesure", size: "Sur-Mesure", contactOnly: true },
 ];
 
+export const unboxingPhotos = [
+  { id: "reaction", image: "/images/unboxing/unboxing1.webp" },
+  { id: "setup", image: "/images/unboxing/unboxing2.webp" },
+  { id: "collector", image: "/images/unboxing/unboxing3.webp" },
+] as const;
+
 export const guarantees = [
   { id: "certificate", icon: "certificate" },
   { id: "crate", icon: "crate" },
@@ -75,10 +81,14 @@ export const galleryDetails = [
 ] as const;
 
 export const faqItems = [
+  { id: "origin" },
   { id: "payment" },
   { id: "delivery" },
   { id: "packaging" },
   { id: "certificate" },
+  { id: "paymentMethods" },
+  { id: "damage" },
+  { id: "shipping" },
 ] as const;
 
 export const footerLinks = {

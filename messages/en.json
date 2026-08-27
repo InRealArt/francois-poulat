@@ -43,7 +43,9 @@
     ],
     "ctaPrimary": "Secure my print (75% Deposit)",
     "ctaSecondary": "Watch the Live Unboxing",
-    "badges": ["InRealArt Guarantee"],
+    "badges": [
+      "InRealArt Guarantee"
+    ],
     "imageAlt": "Pikapoulat in Grim's Setup",
     "tagSetup": "Grim Setup",
     "tagDetail": "Canvas Detail",
@@ -54,19 +56,31 @@
     "unboxingCta": "Reserve"
   },
   "genese": {
-    "eyebrow": "// The Genesis of the Project",
-    "title": "The Alliance of Streaming & Physical Art",
-    "intro": "To perfect the atmosphere of his studio, Grim was looking for a strong, vivid contemporary art piece capable of grabbing attention on camera.",
-    "imageAlt": "Grim installing the Pikapoulat canvas",
-    "tagReview": "Studio Review",
-    "tagFormat": "100×100 cm Format",
-    "videoAria": "Watch the unboxing video",
-    "replayLabel": "Replay Extract • Twitch",
-    "quote": "Grim installs \"Pikapoulat\" in his Setup",
-    "quoteSub": "The live unveiling in front of thousands of fans",
-    "body": "InRealArt Agency orchestrated the secure shipment of the artwork from François Poulat's studio to Grim's setup. From unboxing the armored wood crate to the final placement under the setup, relive the behind-the-scenes of this creation.",
-    "ctaPrimary": "Watch the Unboxing Video",
-    "ctaSecondary": "See pricing →"
+    "eyebrow": "From Grim's Setup",
+    "titleAccent": "Straight From the Stream",
+    "intro": "To perfect the atmosphere of his studio, Grim was looking for a strong, vibrant piece of contemporary art capable of capturing the viewer's attention under the camera's rendering.",
+    "replayBadge": "Replay",
+    "replaySource": "Twitch • Grim Valorant",
+    "videoFormat": "100 × 100 cm",
+    "videoAria": "Watch the unboxing replay",
+    "body": "InRealArt orchestrated the secure shipment from François Poulat's studio to Grim's setup. Armored crate, insured transit, and a hand-signed certificate of authenticity waiting inside.",
+    "ctaSecondary": "See pricing →",
+    "photosLabel": "From the Reveal",
+    "photos": {
+      "reaction": {
+        "badge": "Reveal Reaction",
+        "alt": "Grim reacting to the Pikapoulat canvas on camera"
+      },
+      "setup": {
+        "badge": "Setup Mount",
+        "alt": "Grim with the artwork mounted behind his gaming setup"
+      },
+      "collector": {
+        "badge": "Collector Corner",
+        "alt": "The Pikapoulat canvas displayed among Grim's Pokémon collection"
+      }
+    },
+    "titleMain": "The Unboxing,"
   },
   "process": {
     "items": {
@@ -97,9 +111,18 @@
     "role": "Partner Visual Artist",
     "cta": "Reserve a piece from the collection →",
     "stats": {
-      "handmade": { "value": "100%", "label": "Studio Handmade" },
-      "canvas": { "value": "Museum", "label": "Canvas Quality" },
-      "certificate": { "value": "Signed", "label": "InRealArt Certificate" }
+      "handmade": {
+        "value": "100%",
+        "label": "Studio Handmade"
+      },
+      "canvas": {
+        "value": "Museum",
+        "label": "Canvas Quality"
+      },
+      "certificate": {
+        "value": "Signed",
+        "label": "InRealArt Certificate"
+      }
     }
   },
   "formats": {
@@ -215,21 +238,37 @@
     "eyebrow": "// Questions?",
     "title": "Customer FAQ",
     "items": {
+      "origin": {
+        "question": "Where are the artworks made?",
+        "answer": "All physical editions are 100% made and assembled in France. Every print is carefully framed, varnished, and inspected locally to guarantee the highest standard of French art craftsmanship."
+      },
       "payment": {
         "question": "How does the 75% deposit payment work?",
-        "answer": "When you make your reservation, you only pay 75% of your print's total value through our secure checkout. This first payment immediately secures your spot in the production queue. The remaining 25% balance is only requested once the piece is finished, inspected, and ready to ship."
+        "answer": "When you place your order, you pay a 75% deposit via our secure Stripe checkout to cover production costs and lock your place in the queue. The remaining 25% balance is requested once the piece passes final quality inspection and is ready to ship."
       },
       "delivery": {
         "question": "What are the production and delivery times?",
-        "answer": "Since each artwork is carefully prepared and varnished on its frame, expect 2 to 3 weeks of production. Shipping then takes 48 to 72h via a carrier specialized in artwork, with priority tracking."
+        "answer": "Since each artwork is individually prepared, hand-varnished, and mounted on its frame, please allow 2 to 3 weeks for production. Express delivery then takes 48 to 72 hours via specialized artwork carriers with real-time priority tracking."
       },
       "packaging": {
-        "question": "How is the artwork packaged?",
-        "answer": "All our physical art editions are wrapped in moisture-protective film, cushioned in high-density foam, then locked in a secure packaging specifically sized for the selected dimensions."
+        "question": "How is the artwork packaged for transport?",
+        "answer": "Each piece is wrapped in a moisture-protective film, encased in high-density protective foam, and shipped in a custom-engineered reinforced heavy-duty box designed to resist shocks and ensure safe transit."
       },
       "certificate": {
-        "question": "Does the artwork come with a certificate of authenticity?",
-        "answer": "Yes, absolutely. Every physical print delivered by InRealArt Agency includes its Physical Certificate of Authenticity, sealed, numbered, and hand-signed by the artist François Poulat."
+        "question": "Does the artwork come with a Certificate of Authenticity?",
+        "answer": "Yes. Every physical artwork comes with its physical Certificate of Authenticity, sealed, numbered, and hand-signed by the artist François Poulat."
+      },
+      "paymentMethods": {
+        "question": "Which payment methods do you accept?",
+        "answer": "We process all transactions securely through Stripe. You can pay using major credit and debit cards (Visa, Mastercard, American Express) as well as Apple Pay and Google Pay."
+      },
+      "damage": {
+        "question": "What happens if the artwork arrives damaged?",
+        "answer": "In the rare event of transit damage, notify us within 48 hours of delivery with photos of the package and the artwork. We will immediately arrange a priority collection and ship a replacement piece at no extra cost to you."
+      },
+      "shipping": {
+        "question": "Do you ship internationally?",
+        "answer": "Yes, we ship worldwide using fully insured, specialized art carriers. Shipping fees and estimated transit times are automatically calculated at checkout based on your delivery address."
       }
     }
   },

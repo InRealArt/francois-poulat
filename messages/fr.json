@@ -43,7 +43,9 @@
     ],
     "ctaPrimary": "Sécuriser mon tirage (Acompte 75 %)",
     "ctaSecondary": "Voir l’Unboxing Live",
-    "badges": ["Garantie InRealArt"],
+    "badges": [
+      "Garantie InRealArt"
+    ],
     "imageAlt": "Pikapoulat dans le Setup de Grim",
     "tagSetup": "Setup Grim",
     "tagDetail": "Détail Toile",
@@ -54,19 +56,31 @@
     "unboxingCta": "Réserver"
   },
   "genese": {
-    "eyebrow": "// La Genèse du Projet",
-    "title": "L’Alliance du Stream & de l’Art Physique",
+    "eyebrow": "Depuis le Setup de Grim",
+    "titleAccent": "Directement du Stream",
     "intro": "Pour parfaire l’atmosphère de son studio, Grim recherchait une pièce d’art contemporain forte, vivante et capable d’accaparer le regard sous le rendu caméra.",
-    "imageAlt": "Grim installant la toile Pikapoulat",
-    "tagReview": "Studio Review",
-    "tagFormat": "Format 100×100 cm",
-    "videoAria": "Visionner le déballage en vidéo",
-    "replayLabel": "Replay Extract • Twitch",
-    "quote": "Grim installe « Pikapoulat » dans son Setup",
-    "quoteSub": "Le dévoilement en direct devant des milliers de passionnés",
-    "body": "L’Agence InRealArt a orchestré l’expédition sécurisée de l’œuvre depuis l’atelier de François Poulat jusqu’au studio de Grim. Du déballage de la caisse en bois blindée au placement définitif sous le setup, revivez les coulisses de cette création.",
-    "ctaPrimary": "Lancer la vidéo de l’Unboxing",
-    "ctaSecondary": "Voir les tarifs →"
+    "replayBadge": "Replay",
+    "replaySource": "Twitch • Grim Valorant",
+    "videoFormat": "100 × 100 cm",
+    "videoAria": "Visionner le replay du déballage",
+    "body": "L’Agence InRealArt a orchestré l’expédition sécurisée depuis l’atelier de François Poulat jusqu’au setup de Grim. Caisse blindée, transport assuré, et certificat d’authenticité signé à la main à l’intérieur.",
+    "ctaSecondary": "Voir les tarifs →",
+    "photosLabel": "Extraits du Dévoilement",
+    "photos": {
+      "reaction": {
+        "badge": "Réaction au Dévoilement",
+        "alt": "Grim réagissant face caméra devant la toile Pikapoulat"
+      },
+      "setup": {
+        "badge": "Montage sur le Setup",
+        "alt": "Grim avec l’œuvre montée derrière son setup gaming"
+      },
+      "collector": {
+        "badge": "Coin Collector",
+        "alt": "La toile Pikapoulat exposée parmi la collection Pokémon de Grim"
+      }
+    },
+    "titleMain": "L’Unboxing,"
   },
   "process": {
     "items": {
@@ -97,9 +111,18 @@
     "role": "Artiste Plasticien Partenaire",
     "cta": "Réserver une œuvre de la collection →",
     "stats": {
-      "handmade": { "value": "100%", "label": "Fait Main Atelier" },
-      "canvas": { "value": "Musée", "label": "Qualité Toile" },
-      "certificate": { "value": "Signé", "label": "Certificat InRealArt" }
+      "handmade": {
+        "value": "100%",
+        "label": "Fait Main Atelier"
+      },
+      "canvas": {
+        "value": "Musée",
+        "label": "Qualité Toile"
+      },
+      "certificate": {
+        "value": "Signé",
+        "label": "Certificat InRealArt"
+      }
     }
   },
   "formats": {
@@ -215,21 +238,37 @@
     "eyebrow": "// Des Questions ?",
     "title": "Foire Aux Questions Client",
     "items": {
+      "origin": {
+        "question": "Où les œuvres sont-elles fabriquées ?",
+        "answer": "Toutes les éditions physiques sont fabriquées et assemblées à 100 % en France. Chaque tirage est encadré, verni et inspecté localement afin de garantir le plus haut niveau d'exigence de l'artisanat d'art français."
+      },
       "payment": {
-        "question": "Comment fonctionne le paiement par acompte de 75 % ?",
-        "answer": "Lors de votre réservation, vous ne réglez que 75 % de la valeur totale de votre tirage via notre checkout sécurisé. Ce premier versement bloque immédiatement votre place dans le carnet de production. Le solde restant de 25 % ne vous sera demandé qu’une fois la pièce finalisée, inspectée et prête pour l’expédition."
+        "question": "Comment fonctionne l'acompte de 75 % ?",
+        "answer": "Lors de votre commande, vous réglez un acompte de 75 % via notre paiement sécurisé Stripe, ce qui couvre les frais de production et réserve votre place dans la file de fabrication. Le solde de 25 % restant n'est demandé qu'une fois la pièce validée en contrôle qualité final et prête à être expédiée."
       },
       "delivery": {
-        "question": "Quels sont les délais de fabrication et de livraison ?",
-        "answer": "Chaque œuvre étant minutieusement préparée et vernie sur châssis, comptez entre 2 à 3 semaines de fabrication. L’expédition prend ensuite 48 à 72h via transporteur spécialisé en œuvres d’art avec numéro de suivi prioritaire."
+        "question": "Quels sont les délais de production et de livraison ?",
+        "answer": "Chaque œuvre étant préparée individuellement, vernie à la main puis montée sur son châssis, comptez 2 à 3 semaines de production. La livraison express prend ensuite 48 à 72 heures via des transporteurs spécialisés en œuvres d'art, avec suivi prioritaire en temps réel."
       },
       "packaging": {
-        "question": "Comment est emballée l’œuvre d’art ?",
-        "answer": "Toutes nos éditions d’art physiques sont emballées sous film protecteur anti-humidité, calées dans de la mousse haute densité, puis verrouillées dans un emballage sécurisé spécifiquement adaptée aux dimensions sélectionnées."
+        "question": "Comment l'œuvre est-elle emballée pour le transport ?",
+        "answer": "Chaque pièce est enveloppée dans un film protecteur anti-humidité, calée dans une mousse de protection haute densité, puis expédiée dans une caisse renforcée sur-mesure conçue pour résister aux chocs et garantir un transport en toute sécurité."
       },
       "certificate": {
-        "question": "L’œuvre est-elle accompagnée d’un certificat d’authenticité ?",
-        "answer": "Oui, absolument. Chaque tirage physique délivré par l’Agence InRealArt inclut son Certificat d’Authenticité Physique, scellé, numéroté et signé manuscritement par l’artiste François Poulat."
+        "question": "L'œuvre est-elle accompagnée d'un certificat d'authenticité ?",
+        "answer": "Oui. Chaque œuvre physique est livrée avec son certificat d'authenticité physique, scellé, numéroté et signé à la main par l'artiste François Poulat."
+      },
+      "paymentMethods": {
+        "question": "Quels moyens de paiement acceptez-vous ?",
+        "answer": "Toutes les transactions sont traitées de manière sécurisée via Stripe. Vous pouvez régler par carte bancaire (Visa, Mastercard, American Express) ainsi que via Apple Pay et Google Pay."
+      },
+      "damage": {
+        "question": "Que se passe-t-il si l'œuvre arrive endommagée ?",
+        "answer": "Dans le rare cas d'un dommage survenu pendant le transport, contactez-nous dans les 48 heures suivant la livraison avec des photos du colis et de l'œuvre. Nous organiserons immédiatement un enlèvement prioritaire et l'expédition d'une pièce de remplacement, sans frais supplémentaires pour vous."
+      },
+      "shipping": {
+        "question": "Livrez-vous à l'international ?",
+        "answer": "Oui, nous livrons dans le monde entier via des transporteurs spécialisés en œuvres d'art, entièrement assurés. Les frais de port et les délais estimés sont calculés automatiquement au paiement en fonction de votre adresse de livraison."
       }
     }
   },
