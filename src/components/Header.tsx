@@ -60,44 +60,34 @@ export default function Header() {
   return (
     <>
       <header className="fixed inset-x-0 top-0 z-[70] h-16 md:h-[90px] border-b border-white/10 bg-[rgb(var(--background-rgb))]/95 backdrop-blur-md">
-      <div className="mx-auto flex h-full max-w-[1536px] items-center justify-between px-3 sm:px-6 lg:px-10">
+      <div className="mx-auto flex h-full max-w-[1536px] items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link
           href="#top"
           aria-hidden={menuOpen}
           tabIndex={menuOpen ? -1 : undefined}
-          className="serif flex items-center gap-3 uppercase tracking-[0.2em] text-sm md:text-lg"
+          className="serif flex shrink-0 items-center uppercase tracking-[0.2em] text-sm md:text-lg"
         >
-          <span className="flex h-9 w-9 items-center justify-center rounded-full border border-gold text-[0.65rem] font-montserrat tracking-normal text-gold">
-            IRA
-          </span>
-          <span className="hidden sm:flex flex-col leading-tight normal-case">
-            <span className="tracking-[0.4em] uppercase">{t("header.brand")}</span>
-            <span className="font-montserrat text-[0.55rem] tracking-[0.3em] uppercase text-gray-400">
+          <span className="flex flex-col leading-tight normal-case">
+            <span className="tracking-[0.2em] sm:tracking-[0.4em] uppercase">{t("header.brand")}</span>
+            <span className="hidden font-montserrat text-[0.55rem] tracking-[0.3em] uppercase text-gray-400 sm:block">
               {t("header.tagline")}
             </span>
           </span>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-3">
-          {nav.map((item, index) => (
-            <span key={item.href} className="flex items-center gap-3">
-              {index > 0 && (
-                <span
-                  aria-hidden
-                  className="h-[3px] w-[3px] rounded-full bg-gold/50"
-                />
-              )}
-              <a
-                href={item.href}
-                className="text-[13px] uppercase tracking-[0.25em] text-white/80 transition-colors hover:text-gold"
-              >
-                {t(`nav.${item.id}`)}
-              </a>
-            </span>
+        <nav className="hidden 2xl:flex items-center gap-5 ml-6">
+          {nav.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className="whitespace-nowrap text-[13px] uppercase tracking-[0.25em] text-white/80 transition-colors hover:text-gold"
+            >
+              {t(`nav.${item.id}`)}
+            </a>
           ))}
         </nav>
 
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-4">
           <div
             role="group"
             aria-label={t("languageSwitcher.label")}
@@ -115,7 +105,7 @@ export default function Header() {
                 type="button"
                 onClick={() => switchLocale(loc)}
                 aria-current={locale === loc}
-                className={`relative z-10 w-9 py-1.5 uppercase tracking-[0.1em] transition-colors ${
+                className={`relative z-10 w-9 cursor-pointer py-1.5 uppercase tracking-[0.1em] transition-colors ${
                   locale === loc ? "text-background" : "text-white/60 hover:text-white"
                 }`}
               >
@@ -128,17 +118,9 @@ export default function Header() {
             href="#formats"
             aria-hidden={menuOpen}
             tabIndex={menuOpen ? -1 : undefined}
-            className="btn-cta hidden md:inline-flex"
+            className="btn-cta inline-flex whitespace-nowrap px-3 text-[0.55rem] md:px-[1.8rem] md:text-[0.6rem]"
           >
             {t("header.reserveLong")}
-          </a>
-          <a
-            href="#formats"
-            aria-hidden={menuOpen}
-            tabIndex={menuOpen ? -1 : undefined}
-            className="md:hidden text-[11px] uppercase tracking-[0.15em] text-gold"
-          >
-            {t("header.reserveShort")}
           </a>
 
           <button
@@ -150,7 +132,7 @@ export default function Header() {
             aria-label={t("header.openMenu")}
             aria-hidden={menuOpen}
             tabIndex={menuOpen ? -1 : undefined}
-            className="lg:hidden flex h-9 w-9 flex-col items-center justify-center gap-[5px]"
+            className="2xl:hidden ml-1 flex h-9 w-9 flex-col items-center justify-center gap-[5px]"
           >
             <span className="h-px w-6 bg-white transition-transform" />
             <span className="h-px w-6 bg-white transition-opacity" />
@@ -167,68 +149,83 @@ export default function Header() {
           role="dialog"
           aria-modal="true"
           aria-label={t("header.menuLabel")}
-          className="fixed inset-0 top-16 z-[80] flex flex-col bg-[rgb(var(--background-rgb))] md:top-[90px] lg:hidden"
+          className="fixed inset-0 top-16 z-[80] flex flex-col overflow-y-auto bg-[rgb(var(--background-rgb))] md:top-[90px] 2xl:hidden"
         >
-          <button
-            ref={closeButtonRef}
-            type="button"
-            onClick={() => setMenuOpen(false)}
-            aria-label={t("header.closeMenu")}
-            className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center text-2xl text-white"
-          >
-            &times;
-          </button>
+          <div className="flex shrink-0 items-center justify-between border-b border-white/10 px-6 py-5">
+            <span className="font-montserrat text-[0.6rem] uppercase tracking-[0.4em] text-white/40">
+              {t("header.menuLabel")}
+            </span>
+            <button
+              ref={closeButtonRef}
+              type="button"
+              onClick={() => setMenuOpen(false)}
+              aria-label={t("header.closeMenu")}
+              className="flex h-9 w-9 cursor-pointer items-center justify-center text-2xl text-white transition-colors hover:text-gold"
+            >
+              &times;
+            </button>
+          </div>
 
-          <nav className="flex flex-1 flex-col items-center justify-center gap-8 px-6">
-            {nav.map((item) => (
+          <nav className="flex flex-col px-6 py-2 md:flex-1 md:justify-center md:py-2">
+            {nav.map((item, index) => (
               <a
                 key={item.href}
                 href={item.href}
                 onClick={() => setMenuOpen(false)}
-                className="serif text-2xl italic text-white transition-colors hover:text-gold"
+                className="group flex items-baseline gap-5 border-b border-white/10 py-4 transition-colors first:border-t hover:text-gold md:py-6"
               >
-                {t(`nav.${item.id}`)}
+                <span className="font-montserrat text-xs text-gold/70 transition-colors group-hover:text-gold">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <span className="serif text-2xl italic text-white transition-transform duration-300 ease-out group-hover:translate-x-2 group-hover:text-gold sm:text-3xl">
+                  {t(`nav.${item.id}`)}
+                </span>
               </a>
             ))}
 
+            <div className="flex items-center justify-between gap-5 border-b border-white/10 py-4 md:py-6">
+              <span className="font-montserrat text-xs text-gold/70">
+                {t("languageSwitcher.label")}
+              </span>
+              <div
+                role="group"
+                aria-label={t("languageSwitcher.label")}
+                className="relative flex items-center rounded-full border border-white/20 p-[3px] text-xs"
+              >
+                <span
+                  aria-hidden
+                  className={`absolute top-[3px] h-[calc(100%-6px)] w-10 rounded-full bg-gold transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] ${
+                    locale === "fr" ? "translate-x-10" : "translate-x-0"
+                  }`}
+                />
+                {(["en", "fr"] as const).map((loc) => (
+                  <button
+                    key={loc}
+                    type="button"
+                    onClick={() => {
+                      setMenuOpen(false);
+                      switchLocale(loc);
+                    }}
+                    aria-current={locale === loc}
+                    className={`relative z-10 w-10 cursor-pointer py-2 uppercase tracking-[0.1em] transition-colors ${
+                      locale === loc ? "text-background" : "text-white/60"
+                    }`}
+                  >
+                    {t(`languageSwitcher.${loc}`)}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </nav>
+
+          <div className="mt-auto shrink-0 border-t border-white/10 px-6 py-6">
             <a
               href="#formats"
               onClick={() => setMenuOpen(false)}
-              className="btn-cta mt-6"
+              className="btn-cta w-full"
             >
               {t("header.reserveLong")}
             </a>
-          </nav>
-
-          <div className="flex items-center justify-center pb-8">
-            <div
-              role="group"
-              aria-label={t("languageSwitcher.label")}
-              className="relative flex items-center rounded-full border border-white/20 p-[3px] text-xs"
-            >
-              <span
-                aria-hidden
-                className={`absolute top-[3px] h-[calc(100%-6px)] w-10 rounded-full bg-gold transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] ${
-                  locale === "fr" ? "translate-x-10" : "translate-x-0"
-                }`}
-              />
-              {(["en", "fr"] as const).map((loc) => (
-                <button
-                  key={loc}
-                  type="button"
-                  onClick={() => {
-                    setMenuOpen(false);
-                    switchLocale(loc);
-                  }}
-                  aria-current={locale === loc}
-                  className={`relative z-10 w-10 py-2 uppercase tracking-[0.1em] transition-colors ${
-                    locale === loc ? "text-background" : "text-white/60"
-                  }`}
-                >
-                  {t(`languageSwitcher.${loc}`)}
-                </button>
-              ))}
-            </div>
           </div>
         </div>
       )}

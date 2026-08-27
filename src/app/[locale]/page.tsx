@@ -1,3 +1,4 @@
+import { setRequestLocale } from "next-intl/server";
 import AnnouncementBar from "@/components/AnnouncementBar";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -10,7 +11,10 @@ import Guarantees from "@/components/sections/Guarantees";
 import GalleryDetails from "@/components/sections/GalleryDetails";
 import Faq from "@/components/sections/Faq";
 
-export default function Home() {
+export default async function Home({ params }: PageProps<"/[locale]">) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <>
       <AnnouncementBar />

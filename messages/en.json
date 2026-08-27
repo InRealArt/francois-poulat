@@ -12,7 +12,7 @@
     "faq": "FAQ"
   },
   "announcementBar": {
-    "text": "Official \"Pikapoulat\" Physical Art Edition — Reservations Open (50% Deposit)",
+    "text": "Official \"Pikapoulat\" Physical Art Edition — Reservations Open (75% Deposit)",
     "cta": "Explore the 7 formats →"
   },
   "header": {
@@ -33,21 +33,22 @@
     "eyebrow": "Exclusive Curation Grim x François Poulat",
     "titleLine1": "The Ultimate Setup Artwork.",
     "titleLine2": "\"Pikapoulat\"",
-    "description": "The contemporary energy of streaming and the Pop Art icon united on a masterful physical canvas. Selected by Grim to dress the background of his studio, the original artwork by François Poulat is produced on a noble wood frame by InRealArt Agency.",
+    "description": "The contemporary energy of streaming and the Pop Art icon united on a masterful physical canvas. Selected by Grim to dress the background of his studio, the original artwork by François Poulat is is hand-painted on Alu-Dibond.",
     "features": [
       "7 Custom Physical Dimensions",
       "Physically Sealed & Signed Certificate",
-      "50% Deposit Secured via Stripe",
-      "Armored Wood Crate & Insured Transport"
+      "75% Deposit Secured",
+      "Insured Transport",
+      "Custom orders available"
     ],
-    "ctaPrimary": "Secure my print (50% Deposit)",
+    "ctaPrimary": "Secure my print (75% Deposit)",
     "ctaSecondary": "Watch the Live Unboxing",
-    "badges": ["Stripe SSL", "Apple Pay", "Google Pay", "InRealArt Guarantee"],
+    "badges": ["InRealArt Guarantee"],
     "imageAlt": "Pikapoulat in Grim's Setup",
     "tagSetup": "Grim Setup",
     "tagDetail": "Canvas Detail",
-    "formatOfficial": "Grim's Official Format: 100 × 100 cm",
-    "technique": "Mixed Technique: Acrylic & Varnish",
+    "formatOfficial": "Grim's Official Format: 50 × 50 cm",
+    "technique": "Mixed Technique: Painting on Alu-Dibond",
     "unboxingTitle": "Official Live Unboxing",
     "unboxingSubtitle": "Presented live by Grim on Twitch",
     "unboxingCta": "Reserve"
@@ -90,7 +91,7 @@
     "eyebrow": "// Visual Artist",
     "title": "The Pop Art Material of François Poulat",
     "body": "Exhibited internationally, François Poulat stands out for his mastery of color contrasts and his poetic rearrangement of Pop Culture icons. His canvases combine graphic rigor with the raw energy of palette-knife painting.",
-    "quote": "\"Reinventing Pop iconography for Grim's studio was a captivating challenge: blending gaming energy with the nobility of a canvas worked in thick layers.\"",
+    "quote": "\"Reinventing Pop iconography for Grim's studio was a captivating challenge: infuse gaming energy and pop culture into a custom-made Dibond artwork designed for its world.\"",
     "imageAlt": "François Poulat in his studio",
     "name": "François Poulat",
     "role": "Partner Visual Artist",
@@ -104,7 +105,7 @@
   "formats": {
     "eyebrow": "// Dimension & Deposit Selection",
     "title": "Choose Your Format",
-    "description": "Secure reservation with a 50% deposit at order. The remaining 50% balance is charged only before your piece ships.",
+    "description": "Secure reservation with a 75% deposit at order. The remaining 25% balance is charged only before your piece ships.",
     "featuredBadge": "Grim's Official Format",
     "reserveDefault": "Reserve the Deposit",
     "reserveFeatured": "Reserve Grim's Format",
@@ -165,16 +166,16 @@
         "description": "Official document physically sealed and hand-signed by François Poulat certifying the authenticity of the artwork."
       },
       "crate": {
-        "title": "Armored Wood Crate",
-        "description": "Secure shipment in a reinforced wooden crate, specifically designed to absorb shocks during transit."
+        "title": "Secure packaging",
+        "description": "Secure shipment, specifically designed to absorb shocks during transit."
       },
       "shield": {
         "title": "100% Transport Insurance",
         "description": "Your delivery is covered up to 100% of its value with real-time tracking and mandatory signature on receipt."
       },
       "wallet": {
-        "title": "50% Deposit",
-        "description": "Pay only 50% to start production. The remaining 50% balance is charged only once the artwork is ready to ship."
+        "title": "75% Deposit",
+        "description": "Pay only 75% to start production. The remaining 25% balance is charged only once the artwork is ready to ship."
       }
     }
   },
@@ -215,8 +216,8 @@
     "title": "Customer FAQ",
     "items": {
       "payment": {
-        "question": "How does the 50% deposit payment work?",
-        "answer": "When you make your reservation, you only pay 50% of your print's total value through our secure checkout. This first payment immediately secures your spot in the production queue. The remaining 50% balance is only requested once the piece is finished, inspected, and ready to ship."
+        "question": "How does the 75% deposit payment work?",
+        "answer": "When you make your reservation, you only pay 75% of your print's total value through our secure checkout. This first payment immediately secures your spot in the production queue. The remaining 25% balance is only requested once the piece is finished, inspected, and ready to ship."
       },
       "delivery": {
         "question": "What are the production and delivery times?",
@@ -224,7 +225,7 @@
       },
       "packaging": {
         "question": "How is the artwork packaged?",
-        "answer": "All our physical art editions are wrapped in moisture-protective film, cushioned in high-density foam, then locked in a reinforced armored wood crate specifically sized for the selected dimensions."
+        "answer": "All our physical art editions are wrapped in moisture-protective film, cushioned in high-density foam, then locked in a secure packaging specifically sized for the selected dimensions."
       },
       "certificate": {
         "question": "Does the artwork come with a certificate of authenticity?",
@@ -254,7 +255,7 @@
   "reservationModal": {
     "ariaLabel": "Reserve your print",
     "closeLabel": "Close",
-    "badge": "50% Secured Deposit",
+    "badge": "75% Secured Deposit",
     "title": "Reserve Your Print",
     "totalLabel": "Total",
     "depositLabel": "Deposit",
