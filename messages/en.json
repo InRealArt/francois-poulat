@@ -324,6 +324,8 @@
     "pokemonsPlaceholder": "e.g. Pikachu, Charizard, Lucario",
     "submit": "Send My Request",
     "responseNote": "Our curators reply within 24h",
-    "success": "Request received! Our curators will reach out within 24h with a personalized quote."
+    "success": "Request received! Our curators will reach out within 24h with a personalized quote.",
+    "requiredError": "Please fill in this field (at least 2 characters).",
+    "captchaError": "Please complete the verification below."
   }
 }

@@ -1,20 +1,56 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { z } from "zod";
 import { useTranslations } from "next-intl";
+import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import { useModalBehavior } from "@/hooks/useModalBehavior";
 
 type Props = {
   onClose: () => void;
 };
 
+const customOrderSchema = z.object({
+  format: z.string().trim().min(2),
+  medium: z.string().trim().min(2),
+  support: z.string().trim().min(2),
+  pokemons: z.string().trim().min(2),
+  captchaToken: z.string().min(1),
+});
+
+type CustomOrderField = keyof z.infer<typeof customOrderSchema>;
+
 export default function CustomOrderModal({ onClose }: Props) {
   const [submitted, setSubmitted] = useState(false);
+  const [errors, setErrors] = useState<Partial<Record<CustomOrderField, boolean>>>({});
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+  const turnstileRef = useRef<TurnstileInstance | null>(null);
   useModalBehavior(true, onClose);
   const t = useTranslations("customOrderModal");
 
-  function handleSubmit(event: React.FormEvent) {
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+
+    const formData = new FormData(event.currentTarget);
+    const result = customOrderSchema.safeParse({
+      format: formData.get("format"),
+      medium: formData.get("medium"),
+      support: formData.get("support"),
+      pokemons: formData.get("pokemons"),
+      captchaToken,
+    });
+
+    if (!result.success) {
+      const fieldErrors: Partial<Record<CustomOrderField, boolean>> = {};
+      for (const issue of result.error.issues) {
+        const field = issue.path[0] as CustomOrderField;
+        fieldErrors[field] = true;
+      }
+      setErrors(fieldErrors);
+      return;
+    }
+
+    setErrors({});
     setSubmitted(true);
   }
 
@@ -61,51 +97,111 @@ export default function CustomOrderModal({ onClose }: Props) {
             {t("success")}
           </p>
         ) : (
-          <form onSubmit={handleSubmit} className="mt-6 flex flex-col gap-4">
+          <form onSubmit={handleSubmit} noValidate className="mt-6 flex flex-col gap-4">
             <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-gray-400">
               {t("formatLabel")}
               <input
-                required
                 id="custom-order-format"
                 name="format"
                 type="text"
                 placeholder={t("formatPlaceholder")}
-                className="rounded-none border-b border-white/20 bg-transparent py-2 text-sm text-white outline-none placeholder:text-gray-600 focus:border-gold"
+                aria-invalid={errors.format || undefined}
+                aria-describedby={errors.format ? "custom-order-format-error" : undefined}
+                className={`rounded-none border-b bg-transparent py-2 text-sm text-white outline-none placeholder:text-gray-600 focus:border-gold ${
+                  errors.format ? "border-red-500" : "border-white/20"
+                }`}
               />
+              {errors.format && (
+                <span id="custom-order-format-error" className="normal-case tracking-normal text-red-400">
+                  {t("requiredError")}
+                </span>
+              )}
             </label>
             <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-gray-400">
               {t("mediumLabel")}
               <input
-                required
                 id="custom-order-medium"
                 name="medium"
                 type="text"
                 placeholder={t("mediumPlaceholder")}
-                className="rounded-none border-b border-white/20 bg-transparent py-2 text-sm text-white outline-none placeholder:text-gray-600 focus:border-gold"
+                aria-invalid={errors.medium || undefined}
+                aria-describedby={errors.medium ? "custom-order-medium-error" : undefined}
+                className={`rounded-none border-b bg-transparent py-2 text-sm text-white outline-none placeholder:text-gray-600 focus:border-gold ${
+                  errors.medium ? "border-red-500" : "border-white/20"
+                }`}
               />
+              {errors.medium && (
+                <span id="custom-order-medium-error" className="normal-case tracking-normal text-red-400">
+                  {t("requiredError")}
+                </span>
+              )}
             </label>
             <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-gray-400">
               {t("supportLabel")}
               <input
-                required
                 id="custom-order-support"
                 name="support"
                 type="text"
                 placeholder={t("supportPlaceholder")}
-                className="rounded-none border-b border-white/20 bg-transparent py-2 text-sm text-white outline-none placeholder:text-gray-600 focus:border-gold"
+                aria-invalid={errors.support || undefined}
+                aria-describedby={errors.support ? "custom-order-support-error" : undefined}
+                className={`rounded-none border-b bg-transparent py-2 text-sm text-white outline-none placeholder:text-gray-600 focus:border-gold ${
+                  errors.support ? "border-red-500" : "border-white/20"
+                }`}
               />
+              {errors.support && (
+                <span id="custom-order-support-error" className="normal-case tracking-normal text-red-400">
+                  {t("requiredError")}
+                </span>
+              )}
             </label>
             <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-gray-400">
               {t("pokemonsLabel")}
               <input
-                required
                 id="custom-order-pokemons"
                 name="pokemons"
                 type="text"
                 placeholder={t("pokemonsPlaceholder")}
-                className="rounded-none border-b border-white/20 bg-transparent py-2 text-sm text-white outline-none placeholder:text-gray-600 focus:border-gold"
+                aria-invalid={errors.pokemons || undefined}
+                aria-describedby={errors.pokemons ? "custom-order-pokemons-error" : undefined}
+                className={`rounded-none border-b bg-transparent py-2 text-sm text-white outline-none placeholder:text-gray-600 focus:border-gold ${
+                  errors.pokemons ? "border-red-500" : "border-white/20"
+                }`}
               />
+              {errors.pokemons && (
+                <span id="custom-order-pokemons-error" className="normal-case tracking-normal text-red-400">
+                  {t("requiredError")}
+                </span>
+              )}
             </label>
+
+            <div className="flex flex-col gap-1">
+              <Turnstile
+                ref={turnstileRef}
+                siteKey={
+                  process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY ??
+                  "1x00000000000000000000AA"
+                }
+                options={{
+                  theme: "dark",
+                  refreshExpired: "manual",
+                }}
+                onSuccess={(token) => {
+                  setCaptchaToken(token);
+                  setErrors((prev) => ({ ...prev, captchaToken: false }));
+                }}
+                onExpire={() => {
+                  setCaptchaToken(null);
+                  turnstileRef.current?.reset();
+                }}
+                onError={() => setCaptchaToken(null)}
+              />
+              {errors.captchaToken && (
+                <span className="text-xs normal-case tracking-normal text-red-400">
+                  {t("captchaError")}
+                </span>
+              )}
+            </div>
 
             <button type="submit" className="btn-action mt-2">
               {t("submit")}
