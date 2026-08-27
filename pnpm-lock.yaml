@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@getbrevo/brevo':
+        specifier: ^6.0.3
+        version: 6.0.3
       '@marsidev/react-turnstile':
         specifier: ^1.6.0
         version: 1.6.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -195,6 +198,10 @@ packages:
 
   '@formatjs/intl-localematcher@0.8.13':
     resolution: {integrity: sha512-kHEAFOkeJSPNi7c5PaKaRjxcBrJwzzt81ifUu+8uve1EDW/VJl83KsxmqgqNZLzcFEhSliZGvx3+pk/RH0IOmg==}
+
+  '@getbrevo/brevo@6.0.3':
+    resolution: {integrity: sha512-yWBLKoHC8P5HLZ8z6iRuqDYLpCRKPTUETnZOLZzNDWGFYL78y4SHOTxQVrKH5ROX7f4q+SQ19LD3GWtJlIuNXA==}
+    engines: {node: '>=18.0.0'}
 
   '@humanfs/core@0.19.2':
     resolution: {integrity: sha512-UhXNm+CFMWcbChXywFwkmhqjs3PRCmcSa/hfBgLIb7oQ5HNb1wS0icWsGtSAUNgefHeI+eBrA8I1fxmbHsGdvA==}
@@ -2444,6 +2451,8 @@ snapshots:
   '@formatjs/intl-localematcher@0.8.13':
     dependencies:
       '@formatjs/fast-memoize': 3.1.7
+
+  '@getbrevo/brevo@6.0.3': {}
 
   '@humanfs/core@0.19.2':
     dependencies:

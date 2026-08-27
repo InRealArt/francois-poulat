@@ -52,7 +52,7 @@
     "formatOfficial": "Format Officiel Grim : 50 × 50 cm",
     "technique": "Technique Mixte : sur Alu-Dibond",
     "unboxingTitle": "Unboxing Officiel en Live",
-    "unboxingSubtitle": "Présenté en direct par Grim sur Twitch",
+    "unboxingSubtitle": "Présenté en direct par Grim",
     "unboxingCta": "Réserver"
   },
   "genese": {
@@ -60,7 +60,7 @@
     "titleAccent": "Directement du Stream",
     "intro": "Découvrez l'unboxing live légendaire de Grim. En direct devant des milliers de passionnés, la toile « PikaPoulat » de François Poulat a fait une entrée fracassante dans le stream. Du déballage jusqu'à son installation finale sous les projecteurs, la création contemporaine 50×50 cm prend possession du décor pour transformer l'atmosphère du setup à jamais.",
     "replayBadge": "Replay",
-    "replaySource": "Twitch • Grim Valorant",
+    "replaySource": "Grim Valorant",
     "videoFormat": "100 × 100 cm",
     "videoAria": "Visionner le replay du déballage",
     "body": "L’Agence InRealArt a orchestré l’expédition sécurisée depuis l’atelier de François Poulat jusqu’au setup de Grim. Caisse blindée, transport assuré, et certificat d’authenticité signé à la main à l’intérieur.",
@@ -326,6 +326,11 @@
     "responseNote": "Réponse de nos curateurs sous 24h",
     "success": "Demande envoyée ! Nos curateurs vous recontacteront sous 24h avec un devis personnalisé.",
     "requiredError": "Merci de renseigner ce champ (2 caractères minimum).",
-    "captchaError": "Merci de valider la vérification ci-dessous."
+    "captchaError": "Merci de valider la vérification ci-dessous.",
+    "emailLabel": "Votre Email",
+    "emailPlaceholder": "vous@exemple.com",
+    "emailError": "Merci de saisir une adresse email valide.",
+    "submitting": "Envoi en cours…",
+    "submitError": "Une erreur est survenue. Merci de réessayer dans un instant."
   }
 }

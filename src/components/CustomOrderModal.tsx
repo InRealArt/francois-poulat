@@ -11,6 +11,7 @@ type Props = {
 };
 
 const customOrderSchema = z.object({
+  email: z.email(),
   format: z.string().trim().min(2),
   medium: z.string().trim().min(2),
   support: z.string().trim().min(2),
@@ -22,17 +23,20 @@ type CustomOrderField = keyof z.infer<typeof customOrderSchema>;
 
 export default function CustomOrderModal({ onClose }: Props) {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
   const [errors, setErrors] = useState<Partial<Record<CustomOrderField, boolean>>>({});
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
   const turnstileRef = useRef<TurnstileInstance | null>(null);
   useModalBehavior(true, onClose);
   const t = useTranslations("customOrderModal");
 
-  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
     const formData = new FormData(event.currentTarget);
     const result = customOrderSchema.safeParse({
+      email: formData.get("email"),
       format: formData.get("format"),
       medium: formData.get("medium"),
       support: formData.get("support"),
@@ -51,7 +55,28 @@ export default function CustomOrderModal({ onClose }: Props) {
     }
 
     setErrors({});
-    setSubmitted(true);
+    setSubmitError(false);
+    setSubmitting(true);
+
+    try {
+      const response = await fetch("/api/custom-order", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(result.data),
+      });
+
+      if (!response.ok) {
+        throw new Error("request_failed");
+      }
+
+      setSubmitted(true);
+    } catch {
+      setSubmitError(true);
+      setCaptchaToken(null);
+      turnstileRef.current?.reset();
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   return (
@@ -98,6 +123,26 @@ export default function CustomOrderModal({ onClose }: Props) {
           </p>
         ) : (
           <form onSubmit={handleSubmit} noValidate className="mt-6 flex flex-col gap-4">
+            <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-gray-400">
+              {t("emailLabel")}
+              <input
+                id="custom-order-email"
+                name="email"
+                type="email"
+                autoComplete="email"
+                placeholder={t("emailPlaceholder")}
+                aria-invalid={errors.email || undefined}
+                aria-describedby={errors.email ? "custom-order-email-error" : undefined}
+                className={`rounded-none border-b bg-transparent py-2 text-sm text-white outline-none placeholder:text-gray-600 focus:border-gold ${
+                  errors.email ? "border-red-500" : "border-white/20"
+                }`}
+              />
+              {errors.email && (
+                <span id="custom-order-email-error" className="normal-case tracking-normal text-red-400">
+                  {t("emailError")}
+                </span>
+              )}
+            </label>
             <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-gray-400">
               {t("formatLabel")}
               <input
@@ -203,8 +248,18 @@ export default function CustomOrderModal({ onClose }: Props) {
               )}
             </div>
 
-            <button type="submit" className="btn-action mt-2">
-              {t("submit")}
+            {submitError && (
+              <p className="text-xs normal-case tracking-normal text-red-400">
+                {t("submitError")}
+              </p>
+            )}
+
+            <button
+              type="submit"
+              disabled={submitting}
+              className="btn-action mt-2 disabled:cursor-not-allowed disabled:opacity-50"
+            >
+              {submitting ? t("submitting") : t("submit")}
             </button>
             <p className="text-center text-[0.6rem] uppercase tracking-[0.1em] text-gray-600">
               {t("responseNote")}

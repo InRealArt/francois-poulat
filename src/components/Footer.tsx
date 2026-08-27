@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { footerLinks } from "@/lib/content";
 
-const socials = ["Instagram", "X", "Twitch", "LinkedIn"];
+const socials = ["Instagram", "X", "LinkedIn"];
 
 export default async function Footer() {
   const t = await getTranslations("footer");
@@ -47,10 +47,10 @@ export default async function Footer() {
               {t("contactQuestion")}
             </p>
             <a
-              href="mailto:contact@inrealart.com"
+              href="mailto:teaminrealart@gmail.com"
               className="footer-link mt-2 !text-gold"
             >
-              contact@inrealart.com
+              teaminrealart@gmail.com
             </a>
           </div>
 

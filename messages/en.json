@@ -52,7 +52,7 @@
     "formatOfficial": "Grim's Official Format: 50 × 50 cm",
     "technique": "Mixed Technique: Painting on Alu-Dibond",
     "unboxingTitle": "Official Live Unboxing",
-    "unboxingSubtitle": "Presented live by Grim on Twitch",
+    "unboxingSubtitle": "Presented live by Grim",
     "unboxingCta": "Reserve"
   },
   "genese": {
@@ -60,7 +60,7 @@
     "titleAccent": "Straight From the Stream",
     "intro": "Experience Grim’s legendary live unboxing. Before thousands of enthusiasts, François Poulat’s \"PikaPoulat\" canvas made a spectacular entrance on the stream. From the moment it was unwrapped to its final installation under the spotlight, this 50×50 cm contemporary piece took over the set, transforming the atmosphere of the setup forever.",
     "replayBadge": "Replay",
-    "replaySource": "Twitch • Grim Valorant",
+    "replaySource": "Grim Valorant",
     "videoFormat": "100 × 100 cm",
     "videoAria": "Watch the unboxing replay",
     "body": "InRealArt orchestrated the secure shipment from François Poulat's studio to Grim's setup. Armored crate, insured transit, and a hand-signed certificate of authenticity waiting inside.",
@@ -326,6 +326,11 @@
     "responseNote": "Our curators reply within 24h",
     "success": "Request received! Our curators will reach out within 24h with a personalized quote.",
     "requiredError": "Please fill in this field (at least 2 characters).",
-    "captchaError": "Please complete the verification below."
+    "captchaError": "Please complete the verification below.",
+    "emailLabel": "Your Email",
+    "emailPlaceholder": "you@example.com",
+    "emailError": "Please enter a valid email address.",
+    "submitting": "Sending…",
+    "submitError": "Something went wrong. Please try again in a moment."
   }
 }
