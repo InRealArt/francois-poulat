@@ -307,5 +307,23 @@
     "paymentPreview": "Secure payment (preview): •••• •••• •••• 4242",
     "submit": "Confirm & Reserve the Deposit",
     "sslNote": "256-bit SSL encrypted transaction"
+  },
+  "customOrderModal": {
+    "ariaLabel": "Request a custom project",
+    "closeLabel": "Close",
+    "badge": "Private Curation",
+    "title": "Describe Your Custom Project",
+    "intro": "Tell us your vision — our curators will get back to you within 24h with a personalized quote.",
+    "formatLabel": "Desired Format",
+    "formatPlaceholder": "e.g. 90 × 90 cm, or a custom dimension",
+    "mediumLabel": "Desired Medium",
+    "mediumPlaceholder": "e.g. Acrylic, oil, mixed media",
+    "supportLabel": "Desired Support",
+    "supportPlaceholder": "e.g. Wood frame, Alu-Dibond, canvas",
+    "pokemonsLabel": "Desired Pokémon",
+    "pokemonsPlaceholder": "e.g. Pikachu, Charizard, Lucario",
+    "submit": "Send My Request",
+    "responseNote": "Our curators reply within 24h",
+    "success": "Request received! Our curators will reach out within 24h with a personalized quote."
   }
 }

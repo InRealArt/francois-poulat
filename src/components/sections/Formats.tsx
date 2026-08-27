@@ -4,10 +4,12 @@ import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { formats, formatPrice, type Format } from "@/lib/content";
 import ReservationModal from "@/components/ReservationModal";
+import CustomOrderModal from "@/components/CustomOrderModal";
 
 export default function Formats() {
   const [currency, setCurrency] = useState<"EUR" | "USD">("EUR");
   const [selected, setSelected] = useState<Format | null>(null);
+  const [customOrderOpen, setCustomOrderOpen] = useState(false);
   const t = useTranslations("formats");
   const locale = useLocale();
 
@@ -78,12 +80,13 @@ export default function Formats() {
               )}
 
               {format.contactOnly ? (
-                <a
-                  href="mailto:contact@inrealart.com"
+                <button
+                  type="button"
+                  onClick={() => setCustomOrderOpen(true)}
                   className="btn-cta mt-6 text-center"
                 >
                   {t("galleryContact")}
-                </a>
+                </button>
               ) : (
                 <>
                   <div className="mt-6 border-t border-white/10 pt-4">
@@ -122,6 +125,10 @@ export default function Formats() {
           currency={currency}
           onClose={() => setSelected(null)}
         />
+      )}
+
+      {customOrderOpen && (
+        <CustomOrderModal onClose={() => setCustomOrderOpen(false)} />
       )}
     </section>
   );

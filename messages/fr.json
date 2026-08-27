@@ -307,5 +307,23 @@
     "paymentPreview": "Paiement sécurisé (aperçu) : •••• •••• •••• 4242",
     "submit": "Valider & Réserver l’Acompte",
     "sslNote": "Transaction chiffrée SSL 256 bits"
+  },
+  "customOrderModal": {
+    "ariaLabel": "Demander un projet sur-mesure",
+    "closeLabel": "Fermer",
+    "badge": "Curation Privée",
+    "title": "Décrivez Votre Projet Sur-Mesure",
+    "intro": "Partagez-nous votre vision — nos curateurs reviendront vers vous sous 24h avec un devis personnalisé.",
+    "formatLabel": "Format Souhaité",
+    "formatPlaceholder": "ex. 90 × 90 cm, ou une dimension personnalisée",
+    "mediumLabel": "Medium Souhaité",
+    "mediumPlaceholder": "ex. Acrylique, huile, technique mixte",
+    "supportLabel": "Support Souhaité",
+    "supportPlaceholder": "ex. Châssis bois, Alu-Dibond, toile",
+    "pokemonsLabel": "Pokémons Souhaités",
+    "pokemonsPlaceholder": "ex. Pikachu, Dracaufeu, Lucario",
+    "submit": "Envoyer Ma Demande",
+    "responseNote": "Réponse de nos curateurs sous 24h",
+    "success": "Demande envoyée ! Nos curateurs vous recontacteront sous 24h avec un devis personnalisé."
   }
 }
