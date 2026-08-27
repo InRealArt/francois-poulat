@@ -291,6 +291,33 @@
       "cgv": "CGV & Garanties"
     }
   },
+  "legal": {
+    "metaTitle": "Mentions Légales — InRealArt",
+    "metaDescription": "Mentions légales du site InRealArt conformément à la loi n°2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique.",
+    "kicker": "Informations légales",
+    "title": "Mentions Légales",
+    "reference": "Obligation LCEN — loi n°2004-575 du 21 juin 2004.",
+    "editor": {
+      "heading": "Éditeur du site",
+      "body": "Dénomination sociale : INREALART\nForme juridique / capital social : [à compléter]\nSiège social : 6 rue du château d'eau, 37260 Artannes-sur-Indre\nRCS / SIREN : [à compléter]\nN° TVA intracommunautaire : [à compléter]\nE-mail : teaminrealart@gmail.com\nTéléphone : [à compléter]\nDirecteur de la publication : [nom du représentant légal]"
+    },
+    "host": {
+      "heading": "Hébergeur",
+      "body": "Dénomination : Vercel\nAdresse : 102 avenue des Champs-Élysées, 75008 Paris\nTéléphone : [à compléter]"
+    },
+    "intellectualProperty": {
+      "heading": "Propriété intellectuelle",
+      "body": "L'ensemble des contenus du site (textes, visuels, œuvres, logos, marques) est protégé par le droit de la propriété intellectuelle et demeure la propriété de l'éditeur ou de ses partenaires. Toute reproduction ou représentation, totale ou partielle, sans autorisation préalable est interdite."
+    },
+    "liability": {
+      "heading": "Responsabilité",
+      "body": "L'éditeur s'efforce d'assurer l'exactitude des informations diffusées sur le site mais ne saurait être tenu responsable des erreurs, omissions ou d'une indisponibilité temporaire du service."
+    },
+    "data": {
+      "heading": "Données personnelles et cookies",
+      "body": "Le traitement des données personnelles et l'usage des cookies sont décrits dans la Politique de confidentialité et la Politique cookies accessibles sur le site."
+    }
+  },
   "reservationModal": {
     "ariaLabel": "Réserver votre tirage",
     "closeLabel": "Fermer",

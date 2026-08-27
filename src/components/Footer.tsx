@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import { footerLinks } from "@/lib/content";
 
 const socials = ["Instagram", "X", "LinkedIn"];
@@ -75,12 +76,12 @@ export default async function Footer() {
           <ul className="flex flex-wrap gap-6">
             {footerLinks.legal.map((link) => (
               <li key={link.id}>
-                <a
+                <Link
                   href={link.href}
                   className="transition-colors hover:text-white"
                 >
                   {t(`legalLinks.${link.id}`)}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

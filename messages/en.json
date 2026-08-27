@@ -291,6 +291,33 @@
       "cgv": "Terms & Guarantees"
     }
   },
+  "legal": {
+    "metaTitle": "Legal Notice — InRealArt",
+    "metaDescription": "Legal notice for the InRealArt website pursuant to French law no. 2004-575 of 21 June 2004 on confidence in the digital economy.",
+    "kicker": "Legal information",
+    "title": "Legal Notice",
+    "reference": "LCEN obligation — French law no. 2004-575 of 21 June 2004.",
+    "editor": {
+      "heading": "Site publisher",
+      "body": "Company name: INREALART\nLegal form / share capital: [to be completed]\nRegistered office: 6 rue du château d'eau, 37260 Artannes-sur-Indre, France\nTrade register / SIREN: [to be completed]\nIntra-community VAT number: [to be completed]\nEmail: teaminrealart@gmail.com\nPhone: [to be completed]\nPublication director: [name of legal representative]"
+    },
+    "host": {
+      "heading": "Hosting provider",
+      "body": "Name: Vercel\nAddress: 102 avenue des Champs-Élysées, 75008 Paris, France\nPhone: [to be completed]"
+    },
+    "intellectualProperty": {
+      "heading": "Intellectual property",
+      "body": "All content on the site (text, visuals, artworks, logos, trademarks) is protected by intellectual property law and remains the property of the publisher or its partners. Any reproduction or representation, in whole or in part, without prior authorization is prohibited."
+    },
+    "liability": {
+      "heading": "Liability",
+      "body": "The publisher strives to ensure the accuracy of the information published on the site but cannot be held liable for errors, omissions, or any temporary unavailability of the service."
+    },
+    "data": {
+      "heading": "Personal data and cookies",
+      "body": "The processing of personal data and the use of cookies are described in the Privacy Policy and the Cookie Policy available on the site."
+    }
+  },
   "reservationModal": {
     "ariaLabel": "Reserve your print",
     "closeLabel": "Close",

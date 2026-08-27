@@ -99,7 +99,7 @@ export const footerLinks = {
     { id: "formats", href: "#formats" },
   ],
   legal: [
-    { id: "mentions", href: "#" },
+    { id: "mentions", href: "/legal" },
     { id: "privacy", href: "#" },
     { id: "cgv", href: "#" },
   ],
