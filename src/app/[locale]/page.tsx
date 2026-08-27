@@ -22,11 +22,11 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
       <main>
         <Hero />
         <Genese />
+        <GalleryDetails />
         <Process />
         <Artist />
         <Formats />
         <Guarantees />
-        <GalleryDetails />
         <Faq />
       </main>
       <Footer />
