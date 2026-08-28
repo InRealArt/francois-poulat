@@ -78,7 +78,7 @@ export const galleryDetails = [
   { id: "chassis", image: "/images/carousel/PikaPoulat3.webp" },
   { id: "signature", image: "/images/carousel/PikaPoulat4.webp" },
   { id: "finition", image: "/images/carousel/PikaPoulat5.webp" },
-  { id: "finition", image: "/images/carousel/PikaPoulat6.webp" },
+  { id: "elagant", image: "/images/carousel/PikaPoulat6.webp" },
 ] as const;
 
 export const faqItems = [
