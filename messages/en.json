@@ -241,6 +241,7 @@
   "faq": {
     "eyebrow": "// Questions?",
     "title": "Customer FAQ",
+    "cta": "Ordering my artwork",
     "items": {
       "origin": {
         "question": "Where are the artworks made?",

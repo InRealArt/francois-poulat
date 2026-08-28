@@ -241,6 +241,7 @@
   "faq": {
     "eyebrow": "// Des Questions ?",
     "title": "Foire Aux Questions Client",
+    "cta": "Commander mon œuvre",
     "items": {
       "origin": {
         "question": "Où les œuvres sont-elles fabriquées ?",

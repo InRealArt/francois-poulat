@@ -43,9 +43,16 @@ export default function Faq() {
                   </span>
                 </button>
                 <div className={`accordion-content ${isOpen ? "open" : ""}`}>
-                  <p className="pb-6 text-sm leading-loose text-[var(--light-text-muted)]">
+                  <p className="text-sm leading-loose text-[var(--light-text-muted)]">
                     {t(`items.${item.id}.answer`)}
                   </p>
+                  <a
+                    href="#formats"
+                    className="btn-action btn-pulse mt-5 mb-6 inline-flex items-center gap-2 !px-5 !py-2.5 !text-[0.6rem]"
+                  >
+                    {t("cta")}
+                    <span aria-hidden>&rarr;</span>
+                  </a>
                 </div>
               </div>
             );
