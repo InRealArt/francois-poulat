@@ -293,7 +293,9 @@
     "legalLinks": {
       "mentions": "Legal Notice",
       "privacy": "Privacy Policy",
-      "cgv": "Terms & Guarantees"
+      "cgv": "Terms & Guarantees",
+      "influencerDisclosure": "Influencer Disclosure",
+      "cookies": "Cookie Policy"
     }
   },
   "legal": {
@@ -321,6 +323,178 @@
     "data": {
       "heading": "Personal data and cookies",
       "body": "The processing of personal data and the use of cookies are described in the Privacy Policy and the Cookie Policy available on the site."
+    }
+  },
+  "cgv": {
+    "metaTitle": "Terms & Guarantees — InRealArt",
+    "metaDescription": "Terms and Conditions of Sale applicable to sales of canvases and printed artworks made on the InRealArt website.",
+    "kicker": "Legal information",
+    "title": "Terms and Conditions of Sale",
+    "reference": "Version in force as of 28 August 2026. Sale of canvases and printed artworks to consumers.",
+    "scope": {
+      "heading": "Article 1 — Purpose and scope",
+      "body": "These Terms and Conditions of Sale (\"T&Cs\") exclusively govern sales of products concluded on the page inrealart.com (\"the Site\") between the company INREALART (\"the Seller\") and any natural person acting for purposes outside their professional activity (\"the Customer\" or \"the Consumer\").\n\nAny order implies full and unreserved acceptance of these T&Cs, which the Customer acknowledges having read before validating their order, by ticking the box provided for that purpose. The applicable T&Cs are those in force on the date of the order.\n\nThe Seller reserves the right to amend these T&Cs at any time. The applicable version is archived and may be provided on request. Version in force as of: 28 August 2026."
+    },
+    "seller": {
+      "heading": "Article 2 — Seller identity",
+      "body": "Company name: INREALART\nLegal form and share capital: [to be completed]\nRegistered office: 6 rue du château d'eau, 37260 Artannes-sur-Indre, France\nTrade register / SIREN: [to be completed]\nIntra-community VAT number: [to be completed]\nContact email: teaminrealart@gmail.com   —   Phone: [to be completed]\nPublication director: [name of legal representative]"
+    },
+    "products": {
+      "heading": "Article 3 — Products",
+      "body": "The products offered are the canvases and printed artworks described on the Site. Each product is presented with a description of its essential characteristics (dimensions, support material, printing technique and quality, finish, etc.).\n\nThe photographs and visuals illustrating the products have no contractual value and may show slight differences from the actual product, in particular colour rendering depending on the screen used. Such differences shall not engage the Seller's liability nor constitute a lack of conformity.\n\nLimited / numbered editions: the print run, numbering and, where applicable, the certificate of authenticity provided are specified in the description of the relevant artwork."
+    },
+    "prices": {
+      "heading": "Article 4 — Prices",
+      "body": "Prices are stated in euros, inclusive of all taxes, excluding delivery costs which are mentioned separately before order validation. The total price due by the Customer (products + any delivery costs) is summarised on the order page before payment.\n\nThe Seller reserves the right to change its prices at any time, it being understood that the price applied is the one in force at the time the order is validated.\n\nAny announcement of a price reduction indicates the lowest prior price applied during the preceding 30 days (art. L112-1-1 of the French Consumer Code)."
+    },
+    "order": {
+      "heading": "Article 5 — Ordering",
+      "body": "The Customer selects the product(s), checks the details of their order and total price, corrects any errors, then confirms the order. Validation is carried out using the \"double click\" process: after checking the summary, the Customer definitively confirms by clicking the button bearing the wording \"Order with obligation to pay\".\n\nThe sale is only considered final after confirmation of acceptance of the order by the Seller, sent by email, and collection of the full price. The Seller sends an acknowledgement of receipt summarising the order.\n\nThe Seller reserves the right to refuse or cancel any order from a Customer with whom there is a dispute relating to payment of a previous order, or in the event of an abnormal order (quantity, suspicion of fraud)."
+    },
+    "payment": {
+      "heading": "Article 6 — Payment",
+      "body": "Payment is made online by bank card via the payment service provider Stripe. Payment data is transmitted securely and is neither processed nor stored by the Seller. The debit takes place at the time the order is validated.\n\nThe order is only registered after confirmation of payment by the provider. If payment is refused, the order is automatically cancelled. The Seller may suspend or cancel any order in the event of non-payment, irregular payment or fraud."
+    },
+    "delivery": {
+      "heading": "Article 7 — Delivery",
+      "body": "Areas served: mainland France.\nDelivery time: 5 to 10 business days from confirmation of the order. In accordance with art. L216-1 of the French Consumer Code, failing any indication, delivery takes place no later than 30 days after conclusion of the contract.\nDelivery costs: indicated before order validation.\n\nIn the event of late delivery, the Customer may, after having instructed the Seller to deliver within a reasonable additional period that has remained without effect, terminate the contract by registered letter or in writing on another durable medium. Sums paid are then refunded no later than 14 days following termination (art. L216-6 and L216-7).\n\nOn receipt, the Customer is invited to check the condition of the parcel and the product and to report any apparent damage or non-conformity to the carrier and the Seller as soon as possible."
+    },
+    "ownership": {
+      "heading": "Article 8 — Transfer of ownership and risk",
+      "body": "Transfer of ownership is deferred until full payment of the price by the Customer. Transfer of the risk of loss or damage occurs when the Customer, or a third party designated by them, takes physical possession of the product (art. L216-4 of the French Consumer Code)."
+    },
+    "withdrawal": {
+      "heading": "Article 9 — Right of withdrawal",
+      "body": "Standard canvases (non-personalised): the Customer has a period of 14 days from receipt of the product to exercise their right of withdrawal, without having to give reasons. They inform the Seller of their decision using the model form below or any unambiguous statement, before the deadline expires.\n\nThe Customer returns the product without undue delay and no later than 14 days after communicating their decision. Return costs are borne by the Customer. The Seller refunds all sums paid, including standard delivery costs, no later than 14 days after being informed, and may defer the refund until recovery of the product or proof of its dispatch. The Customer's liability may be engaged in the event of depreciation of the product resulting from handling other than that necessary.\n\nModel withdrawal form: \"To INREALART, 6 rue du château d'eau, 37260 Artannes-sur-Indre, teaminrealart@gmail.com: I hereby notify you of my withdrawal from the contract for the sale of the product below — ordered on … / received on … — Name, address, signature (if on paper), date.\"\n\nPersonalised or made-to-order canvases: in accordance with article L221-28 3° of the French Consumer Code, the right of withdrawal cannot be exercised for goods made to the Customer's specifications or clearly personalised (name, photo, format or variant produced on request). The Customer is informed of this before ordering and acknowledges it when validating the order. The applicable category is stated in the description of each product."
+    },
+    "warranties": {
+      "heading": "Article 10 — Legal guarantees",
+      "body": "Regardless of any commercial warranty, the Seller remains bound by the legal guarantees of conformity (art. L217-3 et seq. of the French Consumer Code) and against hidden defects (art. 1641 et seq. of the French Civil Code).\n\nThe consumer has a period of two years from delivery of the goods to act under the legal guarantee of conformity. They may choose between repair or replacement of the goods, subject to the cost conditions provided for in article L217-12 of the Consumer Code. They are exempt from proving the existence of the lack of conformity during the twenty-four months following delivery of the goods.\n\nThe legal guarantee of conformity applies independently of any commercial warranty granted. The consumer may decide to invoke the guarantee against hidden defects of the item sold within the meaning of article 1641 of the Civil Code. In this case, they may choose between rescission of the sale or a reduction of the sale price in accordance with article 1644 of the Civil Code.\n\nThe Customer may invoke these guarantees by writing to the contact details given in Article 2. The costs of returning the non-conforming product are borne by the Seller in this context."
+    },
+    "liability": {
+      "heading": "Article 11 — Liability",
+      "body": "The Seller cannot be held liable for non-performance of the contract in the event of force majeure, the act of a third party, or fault of the Customer. The Seller's liability is limited, to the extent permitted by law, to the amount of the order, without prejudice to the Consumer's mandatory rights."
+    },
+    "intellectualProperty": {
+      "heading": "Article 12 — Intellectual property",
+      "body": "All elements of the Site and the products (visuals, artworks, trademarks, texts) are protected by intellectual property law. The sale of a canvas does not entail any assignment of the copyright or exploitation rights attached to the work. Any unauthorised reproduction or commercial exploitation is prohibited."
+    },
+    "data": {
+      "heading": "Article 13 — Personal data",
+      "body": "Data collected in connection with the order is processed in accordance with the Privacy Policy accessible on the Site, established pursuant to the GDPR and the French Data Protection Act."
+    },
+    "claims": {
+      "heading": "Article 14 — Complaints and consumer mediation",
+      "body": "Any complaint may be sent to the Seller: teaminrealart@gmail.com.\n\nIn accordance with articles L611-1 et seq. of the French Consumer Code, the Customer has the right to use a consumer mediator free of charge with a view to the amicable resolution of a dispute, after a first written approach to the Seller has been unsuccessful. Designated mediator: [name, address and website of the mediator — to be subscribed]."
+    },
+    "law": {
+      "heading": "Article 15 — Applicable law and disputes",
+      "body": "These T&Cs are governed by French law. In the event of a dispute, and failing amicable resolution, the French courts shall have jurisdiction under the conditions of ordinary law. The Consumer may bring the matter, at their choice, before the court of the place where they resided at the time the contract was concluded or where the harmful event occurred."
+    }
+  },
+  "influencerDisclosure": {
+    "metaTitle": "Transparency & commercial influence — InRealArt",
+    "metaDescription": "Information on paid partnerships, advertising disclosure and compliance of influencer content related to the InRealArt operation.",
+    "kicker": "Legal information",
+    "title": "Transparency & commercial influence",
+    "reference": "French law no. 2023-451 of 9 June 2023 on commercial influence, amended by order no. 2024-978 of 6 November 2024; French Consumer Code; GDPR; platform-specific rules.",
+    "advertisingDisclosure": {
+      "heading": "1. Advertising disclosure",
+      "body": "Any content published by an influencer as part of the operation is a commercial communication: it is identified as such in a clear, legible and immediately identifiable way, for its entire duration.\n\nAccepted wording: \"Advertising\" or \"Commercial collaboration\". Equivalent wording is tolerated (\"partnership\", \"sponsored\", \"in collaboration with…\") provided it is equally clear and understandable.\n\nAmbiguous wording, or English-language wording poorly understood by the French public (#ad, #sponso), or a disclosure buried among hashtags, are prohibited. The \"paid partnership\" tool on Instagram/TikTok is not sufficient on its own: the explicit disclosure also appears in the content itself.\n\nPenalties: up to 2 years' imprisonment and a €300,000 fine, and a ban from practising, in the event of missing disclosure or misleading practice. The advertiser may be jointly liable."
+    },
+    "twitchLive": {
+      "heading": "2. Twitch live",
+      "body": "The advertising disclosure is visible and audible for the entire duration of the live stream, not only at the start: a clear spoken announcement at the beginning of the live AND a continuously visible reminder (live title, \"Commercial collaboration\" panel/overlay, banner).\n\nThe nature of the partnership is restated each time the product or promo code is promoted again during the live. A record of the live (VOD, screenshot) is kept as proof of compliance in the event of an inspection.\n\nAny scarcity element shown during the live (stock countdown, \"only X left\") must be truthful."
+    },
+    "instagram": {
+      "heading": "3. Instagram / TikTok posts and stories",
+      "body": "The \"Paid partnership\" tool is enabled AND the explicit disclosure is added at the very start of the caption or as an overlay on the story.\n\nOn a video story, the disclosure remains legible for the entire viewing duration. Each separate post carries its own disclosure: a compliant story does not cover the following ones.\n\nThe link or sticker leading to the landing page points to a page where the T&Cs, legal notice and privacy policy are accessible."
+    },
+    "unboxing": {
+      "heading": "4. Unboxing and product presentation",
+      "body": "A paid unboxing, or one carried out in exchange for consideration (including a free product), is a commercial communication: the same disclosure obligation applies.\n\nStatements about the quality, material, origin or \"handmade\" / \"limited edition\" nature of the canvases are accurate and verifiable; any exaggeration may constitute a misleading commercial practice.\n\nRetouched or virtual images: if the appearance of the product or of the person is altered (filters, retouching, AI), the wording \"Retouched images\" or \"Virtual images\" is mandatory. Omitting it is punishable by 1 year's imprisonment and a €4,500 fine."
+    },
+    "claims": {
+      "heading": "5. Truthfulness of claims and sales messaging",
+      "body": "No false claim or claim likely to mislead (artificial scarcity, fake reviews, unkept promises about delivery times).\n\nPrice reductions: if the operation includes a promo code or a struck-through launch price, the reference price displayed is the lowest price applied during the preceding 30 days (art. L112-1-1 of the French Consumer Code).\n\nPromo codes and affiliation: the commission earned by the influencer via a code remains compatible with transparency about the commercial nature of the content."
+    },
+    "giveaway": {
+      "heading": "6. Prize draw / giveaway",
+      "body": "A set of rules is drafted (organiser, dates, entry terms, prize, designation of winners, free entry).\n\nThe rules of each platform are respected (Instagram and Twitch in particular prohibit encouraging users to tag fake accounts).\n\nFiling the rules with a judicial officer is no longer mandatory but remains recommended as evidence; the rules are kept available on request."
+    },
+    "minors": {
+      "heading": "7. Underage audience",
+      "body": "If the audience includes a significant proportion of minors, the clarity of the disclosures is reinforced and any excessive incitement to purchase is avoided.\n\nThe absence of promotion of products or services prohibited to minors is verified."
+    },
+    "data": {
+      "heading": "8. Personal data during the operation",
+      "body": "Buyer data collected via the landing page falls under InRealArt's privacy policy; the influencer does not have access to it unless there is a legal basis and an explicit notice.\n\nFor a giveaway, participant data constitutes a separate processing operation (information, legal basis, retention period, deletion after the draw)."
+    },
+    "contract": {
+      "heading": "9. Contract and invoicing",
+      "body": "The collaboration contract covers the specific operation: deliverables, disclosures imposed on the influencer, assignment of rights to the content, exclusivity, remuneration, liability in the event of breach.\n\nIf the live or the posts are reused in InRealArt's advertising, the contract provides for the assignment of rights (including the influencer's image) and the authorised media and durations.\n\nInvoicing and VAT for the influencer service are handled normally; invoices and proof of consideration (including the valued amount of free products) are kept."
+    },
+    "checklist": {
+      "heading": "10. Pre-launch checklist",
+      "body": "• T&Cs, legal notice, privacy policy and cookie policy online and accessible from the landing page.\n• Compliant cookie banner (accept and reject at the same level) active before any non-essential tracker.\n• Order button worded \"… with obligation to pay\" and a summary before payment.\n• Consumer mediator subscribed and mentioned in the T&Cs.\n• Advertising disclosures agreed with the influencer for each format (live, post, story, unboxing).\n• \"Retouched / virtual images\" wording planned if retouching is used.\n• Price and promo rules checked if a promo code is used (30-day reference price).\n• Giveaway rules ready if a giveaway is planned.\n• Records kept (VOD, screenshots, contract, invoices).\n\nInformational note for practical guidance — it does not constitute personalised legal advice. A review by a lawyer before launch is recommended."
+    }
+  },
+  "privacyPolicy": {
+    "metaTitle": "Privacy Policy — InRealArt",
+    "metaDescription": "Processing of personal data on the InRealArt website in accordance with the GDPR and the French Data Protection Act.",
+    "kicker": "Legal information",
+    "title": "Privacy Policy",
+    "reference": "Processing of personal data — GDPR and French Data Protection Act. Version in force as of 28 August 2026.",
+    "controller": {
+      "heading": "1. Data controller",
+      "body": "The data controller is INREALART, 6 rue du château d'eau, 37260 Artannes-sur-Indre, France.\n\nContact for any question relating to your data: teaminrealart@gmail.com.\n\nData Protection Officer (DPO): [contact details, if appointed]."
+    },
+    "dataCollected": {
+      "heading": "2. Data collected",
+      "body": "Identification and contact data: first name, last name, email, phone.\nDelivery and billing data: postal address.\nOrder data: products ordered, amount, history.\nPayment data: processed directly by Stripe; the Seller does not have access to full card numbers.\nBrowsing data: see the Cookie Policy (IP address, session identifiers, usage statistics)."
+    },
+    "purposes": {
+      "heading": "3. Purposes and legal bases",
+      "body": "Order management, delivery and after-sales service — performance of the contract.\nInvoicing and accounting obligations — legal obligation.\nMarketing and newsletter — consent (where applicable).\nAudience measurement and site improvement — legitimate interest or consent depending on the tool.\nFraud prevention — legitimate interest."
+    },
+    "recipients": {
+      "heading": "4. Recipients and processors",
+      "body": "Data is intended for authorised internal departments and for processors acting on behalf of the data controller:\n• Stripe — payment provider.\n• Vercel — website host.\n• [Carrier / logistics]\n• [Emailing tool, where applicable]\n• [Analytics tool, where applicable]\n\nNo data is sold to third parties. A transfer outside the EU may occur via certain providers (for example Stripe): it is then governed by appropriate safeguards (standard contractual clauses of the European Commission)."
+    },
+    "retention": {
+      "heading": "5. Retention period",
+      "body": "Order and customer data: for the duration of the commercial relationship, then archived in accordance with legal obligations.\nAccounting documents and invoices: 10 years (legal obligation).\nMarketing data: until consent is withdrawn or 3 years after the last contact.\nCookies: durations specified in the Cookie Policy (13 months maximum for trackers subject to consent)."
+    },
+    "rights": {
+      "heading": "6. Your rights",
+      "body": "In accordance with the GDPR, you have the rights of access, rectification, erasure, restriction, objection, portability, and the right to give instructions regarding the fate of your data after your death. You may withdraw your consent at any time where the processing is based on it.\n\nTo exercise these rights: teaminrealart@gmail.com. Proof of identity may be requested. You may also lodge a complaint with the CNIL (www.cnil.fr)."
+    },
+    "security": {
+      "heading": "7. Security",
+      "body": "The data controller implements appropriate technical and organisational measures to protect data against loss, unauthorised access or disclosure."
+    }
+  },
+  "cookiePolicy": {
+    "metaTitle": "Cookie Policy — InRealArt",
+    "metaDescription": "Information on cookies and trackers used on the InRealArt website, in accordance with article 82 of the French Data Protection Act and CNIL guidelines.",
+    "kicker": "Legal information",
+    "title": "Cookie Policy",
+    "reference": "Article 82 of the French Data Protection Act — CNIL guidelines. Version in force as of 28 August 2026.",
+    "whatIsACookie": {
+      "heading": "1. What is a cookie?",
+      "body": "A cookie is a file placed on your device when you visit a website. It is used in particular to ensure the website functions, to remember preferences, or to measure audience."
+    },
+    "cookiesUsed": {
+      "heading": "2. Cookies used",
+      "body": "Strictly necessary cookies — essential to operation (cart, session, Stripe payment, security). Exempt from consent.\n\nAudience measurement cookies — analytics tool, subject to consent unless configured for exemption. [to be completed with the actual tool]\n\nMarketing and social media cookies — campaign tracking pixel, subject to consent. [to be completed with the actual trackers]\n\nA detailed table listing each cookie (name, purpose, issuer, retention period — 13 months maximum for trackers subject to consent) will be published here once the tools are finalised."
+    },
+    "consent": {
+      "heading": "3. Your consent",
+      "body": "On your first visit, a banner allows you to accept or refuse the placement of non-essential cookies. You can change your choices at any time via the cookie management module accessible on the site. No non-essential tracker is placed before your consent is obtained."
+    },
+    "browserSettings": {
+      "heading": "4. Browser settings",
+      "body": "You can also configure your browser to block or delete cookies. However, this setting may impair certain features of the site."
     }
   },
   "reservationModal": {

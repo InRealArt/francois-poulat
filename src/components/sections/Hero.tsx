@@ -50,7 +50,16 @@ export default async function Hero() {
 
           <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-[0.6rem] uppercase tracking-[0.2em] text-gray-500">
             {badges.map((badge) => (
-              <span key={badge}>{badge}</span>
+              <span key={badge} className="flex items-center gap-2">
+                {badge}
+                <Image
+                  src="/images/hero/french_flag.svg"
+                  alt="Made in France"
+                  width={32}
+                  height={24}
+                  className="inline-block h-6 w-auto rounded-[2px]"
+                />
+              </span>
             ))}
           </div>
         </Reveal>

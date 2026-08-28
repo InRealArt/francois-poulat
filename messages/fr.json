@@ -293,7 +293,9 @@
     "legalLinks": {
       "mentions": "Mentions Légales",
       "privacy": "Politique de Confidentialité",
-      "cgv": "CGV & Garanties"
+      "cgv": "CGV & Garanties",
+      "influencerDisclosure": "Transparence influence",
+      "cookies": "Politique cookies"
     }
   },
   "legal": {
@@ -321,6 +323,178 @@
     "data": {
       "heading": "Données personnelles et cookies",
       "body": "Le traitement des données personnelles et l'usage des cookies sont décrits dans la Politique de confidentialité et la Politique cookies accessibles sur le site."
+    }
+  },
+  "cgv": {
+    "metaTitle": "CGV & Garanties — InRealArt",
+    "metaDescription": "Conditions Générales de Vente applicables aux ventes de toiles et œuvres imprimées réalisées sur le site InRealArt.",
+    "kicker": "Informations légales",
+    "title": "Conditions Générales de Vente",
+    "reference": "Version en vigueur au 28 août 2026. Vente de toiles et œuvres imprimées aux consommateurs.",
+    "scope": {
+      "heading": "Article 1 — Objet et champ d'application",
+      "body": "Les présentes Conditions Générales de Vente (« CGV ») régissent exclusivement les ventes de produits conclues sur la page inrealart.com (« le Site ») entre la société INREALART (« le Vendeur ») et toute personne physique agissant à des fins n'entrant pas dans le cadre de son activité professionnelle (« le Client » ou « le Consommateur »).\n\nToute commande implique l'acceptation pleine et entière des présentes CGV, que le Client reconnaît avoir lues avant de valider sa commande, en cochant la case prévue à cet effet. Les CGV applicables sont celles en vigueur à la date de la commande.\n\nLe Vendeur se réserve le droit de modifier les présentes CGV à tout moment. La version applicable est archivée et peut être communiquée sur simple demande. Version en vigueur au : 28 août 2026."
+    },
+    "seller": {
+      "heading": "Article 2 — Identité du Vendeur",
+      "body": "Dénomination sociale : INREALART\nForme juridique et capital : [à compléter]\nSiège social : 6 rue du château d'eau, 37260 Artannes-sur-Indre, France\nRCS / SIREN : [à compléter]\nN° TVA intracommunautaire : [à compléter]\nE-mail de contact : teaminrealart@gmail.com   —   Téléphone : [à compléter]\nDirecteur de la publication : [nom du représentant légal]"
+    },
+    "products": {
+      "heading": "Article 3 — Produits",
+      "body": "Les produits proposés sont les toiles et œuvres imprimées décrites sur le Site. Chaque produit fait l'objet d'un descriptif présentant ses caractéristiques essentielles (dimensions, matière du support, technique et qualité d'impression, finition, etc.).\n\nLes photographies et visuels illustrant les produits n'ont pas de valeur contractuelle et peuvent présenter de légères différences avec le produit réel, notamment de rendu des couleurs selon l'écran utilisé. De telles différences ne sauraient engager la responsabilité du Vendeur ni constituer un défaut de conformité.\n\nÉditions limitées / numérotées : le tirage, la numérotation et, le cas échéant, le certificat d'authenticité fourni sont précisés dans le descriptif de l'œuvre concernée."
+    },
+    "prices": {
+      "heading": "Article 4 — Prix",
+      "body": "Les prix sont indiqués en euros, toutes taxes comprises (TTC), hors frais de livraison mentionnés séparément avant la validation de la commande. Le prix total dû par le Client (produits + frais de livraison éventuels) est récapitulé sur la page de commande avant paiement.\n\nLe Vendeur se réserve le droit de modifier ses prix à tout moment, étant entendu que le prix appliqué est celui en vigueur au moment de la validation de la commande.\n\nToute annonce de réduction de prix indique le prix antérieur le plus bas pratiqué au cours des 30 derniers jours (art. L112-1-1 du Code de la consommation)."
+    },
+    "order": {
+      "heading": "Article 5 — Commande",
+      "body": "Le Client sélectionne le ou les produits, vérifie le détail de sa commande et son prix total, corrige d'éventuelles erreurs, puis confirme sa commande. La validation s'effectue selon le procédé du « double clic » : après avoir vérifié le récapitulatif, le Client valide définitivement en cliquant sur le bouton portant la mention « Commande avec obligation de paiement ».\n\nLa vente n'est considérée comme définitive qu'après confirmation de l'acceptation de la commande par le Vendeur, adressée par e-mail, et encaissement de l'intégralité du prix. Le Vendeur adresse un accusé de réception récapitulant la commande.\n\nLe Vendeur se réserve le droit de refuser ou d'annuler toute commande d'un Client avec lequel existerait un litige relatif au paiement d'une commande antérieure, ou en cas de commande anormale (quantité, suspicion de fraude)."
+    },
+    "payment": {
+      "heading": "Article 6 — Paiement",
+      "body": "Le paiement s'effectue en ligne par carte bancaire via le prestataire de services de paiement Stripe. Les données de paiement sont transmises de façon sécurisée et ne sont ni traitées ni conservées par le Vendeur. Le débit intervient au moment de la validation de la commande.\n\nLa commande n'est enregistrée qu'après confirmation du paiement par le prestataire. En cas de refus de paiement, la commande est automatiquement annulée. Le Vendeur pourra suspendre ou annuler toute commande en cas de non-paiement, paiement irrégulier ou fraude."
+    },
+    "delivery": {
+      "heading": "Article 7 — Livraison",
+      "body": "Zones desservies : France métropolitaine.\nDélai de livraison : 5 à 10 jours ouvrés à compter de la confirmation de la commande. Conformément à l'art. L216-1 du Code de la consommation, à défaut d'indication, la livraison intervient au plus tard 30 jours après la conclusion du contrat.\nFrais de livraison : indiqués avant la validation de la commande.\n\nEn cas de retard de livraison, le Client peut, après avoir enjoint le Vendeur de livrer dans un délai supplémentaire raisonnable resté sans effet, résoudre le contrat par lettre recommandée ou par écrit sur un autre support durable. Les sommes versées lui sont alors remboursées au plus tard dans les 14 jours suivant la résolution (art. L216-6 et L216-7).\n\nÀ réception, le Client est invité à vérifier l'état du colis et du produit et à signaler toute avarie ou non-conformité apparente au transporteur et au Vendeur dans les meilleurs délais."
+    },
+    "ownership": {
+      "heading": "Article 8 — Transfert de propriété et des risques",
+      "body": "Le transfert de propriété est différé jusqu'au complet paiement du prix par le Client. Le transfert des risques de perte ou d'endommagement intervient lors de la prise de possession physique du produit par le Client ou un tiers désigné par lui (art. L216-4 du Code de la consommation)."
+    },
+    "withdrawal": {
+      "heading": "Article 9 — Droit de rétractation",
+      "body": "Toiles standard (non personnalisées) : le Client dispose d'un délai de 14 jours à compter de la réception du produit pour exercer son droit de rétractation, sans avoir à motiver sa décision. Il informe le Vendeur de sa décision au moyen du formulaire type ci-dessous ou de toute déclaration dénuée d'ambiguïté, avant l'expiration du délai.\n\nLe Client renvoie le produit sans retard excessif et au plus tard 14 jours après avoir communiqué sa décision. Les frais de retour sont à la charge du Client. Le Vendeur rembourse l'ensemble des sommes versées, y compris les frais de livraison standard, au plus tard 14 jours après avoir été informé, en pouvant différer le remboursement jusqu'à récupération du produit ou preuve de son expédition. La responsabilité du Client peut être engagée en cas de dépréciation du produit résultant de manipulations autres que celles nécessaires.\n\nFormulaire type de rétractation : « À l'attention d'INREALART, 6 rue du château d'eau, 37260 Artannes-sur-Indre, teaminrealart@gmail.com : je vous notifie ma rétractation du contrat portant sur la vente du produit ci-dessous — commandé le … / reçu le … — Nom, adresse, signature (si papier), date. »\n\nToiles personnalisées ou réalisées sur mesure : conformément à l'article L221-28 3° du Code de la consommation, le droit de rétractation ne peut être exercé pour les biens confectionnés selon les spécifications du Client ou nettement personnalisés (nom, photo, format ou déclinaison réalisés à la demande). Le Client en est informé avant la commande et le reconnaît en validant celle-ci. La mention de la catégorie applicable figure dans le descriptif de chaque produit."
+    },
+    "warranties": {
+      "heading": "Article 10 — Garanties légales",
+      "body": "Indépendamment de toute garantie commerciale, le Vendeur reste tenu des garanties légales de conformité (art. L217-3 et suivants du Code de la consommation) et des vices cachés (art. 1641 et suivants du Code civil).\n\nLe consommateur dispose d'un délai de deux ans à compter de la délivrance du bien pour agir au titre de la garantie légale de conformité. Il peut choisir entre la réparation ou le remplacement du bien, sous réserve des conditions de coût prévues par l'article L217-12 du Code de la consommation. Il est dispensé de rapporter la preuve de l'existence du défaut de conformité durant les vingt-quatre mois suivant la délivrance du bien.\n\nLa garantie légale de conformité s'applique indépendamment de la garantie commerciale éventuellement consentie. Le consommateur peut décider de mettre en œuvre la garantie contre les défauts cachés de la chose vendue au sens de l'article 1641 du Code civil. Dans cette hypothèse, il peut choisir entre la résolution de la vente ou une réduction du prix de vente conformément à l'article 1644 du Code civil.\n\nLe Client peut faire jouer ces garanties en écrivant aux coordonnées figurant à l'article 2. Les frais de renvoi du produit non conforme sont pris en charge par le Vendeur dans ce cadre."
+    },
+    "liability": {
+      "heading": "Article 11 — Responsabilité",
+      "body": "Le Vendeur ne saurait être tenu responsable de l'inexécution du contrat en cas de force majeure, de fait d'un tiers, ou de faute du Client. La responsabilité du Vendeur est limitée, dans les conditions permises par la loi, au montant de la commande, sans préjudice des droits impératifs du Consommateur."
+    },
+    "intellectualProperty": {
+      "heading": "Article 12 — Propriété intellectuelle",
+      "body": "L'ensemble des éléments du Site et des produits (visuels, œuvres, marques, textes) est protégé par le droit de la propriété intellectuelle. La vente d'une toile n'emporte aucune cession des droits d'auteur ou droits d'exploitation attachés à l'œuvre. Toute reproduction ou exploitation commerciale non autorisée est interdite."
+    },
+    "data": {
+      "heading": "Article 13 — Données personnelles",
+      "body": "Les données collectées dans le cadre de la commande sont traitées conformément à la Politique de confidentialité accessible sur le Site, établie en application du RGPD et de la loi Informatique et Libertés."
+    },
+    "claims": {
+      "heading": "Article 14 — Réclamations et médiation de la consommation",
+      "body": "Toute réclamation peut être adressée au Vendeur : teaminrealart@gmail.com.\n\nConformément aux articles L611-1 et suivants du Code de la consommation, le Client a le droit de recourir gratuitement à un médiateur de la consommation en vue de la résolution amiable d'un litige, après une première démarche écrite auprès du Vendeur restée infructueuse. Médiateur désigné : [nom, adresse et site du médiateur — à souscrire]."
+    },
+    "law": {
+      "heading": "Article 15 — Droit applicable et litiges",
+      "body": "Les présentes CGV sont soumises au droit français. En cas de litige, et à défaut de résolution amiable, les tribunaux français seront compétents dans les conditions de droit commun. Le Consommateur peut saisir à son choix la juridiction du lieu où il demeurait au moment de la conclusion du contrat ou de la survenance du fait dommageable."
+    }
+  },
+  "influencerDisclosure": {
+    "metaTitle": "Transparence & influence commerciale — InRealArt",
+    "metaDescription": "Informations sur les partenariats rémunérés, la mention du caractère publicitaire et la conformité des contenus d'influence liés à l'opération InRealArt.",
+    "kicker": "Informations légales",
+    "title": "Transparence & influence commerciale",
+    "reference": "Loi n°2023-451 du 9 juin 2023 sur l'influence commerciale, modifiée par l'ordonnance n°2024-978 du 6 novembre 2024 ; Code de la consommation ; RGPD ; règles propres à chaque plateforme.",
+    "advertisingDisclosure": {
+      "heading": "1. Mention du caractère publicitaire",
+      "body": "Tout contenu diffusé par un influenceur dans le cadre de l'opération est une communication commerciale : il est identifié comme tel de façon claire, lisible et immédiatement identifiable, pendant toute sa durée.\n\nMentions admises : « Publicité » ou « Collaboration commerciale ». Des mentions équivalentes sont tolérées (« partenariat », « sponsorisé », « en collaboration avec… ») à condition d'être aussi claires et compréhensibles.\n\nSont proscrites les mentions ambiguës ou anglophones peu comprises du public français (#ad, #sponso), ou une mention noyée dans les hashtags. L'outil « partenariat rémunéré » d'Instagram/TikTok ne suffit pas à lui seul : la mention explicite figure aussi dans le contenu.\n\nSanctions : jusqu'à 2 ans d'emprisonnement et 300 000 € d'amende, interdiction d'exercer, en cas d'absence d'identification ou de pratique trompeuse. L'annonceur peut être coresponsable."
+    },
+    "twitchLive": {
+      "heading": "2. Live Twitch",
+      "body": "La mention publicitaire est visible et audible pendant toute la durée du live, pas seulement au lancement : annonce orale claire en début de live ET rappel visible en continu (titre du live, panneau/overlay « Collaboration commerciale », bannière).\n\nLa nature du partenariat est rappelée à chaque relance de la promotion du produit ou du code promo pendant le live. Une trace du live (VOD, capture) est conservée comme preuve de conformité en cas de contrôle.\n\nTout élément de rareté affiché pendant le live (compte à rebours de stock, « il n'en reste que X ») doit être véridique."
+    },
+    "instagram": {
+      "heading": "3. Posts et stories Instagram / TikTok",
+      "body": "L'outil « Partenariat rémunéré » est activé ET la mention explicite est ajoutée dès le début de la légende ou en surimpression sur la story.\n\nSur une story vidéo, la mention reste lisible pendant toute la durée de visionnage. Chaque post distinct porte sa propre mention : une story conforme ne couvre pas les suivantes.\n\nLe lien ou sticker renvoyant vers la landing pointe vers une page où les CGV, mentions légales et politique de confidentialité sont accessibles."
+    },
+    "unboxing": {
+      "heading": "4. Unboxing et présentation du produit",
+      "body": "Un unboxing rémunéré ou réalisé contre contrepartie (produit offert inclus) est une communication commerciale : même obligation de mention.\n\nLes propos sur la qualité, la matière, l'origine ou le caractère « fait main » / « édition limitée » des toiles sont exacts et vérifiables ; toute exagération peut constituer une pratique commerciale trompeuse.\n\nImages retouchées ou virtuelles : si l'apparence du produit ou de la personne est modifiée (filtres, retouche, IA), les mentions « Images retouchées » ou « Images virtuelles » sont obligatoires. Leur omission est passible d'1 an d'emprisonnement et 4 500 € d'amende."
+    },
+    "claims": {
+      "heading": "5. Véracité des allégations et argumentaire de vente",
+      "body": "Aucune allégation fausse ou de nature à induire en erreur (rareté artificielle, faux avis, promesses non tenues sur les délais).\n\nRéductions de prix : si l'opération comporte un code promo ou un prix de lancement barré, le prix de référence affiché est le prix le plus bas pratiqué au cours des 30 derniers jours (art. L112-1-1 du Code de la consommation).\n\nCodes promo et affiliation : la commission perçue par l'influenceur via un code reste compatible avec la transparence de la nature commerciale du contenu."
+    },
+    "giveaway": {
+      "heading": "6. Jeu-concours / giveaway",
+      "body": "Un règlement du jeu est rédigé (organisateur, dates, modalités de participation, dotation, désignation des gagnants, gratuité).\n\nLes règles de chaque plateforme sont respectées (Instagram et Twitch interdisent notamment d'inciter à identifier de faux comptes).\n\nLe dépôt du règlement chez un commissaire de justice n'est plus obligatoire mais reste recommandé à titre de preuve ; le règlement est tenu disponible sur demande."
+    },
+    "minors": {
+      "heading": "7. Public mineur",
+      "body": "Si l'audience comprend une part significative de mineurs, la clarté des mentions est renforcée et toute incitation excessive à l'achat est évitée.\n\nL'absence de promotion de produits ou services interdits aux mineurs est vérifiée."
+    },
+    "data": {
+      "heading": "8. Données personnelles pendant l'opération",
+      "body": "Les données des acheteurs collectées via la landing relèvent de la politique de confidentialité d'InRealArt ; l'influenceur n'y a pas accès sauf base légale et mention explicite.\n\nPour un giveaway, les données des participants constituent un traitement à part entière (information, base légale, durée de conservation, suppression après tirage)."
+    },
+    "contract": {
+      "heading": "9. Contrat et facturation",
+      "body": "Le contrat de collaboration couvre l'opération concernée : livrables, mentions imposées à l'influenceur, cession de droits sur les contenus, exclusivité, rémunération, responsabilité en cas de manquement.\n\nSi le live ou les posts sont réutilisés dans les publicités d'InRealArt, le contrat prévoit la cession des droits (image de l'influenceur incluse) et les supports et durées autorisés.\n\nLa facturation et la TVA de la prestation d'influence sont traitées normalement ; les factures et preuves de contreparties (y compris produits offerts valorisés) sont conservées."
+    },
+    "checklist": {
+      "heading": "10. Check-list avant lancement",
+      "body": "• CGV, mentions légales, politique de confidentialité et politique cookies en ligne et accessibles depuis la landing.\n• Bandeau cookies conforme (accepter et refuser au même niveau) actif avant tout traceur non essentiel.\n• Bouton de commande « … avec obligation de paiement » et récapitulatif avant paiement.\n• Médiateur de la consommation souscrit et mentionné dans les CGV.\n• Mentions publicitaires calées avec l'influenceur pour chaque format (live, post, story, unboxing).\n• Mentions « images retouchées / virtuelles » prévues si retouche.\n• Règles prix et promo vérifiées si code promo (prix de référence sur 30 jours).\n• Règlement de jeu prêt si giveaway.\n• Traçabilité conservée (VOD, captures, contrat, factures).\n\nNote d'information à visée pratique — ne constitue pas un conseil juridique personnalisé. Une relecture par un avocat avant lancement est recommandée."
+    }
+  },
+  "privacyPolicy": {
+    "metaTitle": "Politique de Confidentialité — InRealArt",
+    "metaDescription": "Traitement des données personnelles sur le site InRealArt conformément au RGPD et à la loi Informatique et Libertés.",
+    "kicker": "Informations légales",
+    "title": "Politique de Confidentialité",
+    "reference": "Traitement des données personnelles — RGPD et loi Informatique et Libertés. Version en vigueur au 28 août 2026.",
+    "controller": {
+      "heading": "1. Responsable du traitement",
+      "body": "Le responsable du traitement est INREALART, 6 rue du château d'eau, 37260 Artannes-sur-Indre, France.\n\nContact pour toute question relative à vos données : teaminrealart@gmail.com.\n\nDélégué à la protection des données (DPO) : [coordonnées, si désigné]."
+    },
+    "dataCollected": {
+      "heading": "2. Données collectées",
+      "body": "Données d'identification et de contact : nom, prénom, e-mail, téléphone.\nDonnées de livraison et de facturation : adresse postale.\nDonnées de commande : produits commandés, montant, historique.\nDonnées de paiement : traitées directement par Stripe ; le Vendeur n'a pas accès aux numéros de carte complets.\nDonnées de navigation : voir la Politique cookies (adresse IP, identifiants de session, statistiques d'usage)."
+    },
+    "purposes": {
+      "heading": "3. Finalités et bases légales",
+      "body": "Gestion des commandes, livraison et SAV — exécution du contrat.\nFacturation et obligations comptables — obligation légale.\nProspection et newsletter — consentement (le cas échéant).\nMesure d'audience et amélioration du site — intérêt légitime ou consentement selon l'outil.\nPrévention de la fraude — intérêt légitime."
+    },
+    "recipients": {
+      "heading": "4. Destinataires et sous-traitants",
+      "body": "Les données sont destinées aux services internes habilités et à des sous-traitants agissant pour le compte du responsable du traitement :\n• Stripe — prestataire de paiement.\n• Vercel — hébergeur du site.\n• [Transporteur / logistique]\n• [Outil d'e-mailing, le cas échéant]\n• [Outil de statistiques, le cas échéant]\n\nAucune donnée n'est vendue à des tiers. Un transfert hors UE peut intervenir via certains prestataires (par exemple Stripe) : il est alors encadré par des garanties appropriées (clauses contractuelles types de la Commission européenne)."
+    },
+    "retention": {
+      "heading": "5. Durée de conservation",
+      "body": "Données de commande et client : le temps de la relation commerciale, puis archivage selon les obligations légales.\nDocuments comptables et factures : 10 ans (obligation légale).\nDonnées de prospection : jusqu'au retrait du consentement ou 3 ans après le dernier contact.\nCookies : durées précisées dans la Politique cookies (13 mois maximum pour les traceurs soumis à consentement)."
+    },
+    "rights": {
+      "heading": "6. Vos droits",
+      "body": "Conformément au RGPD, vous disposez des droits d'accès, de rectification, d'effacement, de limitation, d'opposition, de portabilité, et du droit de définir des directives relatives au sort de vos données après votre décès. Vous pouvez retirer votre consentement à tout moment lorsque le traitement repose sur celui-ci.\n\nPour exercer ces droits : teaminrealart@gmail.com. Une preuve d'identité peut être demandée. Vous pouvez également introduire une réclamation auprès de la CNIL (www.cnil.fr)."
+    },
+    "security": {
+      "heading": "7. Sécurité",
+      "body": "Le responsable du traitement met en œuvre des mesures techniques et organisationnelles appropriées pour protéger les données contre la perte, l'accès non autorisé ou la divulgation."
+    }
+  },
+  "cookiePolicy": {
+    "metaTitle": "Politique de Gestion des Cookies — InRealArt",
+    "metaDescription": "Informations sur les cookies et traceurs utilisés sur le site InRealArt, conformément à l'article 82 de la loi Informatique et Libertés et aux lignes directrices de la CNIL.",
+    "kicker": "Informations légales",
+    "title": "Politique de Gestion des Cookies",
+    "reference": "Article 82 de la loi Informatique et Libertés — lignes directrices CNIL. Version en vigueur au 28 août 2026.",
+    "whatIsACookie": {
+      "heading": "1. Qu'est-ce qu'un cookie ?",
+      "body": "Un cookie est un fichier déposé sur votre terminal lors de la visite d'un site. Il permet notamment d'assurer le fonctionnement du site, de mémoriser des préférences ou de mesurer l'audience."
+    },
+    "cookiesUsed": {
+      "heading": "2. Cookies utilisés",
+      "body": "Cookies strictement nécessaires — indispensables au fonctionnement (panier, session, paiement Stripe, sécurité). Exemptés de consentement.\n\nCookies de mesure d'audience — outil d'analytics, soumis à consentement sauf configuration exemptée. [à compléter avec l'outil réel]\n\nCookies de marketing et réseaux sociaux — pixel de suivi de campagne, soumis à consentement. [à compléter avec les traceurs réels]\n\nUn tableau détaillé listant chaque cookie (nom, finalité, émetteur, durée de conservation — 13 mois maximum pour les traceurs soumis à consentement) sera publié ici une fois les outils finalisés."
+    },
+    "consent": {
+      "heading": "3. Votre consentement",
+      "body": "Lors de votre première visite, un bandeau vous permet d'accepter ou de refuser le dépôt des cookies non essentiels. Vous pouvez modifier vos choix à tout moment via le module de gestion des cookies accessible sur le site. Aucun traceur non essentiel n'est déposé avant recueil de votre consentement."
+    },
+    "browserSettings": {
+      "heading": "4. Paramétrage du navigateur",
+      "body": "Vous pouvez également configurer votre navigateur pour bloquer ou supprimer les cookies. Ce réglage peut toutefois altérer certaines fonctionnalités du site."
     }
   },
   "reservationModal": {

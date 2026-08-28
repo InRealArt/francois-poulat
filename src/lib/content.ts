@@ -101,8 +101,10 @@ export const footerLinks = {
   ],
   legal: [
     { id: "mentions", href: "/legal" },
-    { id: "privacy", href: "#" },
-    { id: "cgv", href: "#" },
+    { id: "privacy", href: "/privacy-policy" },
+    { id: "cgv", href: "/terms-and-conditions" },
+    { id: "influencerDisclosure", href: "/influencer-disclosure" },
+    { id: "cookies", href: "/cookie-policy" },
   ],
 } as const;
 
