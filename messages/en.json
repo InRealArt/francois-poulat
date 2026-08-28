@@ -42,7 +42,7 @@
       "Custom orders available"
     ],
     "ctaPrimary": "Secure my print (75% Deposit)",
-    "ctaSecondary": "Watch the Live Unboxing",
+    "ctaSecondary": "Watch the Live Showcase",
     "badges": [
       "InRealArt Guarantee"
     ],
@@ -51,19 +51,19 @@
     "tagDetail": "Canvas Detail",
     "formatOfficial": "Grim's Official Format: 50 × 50 cm",
     "technique": "Mixed Technique: Painting on Alu-Dibond",
-    "unboxingTitle": "Official Live Unboxing",
+    "unboxingTitle": "Official Live Showcase",
     "unboxingSubtitle": "Presented live by Grim",
     "unboxingCta": "Reserve"
   },
   "genese": {
     "eyebrow": "From Grim's Setup",
-    "titleAccent": "Straight From the Stream",
-    "intro": "Experience Grim’s legendary live unboxing. Before thousands of enthusiasts, François Poulat’s \"PikaPoulat\" canvas made a spectacular entrance on the stream. From the moment it was unwrapped to its final installation under the spotlight, this 50×50 cm contemporary piece took over the set, transforming the atmosphere of the setup forever.",
+    "titleAccent": "The Rise of PikaPoulat",
+    "intro": "Before thousands of enthusiasts, François Poulat’s \"PikaPoulat\" canvas made a spectacular entrance on Grim’s stream. From its very first moments on screen to its final installation under the spotlight, this 50×50 cm contemporary piece took over the set, transforming the atmosphere of the setup forever.",
     "replayBadge": "Replay",
     "replaySource": "Grim Valorant",
     "videoFormat": "100 × 100 cm",
-    "videoAria": "Watch the unboxing replay",
-    "body": "InRealArt orchestrated the secure shipment from François Poulat's studio to Grim's setup. Armored crate, insured transit, and a hand-signed certificate of authenticity waiting inside.",
+    "videoAria": "Watch the Showcase replay",
+    "body": "InRealArt orchestrated the high-end transfer from François Poulat's studio to Grim's setup. Custom transport, full insurance coverage, and a hand-signed certificate of authenticity: every detail was crafted to guarantee a flawless delivery.",
     "ctaSecondary": "See pricing →",
     "photosLabel": "From the Reveal",
     "photos": {
@@ -80,7 +80,7 @@
         "alt": "The Pikapoulat canvas displayed among Grim's Pokémon collection"
       }
     },
-    "titleMain": "The Unboxing,"
+    "titleMain": "The Legendary Showcase : "
   },
   "process": {
     "items": {
@@ -130,7 +130,7 @@
     "title": "Choose Your Format",
     "description": "Secure reservation with a 75% deposit at order. The remaining 25% balance is charged only before your piece ships.",
     "featuredBadge": "Grim's Official Format",
-    "reserveDefault": "Reserve the Deposit",
+    "reserveDefault": "Ordering my artwork",
     "reserveFeatured": "Reserve Grim's Format",
     "galleryContact": "Contact the Gallery",
     "totalLabel": "Total",
@@ -203,9 +203,9 @@
     }
   },
   "gallery": {
-    "eyebrow": "// Close-up on the Materials",
-    "title": "Detailed Gallery of the Artwork",
-    "hint": "Swipe or click to explore — click a visual to enlarge it",
+    "eyebrow": "// Commissioned Artworks Gallery",
+    "title": "Custom Creations by François Poulat",
+    "hint": "Browse through past custom pieces — select any artwork to view it in high resolution",
     "ariaLabel": "Detailed gallery of the artwork",
     "prevLabel": "Previous visual",
     "nextLabel": "Next visual",
@@ -214,15 +214,15 @@
     "items": {
       "matieres": {
         "title": "Texturing & Material",
-        "caption": "Layers of acrylic applied with a palette knife"
+        "caption": ""
       },
       "pigments": {
         "title": "Pigment Vibration",
-        "caption": "Vivid contrast optimized for screen & studio"
+        "caption": ""
       },
       "chassis": {
         "title": "Custom Frame",
-        "caption": "High-stability reinforced resinous wood"
+        "caption": ""
       },
       "signature": {
         "title": "Poulat's Signature",
@@ -230,7 +230,11 @@
       },
       "finition": {
         "title": "Finish & Varnish",
-        "caption": "UV protection, deep and durable finish"
+        "caption": ""
+      },
+      "elagant": {
+        "title": "So Pika",
+        "caption": ""
       }
     }
   },
@@ -332,7 +336,7 @@
     "emailLabel": "Confirmation Email",
     "addressLabel": "Shipping Address",
     "paymentPreview": "Secure payment (preview): •••• •••• •••• 4242",
-    "submit": "Confirm & Reserve the Deposit",
+    "submit": "Confirm & Ordering my artwork",
     "sslNote": "256-bit SSL encrypted transaction"
   },
   "customOrderModal": {

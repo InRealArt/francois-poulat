@@ -42,7 +42,7 @@
       "Possibilité de commande personnalisée"
     ],
     "ctaPrimary": "Sécuriser mon tirage (Acompte 75 %)",
-    "ctaSecondary": "Voir l’Unboxing Live",
+    "ctaSecondary": "Voir le Showcase Live",
     "badges": [
       "Garantie InRealArt"
     ],
@@ -51,19 +51,19 @@
     "tagDetail": "Détail Toile",
     "formatOfficial": "Format Officiel Grim : 50 × 50 cm",
     "technique": "Technique Mixte : sur Alu-Dibond",
-    "unboxingTitle": "Unboxing Officiel en Live",
+    "unboxingTitle": "Showcase Officiel en Live",
     "unboxingSubtitle": "Présenté en direct par Grim",
     "unboxingCta": "Réserver"
   },
   "genese": {
     "eyebrow": "Depuis le Setup de Grim",
-    "titleAccent": "Directement du Stream",
-    "intro": "Découvrez l'unboxing live légendaire de Grim. En direct devant des milliers de passionnés, la toile « PikaPoulat » de François Poulat a fait une entrée fracassante dans le stream. Du déballage jusqu'à son installation finale sous les projecteurs, la création contemporaine 50×50 cm prend possession du décor pour transformer l'atmosphère du setup à jamais.",
+    "titleAccent": "L'ascension de Pikapoulat",
+    "intro": "Devant des milliers de passionnés, la toile « PikaPoulat » de François Poulat a fait une entrée spectaculaire sur le stream de Grim. Dès ses premiers instants à l’écran jusqu’à son installation finale sous les projecteurs, cette œuvre contemporaine de 50 × 50 cm a envahi le plateau, transformant à jamais l’atmosphère du décor.",
     "replayBadge": "Replay",
     "replaySource": "Grim Valorant",
     "videoFormat": "100 × 100 cm",
     "videoAria": "Visionner le replay du déballage",
-    "body": "L’Agence InRealArt a orchestré l’expédition sécurisée depuis l’atelier de François Poulat jusqu’au setup de Grim. Caisse blindée, transport assuré, et certificat d’authenticité signé à la main à l’intérieur.",
+    "body": "InRealArt a orchestré le transfert haut de gamme de l'atelier de François Poulat vers les locaux de Grim. Transport sur mesure, couverture d'assurance complète et certificat d'authenticité signé à la main : chaque détail a été soigneusement pensé pour garantir une livraison irréprochable.",
     "ctaSecondary": "Voir les tarifs →",
     "photosLabel": "Extraits du Dévoilement",
     "photos": {
@@ -80,7 +80,7 @@
         "alt": "La toile Pikapoulat exposée parmi la collection Pokémon de Grim"
       }
     },
-    "titleMain": "L’Unboxing,"
+    "titleMain": "Le Showcase légendaire : "
   },
   "process": {
     "items": {
@@ -130,7 +130,7 @@
     "title": "Choisissez Votre Format",
     "description": "Réservation sécurisée avec acompte de 75 % à la commande. Le solde de 75 % est réglé uniquement avant l’expédition de votre pièce.",
     "featuredBadge": "Format Officiel Grim",
-    "reserveDefault": "Réserver l’Acompte",
+    "reserveDefault": "Commander mon œuvre d'art",
     "reserveFeatured": "Réserver le Format Grim",
     "galleryContact": "Contacter la Galerie",
     "totalLabel": "Total",
@@ -203,9 +203,9 @@
     }
   },
   "gallery": {
-    "eyebrow": "// Zoom sur les Matières",
-    "title": "Galerie Détaillée de l’Œuvre",
-    "hint": "Glissez ou cliquez pour explorer — cliquez sur un visuel pour l’agrandir",
+    "eyebrow": "// Galerie d'œuvres d'art réalisées sur commande",
+    "title": "Créations sur mesure par François Poulat",
+    "hint": "Parcourez nos réalisations personnalisées précédentes — sélectionnez n'importe quelle œuvre pour la visualiser en haute résolution",
     "ariaLabel": "Galerie détaillée de l’œuvre",
     "prevLabel": "Visuel précédent",
     "nextLabel": "Visuel suivant",
@@ -214,15 +214,15 @@
     "items": {
       "matieres": {
         "title": "Texturing & Matière",
-        "caption": "Couches d’acrylique appliquées au couteau"
+        "caption": ""
       },
       "pigments": {
         "title": "Vibration des Pigments",
-        "caption": "Contraste vif optimisé pour écran & studio"
+        "caption": ""
       },
       "chassis": {
         "title": "Châssis Sur-Mesure",
-        "caption": "Bois résineux renforcé haute stabilité"
+        "caption": ""
       },
       "signature": {
         "title": "Signature Poulat",
@@ -230,7 +230,11 @@
       },
       "finition": {
         "title": "Finition & Vernis",
-        "caption": "Protection UV, rendu profond et durable"
+        "caption": ""
+      },
+      "elegant": {
+        "title": "So Pika",
+        "caption": ""
       }
     }
   },
@@ -332,7 +336,7 @@
     "emailLabel": "Email de Confirmation",
     "addressLabel": "Adresse de Livraison",
     "paymentPreview": "Paiement sécurisé (aperçu) : •••• •••• •••• 4242",
-    "submit": "Valider & Réserver l’Acompte",
+    "submit": "Valider & Commander mon œuvre d'art",
     "sslNote": "Transaction chiffrée SSL 256 bits"
   },
   "customOrderModal": {

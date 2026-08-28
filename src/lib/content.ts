@@ -73,11 +73,12 @@ export const guarantees = [
 ] as const;
 
 export const galleryDetails = [
-  { id: "matieres", image: "/images/carousel/PokePoulat1.webp" },
-  { id: "pigments", image: "/images/carousel/PokePoulat2.webp" },
-  { id: "chassis", image: "/images/carousel/PokePoulat3.webp" },
-  { id: "signature", image: "/images/carousel/PokePoulat4.webp" },
-  { id: "finition", image: "/images/carousel/PokePoulat5.webp" },
+  { id: "matieres", image: "/images/carousel/PikaPoulat1.webp" },
+  { id: "pigments", image: "/images/carousel/PikaPoulat2.webp" },
+  { id: "chassis", image: "/images/carousel/PikaPoulat3.webp" },
+  { id: "signature", image: "/images/carousel/PikaPoulat4.webp" },
+  { id: "finition", image: "/images/carousel/PikaPoulat5.webp" },
+  { id: "finition", image: "/images/carousel/PikaPoulat6.webp" },
 ] as const;
 
 export const faqItems = [

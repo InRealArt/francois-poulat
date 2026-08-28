@@ -58,7 +58,7 @@ export default async function Hero() {
         <Reveal direction="right" delay={0.15} className="relative">
           <div className="artwork-image relative aspect-square w-full overflow-hidden rounded-sm border-white/10 bg-card">
             <Image
-              src="/images/PokePoulat.webp"
+              src="/images/hero/hero.webp"
               alt={t("imageAlt")}
               fill
               priority
