@@ -33,10 +33,26 @@ export const formats: Format[] = [
     id: "standard",
     size: "50 × 50 cm",
     priceTotal: 1800,
-    priceDeposit: 900,
+    priceDeposit: 1350,
     featured: true,
   },
   { id: "sur-mesure", size: "Sur-Mesure", contactOnly: true },
+];
+
+export type FormatSize = {
+  id: string;
+  size: string;
+  priceTotal: number;
+  priceDeposit: number;
+};
+
+export const formatSizes: FormatSize[] = [
+  { id: "intime", size: "36 × 36 cm", priceTotal: 1200, priceDeposit: 900 },
+  { id: "standard", size: "50 × 50 cm", priceTotal: 1800, priceDeposit: 1350 },
+  { id: "studio", size: "70 × 70 cm", priceTotal: 2600, priceDeposit: 1950 },
+  { id: "collector", size: "100 × 100 cm", priceTotal: 3800, priceDeposit: 2850 },
+  { id: "galerie", size: "120 × 120 cm", priceTotal: 5200, priceDeposit: 3900 },
+  { id: "monumentale", size: "150 × 150 cm", priceTotal: 7500, priceDeposit: 5625 },
 ];
 
 export const unboxingPhotos = [

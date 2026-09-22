@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { formatPrice, type Format } from "@/lib/content";
+import { formatPrice, formatSizes, type Format } from "@/lib/content";
 import { useModalBehavior } from "@/hooks/useModalBehavior";
 
 type Props = {
@@ -13,6 +13,9 @@ type Props = {
 
 export default function ReservationModal({ format, currency, onClose }: Props) {
   const [submitted, setSubmitted] = useState(false);
+  const [selectedSize, setSelectedSize] = useState(
+    () => formatSizes.find((size) => size.id === format.id) ?? formatSizes[0]
+  );
   useModalBehavior(true, onClose);
   const t = useTranslations("reservationModal");
   const tFormats = useTranslations("formats");
@@ -55,23 +58,42 @@ export default function ReservationModal({ format, currency, onClose }: Props) {
 
         <div className="mt-4 rounded-sm border border-black/10 bg-background p-4">
           <p className="text-sm text-black">{tFormats(`items.${format.id}.name`)}</p>
-          <p className="mt-1 font-mono text-xs uppercase tracking-[0.1em] text-black/50">
-            {format.size}
-          </p>
-          {format.priceTotal && format.priceDeposit && (
-            <div className="mt-3 flex items-center justify-between border-t border-black/10 pt-3 text-xs uppercase tracking-[0.1em]">
-              <span className="text-black/50">
-                {t("totalWithAmount", {
-                  amount: formatPrice(format.priceTotal, currency, locale),
-                })}
-              </span>
-              <span className="text-gold">
-                {t("depositWithAmount", {
-                  amount: formatPrice(format.priceDeposit, currency, locale),
-                })}
-              </span>
+
+          <fieldset className="mt-3">
+            <legend className="text-[0.65rem] uppercase tracking-[0.15em] text-black/50">
+              {t("sizeLabel")}
+            </legend>
+            <div className="mt-2 flex flex-wrap gap-2">
+              {formatSizes.map((size) => (
+                <button
+                  key={size.id}
+                  type="button"
+                  onClick={() => setSelectedSize(size)}
+                  aria-pressed={selectedSize.id === size.id}
+                  className={`rounded-full border px-3 py-1.5 font-mono text-xs uppercase tracking-[0.05em] transition-colors ${
+                    selectedSize.id === size.id
+                      ? "border-gold bg-gold text-black"
+                      : "border-black/20 text-black/60 hover:border-black/40"
+                  }`}
+                >
+                  {size.size}
+                </button>
+              ))}
             </div>
-          )}
+          </fieldset>
+
+          <div className="mt-3 flex items-center justify-between border-t border-black/10 pt-3 text-xs uppercase tracking-[0.1em]">
+            <span className="text-black/50">
+              {t("totalWithAmount", {
+                amount: formatPrice(selectedSize.priceTotal, currency, locale),
+              })}
+            </span>
+            <span className="text-gold">
+              {t("depositWithAmount", {
+                amount: formatPrice(selectedSize.priceDeposit, currency, locale),
+              })}
+            </span>
+          </div>
         </div>
 
         {submitted ? (

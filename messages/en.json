@@ -485,6 +485,7 @@
     "closeLabel": "Close",
     "badge": "75% Secured Deposit",
     "title": "Reserve Your Print",
+    "sizeLabel": "Choose your format",
     "totalLabel": "Total",
     "depositLabel": "Deposit",
     "totalWithAmount": "Total: {amount}",

@@ -130,7 +130,7 @@
   "formats": {
     "eyebrow": "// Sélection des Dimensions & Acompte",
     "title": "Choisissez Votre Format",
-    "description": "Réservation sécurisée avec acompte de 75 % à la commande. Le solde de 75 % est réglé uniquement avant l’expédition de votre pièce.",
+    "description": "Réservation sécurisée avec acompte de 75 % à la commande. Le solde de 25 % est réglé uniquement avant l’expédition de votre pièce.",
     "featuredBadge": "Le Format Officiel du Studio",
     "reserveDefault": "Réserver votre œuvre",
     "reserveFeatured": "Commander l'Édition Grim",
@@ -181,7 +181,7 @@
       },
       "wallet": {
         "title": "Acompte 75 %",
-        "description": "Réglez 75 % pour lancer la fabrication. Le solde de 75 % n’est prélevé qu’une fois l’œuvre prête à être envoyée."
+        "description": "Réglez 75 % pour lancer la fabrication. Le solde de 25 % n’est prélevé qu’une fois l’œuvre prête à être envoyée."
       }
     }
   },
@@ -485,6 +485,7 @@
     "closeLabel": "Fermer",
     "badge": "Acompte Sécurisé 75 %",
     "title": "Réserver Votre Tirage",
+    "sizeLabel": "Choisissez votre format",
     "totalLabel": "Total",
     "depositLabel": "Acompte",
     "totalWithAmount": "Total : {amount}",
