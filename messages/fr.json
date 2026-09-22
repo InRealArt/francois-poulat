@@ -13,7 +13,7 @@
   },
   "announcementBar": {
     "text": "Édition d’Art Physique Officielle « Pikapoulat » — Réservation Ouverte (Acompte 75 %)",
-    "cta": "Explorer les 7 formats →"
+    "cta": "Découvrir les formats →"
   },
   "header": {
     "brand": "InRealArt",
@@ -65,7 +65,7 @@
     "replaySource": "Grim Valorant",
     "videoFormat": "100 × 100 cm",
     "videoAria": "Visionner le replay du déballage",
-    "body": "InRealArt a orchestré le transfert haut de gamme de l'atelier de François Poulat vers les locaux de Grim. Transport sur mesure, couverture d'assurance complète et certificat d'authenticité signé à la main : chaque détail a été soigneusement pensé pour garantir une livraison irréprochable.",
+    "body": "Revivez les moments forts de la présentation en direct sur le stream de Grim et découvrez l'œuvre sous tous ses angles.",
     "ctaSecondary": "Voir les tarifs →",
     "photosLabel": "Extraits du Dévoilement",
     "photos": {
@@ -131,53 +131,34 @@
     "eyebrow": "// Sélection des Dimensions & Acompte",
     "title": "Choisissez Votre Format",
     "description": "Réservation sécurisée avec acompte de 75 % à la commande. Le solde de 75 % est réglé uniquement avant l’expédition de votre pièce.",
-    "featuredBadge": "Format Officiel Grim",
-    "reserveDefault": "Commander mon œuvre d'art",
-    "reserveFeatured": "Réserver le Format Grim",
-    "galleryContact": "Contacter la Galerie",
+    "featuredBadge": "Le Format Officiel du Studio",
+    "reserveDefault": "Réserver votre œuvre",
+    "reserveFeatured": "Commander l'Édition Grim",
+    "galleryContact": "Réserver votre œuvre",
     "totalLabel": "Total",
     "depositLabel": "Acompte",
     "totalWithAmount": "Total : {amount}",
     "depositWithAmount": "Acompte : {amount}",
     "items": {
-      "intime": {
-        "name": "Édition Intime",
-        "tag": "Le Compact",
-        "description": "Format idéal pour étagère collector ou bureau d’exposition."
-      },
       "standard": {
-        "name": "Format Standard",
-        "tag": "Édition Grim (Officiel)",
-        "description": "Équilibre parfait pour habiller un mur d’intérieur contemporain.",
-        "extra": "Emballage renforcé inclus"
-      },
-      "studio": {
-        "name": "Format Studio",
-        "tag": "L'Incontournable",
-        "description": "Presence forte et détails vibrants sans encombrer l’espace."
-      },
-      "collector": {
-        "name": "Édition Collector",
-        "tag": "Format Studio XL",
-        "description": "Exactement la même dimension que l’œuvre trônant derrière le setup de Grim.",
-        "extra": "Certificat d’authenticité numéroté inclus"
-      },
-      "galerie": {
-        "name": "Format Galerie",
-        "tag": "Coup de Cœur",
-        "description": "Immersive, cette dimension sublime les textures relief d’acrylique."
-      },
-      "monumentale": {
-        "name": "Édition Galerie",
-        "tag": "Monumental",
-        "description": "Une présence muséale imposante pour grands espaces & lofts."
+        "name": "Édition Grim",
+        "tag": "Le Format Officiel du Studio",
+        "features": [
+          "Peinture acrylique sur plaque Alu-Dibond réalisée par François Poulat.",
+          "Livré avec son Certificat d'Authenticité physique numéroté (Édition limitée à 100 ex.).",
+          "Emballage sécurisé & transport assuré à 100%."
+        ]
       },
       "sur-mesure": {
-        "name": "Projet Dédié",
+        "name": "Format Personnalisé",
         "tag": "Commande Spéciale",
         "size": "Sur-Mesure",
-        "description": "Dimension personnalisée, encadrement spécifique ou projet privé.",
-        "extra": "InRealArt Private Curation — Étude architecturale & chiffrage personnalisé par nos curateurs sous 24h."
+        "features": [
+          "Une déclinaison personnalisée selon vos contraintes d'espace (grand format salon, loft ou bureau).",
+          "Peinture acrylique sur plaque Alu-Dibond réalisée par François Poulat.",
+          "Livré avec son Certificat d'Authenticité physique numéroté (Édition limitée à 100 ex.).",
+          "Emballage sécurisé & transport assuré à 100%."
+        ]
       }
     }
   },

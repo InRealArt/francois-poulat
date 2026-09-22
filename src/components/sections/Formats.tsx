@@ -44,78 +44,87 @@ export default function Formats() {
           </div>
         </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {formats.map((format) => (
-            <article
-              key={format.id}
-              className={`flex flex-col rounded-sm border p-6 transition-all duration-500 ${
-                format.featured
-                  ? "border-gold bg-[color-mix(in_srgb,var(--gold-accent)_12%,var(--card))]"
-                  : "border-black/10 bg-card hover:border-black/30"
-              }`}
-            >
-              {format.featured && (
-                <span className="mb-3 self-start rounded-full bg-gold px-3 py-1 text-[0.6rem] uppercase tracking-[0.15em] text-black">
-                  {t("featuredBadge")}
-                </span>
-              )}
-              <span className="text-[0.6rem] uppercase tracking-[0.2em] text-gold">
-                {t(`items.${format.id}.tag`)}
-              </span>
-              <h3 className="serif mt-2 text-xl italic text-black">
-                {t(`items.${format.id}.name`)}
-              </h3>
-              <p className="mt-1 font-mono text-xs uppercase tracking-[0.1em] text-black/50">
-                {t.has(`items.${format.id}.size`)
-                  ? t(`items.${format.id}.size`)
-                  : format.size}
-              </p>
-              <p className="mt-4 flex-1 text-sm leading-relaxed text-black/60">
-                {t(`items.${format.id}.description`)}
-              </p>
-              {t.has(`items.${format.id}.extra`) && (
-                <p className="mt-3 text-xs leading-relaxed text-gold">
-                  {t(`items.${format.id}.extra`)}
-                </p>
-              )}
+        <div className="mx-auto mt-14 grid max-w-4xl gap-6 sm:grid-cols-2">
+          {formats.map((format) => {
+            const features = t.raw(`items.${format.id}.features`) as string[];
 
-              {format.contactOnly ? (
-                <button
-                  type="button"
-                  onClick={() => setCustomOrderOpen(true)}
-                  className="btn-cta mt-6 text-center"
+            return (
+              <article
+                key={format.id}
+                className={`flex flex-col rounded-sm border p-8 transition-all duration-500 ${
+                  format.featured
+                    ? "border-gold bg-[color-mix(in_srgb,var(--gold-accent)_12%,var(--card))]"
+                    : "border-black/10 bg-card hover:border-black/30"
+                }`}
+              >
+                <span
+                  className={`mb-4 self-start rounded-full px-3 py-1 text-[0.6rem] uppercase tracking-[0.15em] ${
+                    format.featured
+                      ? "bg-gold text-black"
+                      : "border border-black/20 text-black/60"
+                  }`}
                 >
-                  {t("galleryContact")}
-                </button>
-              ) : (
-                <>
-                  <div className="mt-6 border-t border-black/10 pt-4">
-                    <p className="serif text-2xl italic text-black">
-                      {formatPrice(format.priceTotal!, currency, locale)}
-                    </p>
-                    <p className="mt-1 text-[0.65rem] uppercase tracking-[0.15em] text-black/40">
-                      {t("depositWithAmount", {
-                        amount: formatPrice(
-                          format.priceDeposit!,
-                          currency,
-                          locale
-                        ),
-                      })}
-                    </p>
-                  </div>
+                  {t(`items.${format.id}.tag`)}
+                </span>
+                <h3 className="serif text-2xl italic text-black">
+                  {t(`items.${format.id}.name`)}
+                </h3>
+                <p className="mt-1 font-mono text-xs uppercase tracking-[0.1em] text-black/50">
+                  {t.has(`items.${format.id}.size`)
+                    ? t(`items.${format.id}.size`)
+                    : format.size}
+                </p>
+
+                <ul className="mt-5 flex flex-1 flex-col gap-3 text-sm leading-relaxed text-black/60">
+                  {features.map((feature) => (
+                    <li key={feature} className="flex gap-2.5">
+                      <span
+                        aria-hidden
+                        className="mt-2 h-1 w-1 shrink-0 rounded-full bg-gold"
+                      />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+
+                {format.contactOnly ? (
                   <button
                     type="button"
-                    onClick={() => setSelected(format)}
-                    className="btn-action mt-6"
+                    onClick={() => setCustomOrderOpen(true)}
+                    className="btn-cta mt-8 text-center"
                   >
-                    {format.featured
-                      ? t("reserveFeatured")
-                      : t("reserveDefault")}
+                    {t("galleryContact")}
                   </button>
-                </>
-              )}
-            </article>
-          ))}
+                ) : (
+                  <>
+                    <div className="mt-6 border-t border-black/10 pt-4">
+                      <p className="serif text-2xl italic text-black">
+                        {formatPrice(format.priceTotal!, currency, locale)}
+                      </p>
+                      <p className="mt-1 text-[0.65rem] uppercase tracking-[0.15em] text-black/40">
+                        {t("depositWithAmount", {
+                          amount: formatPrice(
+                            format.priceDeposit!,
+                            currency,
+                            locale
+                          ),
+                        })}
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => setSelected(format)}
+                      className="btn-action mt-6"
+                    >
+                      {format.featured
+                        ? t("reserveFeatured")
+                        : t("reserveDefault")}
+                    </button>
+                  </>
+                )}
+              </article>
+            );
+          })}
         </div>
       </div>
 

@@ -82,9 +82,6 @@ export default async function Genese() {
                     height={280}
                     className="absolute inset-0 h-full w-full object-cover"
                   />
-                  <span className="tag-badge absolute inset-x-1 bottom-1 truncate border-0 bg-black/60 !px-1.5 !py-0.5 text-center text-[0.4rem] uppercase leading-none tracking-[0.08em] text-white backdrop-blur">
-                    {t(`photos.${photo.id}.badge`)}
-                  </span>
                 </div>
               ))}
             </div>
