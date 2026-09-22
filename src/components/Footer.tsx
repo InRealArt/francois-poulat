@@ -36,13 +36,13 @@ export default async function Footer() {
                 InRealArt
               </span>
             </div>
-            <p className="footer-link mt-4 max-w-xs !text-gray-400">
+            <p className="footer-link mt-4 max-w-xs !text-black/50">
               {t("description")}
             </p>
           </div>
 
           <div>
-            <p className="text-xs uppercase tracking-[0.2em] text-white">
+            <p className="text-xs uppercase tracking-[0.2em] text-black">
               {t("agencyHeading")}
             </p>
             <ul className="mt-4 flex flex-col">
@@ -57,10 +57,10 @@ export default async function Footer() {
           </div>
 
           <div>
-            <p className="text-xs uppercase tracking-[0.2em] text-white">
+            <p className="text-xs uppercase tracking-[0.2em] text-black">
               {t("contactHeading")}
             </p>
-            <p className="mt-4 text-sm text-gray-400">
+            <p className="mt-4 text-sm text-black/50">
               {t("contactQuestion")}
             </p>
             <a
@@ -72,7 +72,7 @@ export default async function Footer() {
           </div>
 
           <div>
-            <p className="text-xs uppercase tracking-[0.2em] text-white">
+            <p className="text-xs uppercase tracking-[0.2em] text-black">
               {t("followHeading")}
             </p>
             <ul className="mt-4 flex flex-wrap gap-3">
@@ -83,7 +83,7 @@ export default async function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={social.name}
-                    className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-gray-400 transition-colors hover:border-gold hover:text-gold"
+                    className="flex h-10 w-10 items-center justify-center rounded-full border border-black/15 text-black/50 transition-colors hover:border-gold hover:text-gold"
                   >
                     <svg
                       viewBox="0 0 24 24"
@@ -100,14 +100,14 @@ export default async function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 flex flex-col gap-4 border-t border-white/10 pt-6 text-[0.65rem] uppercase tracking-[0.1em] text-gray-500 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-16 flex flex-col gap-4 border-t border-black/10 pt-6 text-[0.65rem] uppercase tracking-[0.1em] text-black/40 sm:flex-row sm:items-center sm:justify-between">
           <p>{t("copyright")}</p>
           <ul className="flex flex-wrap gap-6">
             {footerLinks.legal.map((link) => (
               <li key={link.id}>
                 <Link
                   href={link.href}
-                  className="transition-colors hover:text-white"
+                  className="transition-colors hover:text-black"
                 >
                   {t(`legalLinks.${link.id}`)}
                 </Link>

@@ -10,7 +10,7 @@ export default async function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden border-b border-white/10 bg-background pt-28 pb-20 md:pt-40 md:pb-28"
+      className="relative overflow-hidden border-b border-black/10 bg-background pt-28 pb-20 md:pt-40 md:pb-28"
     >
       <div className="mx-auto grid max-w-[1440px] gap-14 px-3 sm:px-6 lg:grid-cols-2 lg:px-10 lg:gap-20">
         <Reveal direction="up">
@@ -20,7 +20,7 @@ export default async function Hero() {
             <br />
             <span className="text-gold">{t("titleLine2")}</span>
           </h1>
-          <p className="mt-6 max-w-xl text-sm leading-loose text-gray-300 md:text-base">
+          <p className="mt-6 max-w-xl text-sm leading-loose text-black/70 md:text-base">
             {t("description")}
           </p>
 
@@ -28,7 +28,7 @@ export default async function Hero() {
             {features.map((feature) => (
               <li
                 key={feature}
-                className="flex items-center gap-3 text-xs uppercase tracking-[0.15em] text-gray-200 sm:text-sm"
+                className="flex items-center gap-3 text-xs uppercase tracking-[0.15em] text-black/80 sm:text-sm"
               >
                 <span
                   aria-hidden
@@ -43,12 +43,9 @@ export default async function Hero() {
             <a href="#formats" className="btn-action text-center">
               {t("ctaPrimary")}
             </a>
-            <a href="#genese" className="btn-cta text-center">
-              {t("ctaSecondary")}
-            </a>
           </div>
 
-          <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-[0.6rem] uppercase tracking-[0.2em] text-gray-500">
+          <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-[0.6rem] uppercase tracking-[0.2em] text-black/50">
             {badges.map((badge) => (
               <span key={badge} className="flex items-center gap-2">
                 {badge}
@@ -65,7 +62,7 @@ export default async function Hero() {
         </Reveal>
 
         <Reveal direction="right" delay={0.15} className="relative">
-          <div className="artwork-image relative aspect-square w-full overflow-hidden rounded-sm border-white/10 bg-card">
+          <div className="artwork-image relative aspect-square w-full overflow-hidden rounded-sm border-black/10 bg-card">
             <Image
               src="/images/hero/hero.webp"
               alt={t("imageAlt")}
@@ -90,18 +87,6 @@ export default async function Hero() {
                 {t("technique")}
               </p>
             </div>
-          </div>
-
-          <div className="advantage-box mt-6 flex flex-col gap-3 rounded-sm sm:flex-row sm:items-center sm:justify-between">
-            <p className="serif italic text-lg text-white">
-              {t("unboxingTitle")}
-              <span className="serif block text-sm not-italic text-gray-400">
-                {t("unboxingSubtitle")}
-              </span>
-            </p>
-            <a href="#formats" className="btn-mag shrink-0">
-              {t("unboxingCta")}
-            </a>
           </div>
         </Reveal>
       </div>

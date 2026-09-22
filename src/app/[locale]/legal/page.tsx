@@ -58,7 +58,7 @@ export default async function LegalPage({ params }: LegalPageProps) {
           <h1 className="serif mt-4 text-3xl uppercase tracking-[0.2em] md:text-4xl">
             {t("title")}
           </h1>
-          <p className="mt-4 text-sm text-gray-500">{t("reference")}</p>
+          <p className="mt-4 text-sm text-black/50">{t("reference")}</p>
 
           <div className="mt-16 flex flex-col gap-14">
             {sections.map((id) => (
@@ -66,7 +66,7 @@ export default async function LegalPage({ params }: LegalPageProps) {
                 <h2 className="serif text-xl uppercase tracking-[0.2em] text-gold">
                   {t(`${id}.heading`)}
                 </h2>
-                <div className="mt-5 flex flex-col gap-3 border-t border-white/10 pt-6 text-sm leading-relaxed text-gray-400 whitespace-pre-line">
+                <div className="mt-5 flex flex-col gap-3 border-t border-black/10 pt-6 text-sm leading-relaxed text-black/60 whitespace-pre-line">
                   {t(`${id}.body`)}
                 </div>
               </section>

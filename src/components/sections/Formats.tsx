@@ -16,17 +16,17 @@ export default function Formats() {
   return (
     <section
       id="formats"
-      className="border-b border-white/10 bg-background py-20 md:py-28"
+      className="border-b border-black/10 bg-background py-20 md:py-28"
     >
       <div className="mx-auto max-w-[1440px] px-3 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-2xl text-center">
           <span className="section-number mx-auto">{t("eyebrow")}</span>
           <h2 className="serif text-3xl italic sm:text-4xl">{t("title")}</h2>
-          <p className="mt-4 text-sm leading-loose text-gray-300 md:text-base">
+          <p className="mt-4 text-sm leading-loose text-black/60 md:text-base">
             {t("description")}
           </p>
 
-          <div className="mt-6 inline-flex rounded-full border border-white/20 p-1 text-xs uppercase tracking-[0.15em]">
+          <div className="mt-6 inline-flex rounded-full border border-black/20 p-1 text-xs uppercase tracking-[0.15em]">
             {(["EUR", "USD"] as const).map((c) => (
               <button
                 key={c}
@@ -34,8 +34,8 @@ export default function Formats() {
                 onClick={() => setCurrency(c)}
                 className={`rounded-full px-4 py-1.5 transition-colors ${
                   currency === c
-                    ? "bg-white text-black"
-                    : "text-white/60 hover:text-white"
+                    ? "bg-black text-white"
+                    : "text-black/50 hover:text-black"
                 }`}
               >
                 {c === "EUR" ? "€" : "$"}
@@ -51,7 +51,7 @@ export default function Formats() {
               className={`flex flex-col rounded-sm border p-6 transition-all duration-500 ${
                 format.featured
                   ? "border-gold bg-[color-mix(in_srgb,var(--gold-accent)_12%,var(--card))]"
-                  : "border-white/10 bg-card hover:border-white/30"
+                  : "border-black/10 bg-card hover:border-black/30"
               }`}
             >
               {format.featured && (
@@ -62,15 +62,15 @@ export default function Formats() {
               <span className="text-[0.6rem] uppercase tracking-[0.2em] text-gold">
                 {t(`items.${format.id}.tag`)}
               </span>
-              <h3 className="serif mt-2 text-xl italic text-white">
+              <h3 className="serif mt-2 text-xl italic text-black">
                 {t(`items.${format.id}.name`)}
               </h3>
-              <p className="mt-1 font-mono text-xs uppercase tracking-[0.1em] text-gray-400">
+              <p className="mt-1 font-mono text-xs uppercase tracking-[0.1em] text-black/50">
                 {t.has(`items.${format.id}.size`)
                   ? t(`items.${format.id}.size`)
                   : format.size}
               </p>
-              <p className="mt-4 flex-1 text-sm leading-relaxed text-gray-300">
+              <p className="mt-4 flex-1 text-sm leading-relaxed text-black/60">
                 {t(`items.${format.id}.description`)}
               </p>
               {t.has(`items.${format.id}.extra`) && (
@@ -89,11 +89,11 @@ export default function Formats() {
                 </button>
               ) : (
                 <>
-                  <div className="mt-6 border-t border-white/10 pt-4">
-                    <p className="serif text-2xl italic text-white">
+                  <div className="mt-6 border-t border-black/10 pt-4">
+                    <p className="serif text-2xl italic text-black">
                       {formatPrice(format.priceTotal!, currency, locale)}
                     </p>
-                    <p className="mt-1 text-[0.65rem] uppercase tracking-[0.15em] text-gray-500">
+                    <p className="mt-1 text-[0.65rem] uppercase tracking-[0.15em] text-black/40">
                       {t("depositWithAmount", {
                         amount: formatPrice(
                           format.priceDeposit!,

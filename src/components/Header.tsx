@@ -59,7 +59,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed inset-x-0 top-0 z-[70] h-16 md:h-[90px] border-b border-white/10 bg-[rgb(var(--background-rgb))]/95 backdrop-blur-md">
+      <header className="fixed inset-x-0 top-0 z-[70] h-16 md:h-[90px] border-b border-black/10 bg-[rgb(var(--background-rgb))]/95 backdrop-blur-md">
       <div className="mx-auto flex h-full max-w-[1536px] items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link
           href="#top"
@@ -69,7 +69,7 @@ export default function Header() {
         >
           <span className="flex flex-col leading-tight normal-case">
             <span className="tracking-[0.2em] sm:tracking-[0.4em] uppercase">{t("header.brand")}</span>
-            <span className="hidden font-montserrat text-[0.55rem] tracking-[0.3em] uppercase text-gray-400 sm:block">
+            <span className="hidden font-montserrat text-[0.55rem] tracking-[0.3em] uppercase text-black/50 sm:block">
               {t("header.tagline")}
             </span>
           </span>
@@ -80,7 +80,7 @@ export default function Header() {
             <a
               key={item.href}
               href={item.href}
-              className="whitespace-nowrap text-[13px] uppercase tracking-[0.25em] text-white/80 transition-colors hover:text-gold"
+              className="whitespace-nowrap text-[13px] uppercase tracking-[0.25em] text-black/70 transition-colors hover:text-gold"
             >
               {t(`nav.${item.id}`)}
             </a>
@@ -91,7 +91,7 @@ export default function Header() {
           <div
             role="group"
             aria-label={t("languageSwitcher.label")}
-            className="relative hidden items-center rounded-full border border-white/20 p-[3px] text-[11px] md:flex"
+            className="relative hidden items-center rounded-full border border-black/20 p-[3px] text-[11px] md:flex"
           >
             <span
               aria-hidden
@@ -106,7 +106,7 @@ export default function Header() {
                 onClick={() => switchLocale(loc)}
                 aria-current={locale === loc}
                 className={`relative z-10 w-9 cursor-pointer py-1.5 uppercase tracking-[0.1em] transition-colors ${
-                  locale === loc ? "text-background" : "text-white/60 hover:text-white"
+                  locale === loc ? "text-white" : "text-black/60 hover:text-black"
                 }`}
               >
                 {t(`languageSwitcher.${loc}`)}
@@ -134,9 +134,9 @@ export default function Header() {
             tabIndex={menuOpen ? -1 : undefined}
             className="2xl:hidden ml-1 flex h-9 w-9 flex-col items-center justify-center gap-[5px]"
           >
-            <span className="h-px w-6 bg-white transition-transform" />
-            <span className="h-px w-6 bg-white transition-opacity" />
-            <span className="h-px w-6 bg-white transition-transform" />
+            <span className="h-px w-6 bg-black transition-transform" />
+            <span className="h-px w-6 bg-black transition-opacity" />
+            <span className="h-px w-6 bg-black transition-transform" />
           </button>
         </div>
       </div>
@@ -151,8 +151,8 @@ export default function Header() {
           aria-label={t("header.menuLabel")}
           className="fixed inset-0 top-16 z-[80] flex flex-col overflow-y-auto bg-[rgb(var(--background-rgb))] md:top-[90px] 2xl:hidden"
         >
-          <div className="flex shrink-0 items-center justify-between border-b border-white/10 px-6 py-5">
-            <span className="font-montserrat text-[0.6rem] uppercase tracking-[0.4em] text-white/40">
+          <div className="flex shrink-0 items-center justify-between border-b border-black/10 px-6 py-5">
+            <span className="font-montserrat text-[0.6rem] uppercase tracking-[0.4em] text-black/40">
               {t("header.menuLabel")}
             </span>
             <button
@@ -160,7 +160,7 @@ export default function Header() {
               type="button"
               onClick={() => setMenuOpen(false)}
               aria-label={t("header.closeMenu")}
-              className="flex h-9 w-9 cursor-pointer items-center justify-center text-2xl text-white transition-colors hover:text-gold"
+              className="flex h-9 w-9 cursor-pointer items-center justify-center text-2xl text-black transition-colors hover:text-gold"
             >
               &times;
             </button>
@@ -172,25 +172,25 @@ export default function Header() {
                 key={item.href}
                 href={item.href}
                 onClick={() => setMenuOpen(false)}
-                className="group flex items-baseline gap-5 border-b border-white/10 py-4 transition-colors first:border-t hover:text-gold md:py-6"
+                className="group flex items-baseline gap-5 border-b border-black/10 py-4 transition-colors first:border-t hover:text-gold md:py-6"
               >
                 <span className="font-montserrat text-xs text-gold/70 transition-colors group-hover:text-gold">
                   {String(index + 1).padStart(2, "0")}
                 </span>
-                <span className="serif text-2xl italic text-white transition-transform duration-300 ease-out group-hover:translate-x-2 group-hover:text-gold sm:text-3xl">
+                <span className="serif text-2xl italic text-black transition-transform duration-300 ease-out group-hover:translate-x-2 group-hover:text-gold sm:text-3xl">
                   {t(`nav.${item.id}`)}
                 </span>
               </a>
             ))}
 
-            <div className="flex items-center justify-between gap-5 border-b border-white/10 py-4 md:py-6">
+            <div className="flex items-center justify-between gap-5 border-b border-black/10 py-4 md:py-6">
               <span className="font-montserrat text-xs text-gold/70">
                 {t("languageSwitcher.label")}
               </span>
               <div
                 role="group"
                 aria-label={t("languageSwitcher.label")}
-                className="relative flex items-center rounded-full border border-white/20 p-[3px] text-xs"
+                className="relative flex items-center rounded-full border border-black/20 p-[3px] text-xs"
               >
                 <span
                   aria-hidden
@@ -208,7 +208,7 @@ export default function Header() {
                     }}
                     aria-current={locale === loc}
                     className={`relative z-10 w-10 cursor-pointer py-2 uppercase tracking-[0.1em] transition-colors ${
-                      locale === loc ? "text-background" : "text-white/60"
+                      locale === loc ? "text-white" : "text-black/60"
                     }`}
                   >
                     {t(`languageSwitcher.${loc}`)}
@@ -218,7 +218,7 @@ export default function Header() {
             </div>
           </nav>
 
-          <div className="mt-auto shrink-0 border-t border-white/10 px-6 py-6">
+          <div className="mt-auto shrink-0 border-t border-black/10 px-6 py-6">
             <a
               href="#formats"
               onClick={() => setMenuOpen(false)}

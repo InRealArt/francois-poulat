@@ -30,19 +30,16 @@
     "fr": "FR"
   },
   "hero": {
-    "eyebrow": "Exclusive Curation Grim x François Poulat",
-    "titleLine1": "The Ultimate Setup Artwork.",
+    "eyebrow": "LIMITED EDITION • 100 NUMBERED PRINTS",
+    "titleLine1": "The Legendary Artwork of Grim's Setup.",
     "titleLine2": "\"Pikapoulat\"",
-    "description": "The contemporary energy of streaming and the Pop Art icon united on a masterful physical canvas. Selected by Grim to dress the background of his studio, the original artwork by François Poulat is is hand-painted on Alu-Dibond.",
+    "description": "From the virtual screen to the studio's decor. The collector's artwork designed for Grim's background.",
     "features": [
-      "7 Custom Physical Dimensions",
-      "Physically Sealed & Signed Certificate",
+      "100 Signed Certificate",
       "75% Deposit Secured",
-      "Insured Transport",
-      "Custom orders available"
+      "Insured Transport"
     ],
     "ctaPrimary": "Secure my print (75% Deposit)",
-    "ctaSecondary": "Watch the Live Showcase",
     "badges": [
       "InRealArt Guarantee"
     ],
@@ -50,10 +47,12 @@
     "tagSetup": "Grim Setup",
     "tagDetail": "Canvas Detail",
     "formatOfficial": "Grim's Official Format: 50 × 50 cm",
-    "technique": "Mixed Technique: Painting on Alu-Dibond",
-    "unboxingTitle": "Official Live Showcase",
-    "unboxingSubtitle": "Presented live by Grim",
-    "unboxingCta": "Reserve"
+    "technique": "Mixed Technique: Painting on Alu-Dibond"
+  },
+  "grimStory": {
+    "eyebrow": "// The story of an encounter",
+    "title": "Grim × François Poulat: Two Worlds Meet",
+    "body": "For over 5 years, Grim has dominated the gaming scene with incredible audience statistics. Recognized throughout the community for his ultimate mastery and his one-of-a-kind fragging technique, Grim's signature Valorant technique involves using Sage's wall ability (Barrier Orb) in a creative and unconventional way to reach unexpected positions, create original firing angles (off-angles), and surprise opponents. He has established himself as a major figure on YouTube and in global streaming.\n\nWe are proud to pair his visual universe with the artistic touch of painter François Poulat. From this synergy was born \"Pikapoulat,\" a physical artwork on Alu-Dibond designed to dress the decor of his studio.\n\nToday, Grim is teaming up with InRealArt to offer you the opportunity to acquire a personalized piece for your own home."
   },
   "genese": {
     "eyebrow": "From Grim's Setup",

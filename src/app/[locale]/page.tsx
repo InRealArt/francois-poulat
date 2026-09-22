@@ -3,6 +3,7 @@ import AnnouncementBar from "@/components/AnnouncementBar";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Hero from "@/components/sections/Hero";
+import GrimStory from "@/components/sections/GrimStory";
 import Genese from "@/components/sections/Genese";
 import Process from "@/components/sections/Process";
 import Artist from "@/components/sections/Artist";
@@ -21,6 +22,7 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
       <Header />
       <main>
         <Hero />
+        <GrimStory />
         <Genese />
         <GalleryDetails />
         <Process />

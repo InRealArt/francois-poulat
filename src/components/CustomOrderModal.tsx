@@ -88,14 +88,14 @@ export default function CustomOrderModal({ onClose }: Props) {
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-lg rounded-sm border border-white/10 bg-card p-6 sm:p-8"
+        className="relative w-full max-w-lg rounded-sm border border-black/10 bg-card p-6 sm:p-8"
         onClick={(event) => event.stopPropagation()}
       >
         <button
           type="button"
           onClick={onClose}
           aria-label={t("closeLabel")}
-          className="absolute right-4 top-4 text-gray-400 transition-colors hover:text-white"
+          className="absolute right-4 top-4 text-black/50 transition-colors hover:text-black"
         >
           <svg
             viewBox="0 0 24 24"
@@ -112,8 +112,8 @@ export default function CustomOrderModal({ onClose }: Props) {
         <span className="tag-badge inline-block border-gold text-[0.6rem] uppercase tracking-[0.15em] text-gold">
           {t("badge")}
         </span>
-        <h3 className="serif mt-4 text-2xl italic text-white">{t("title")}</h3>
-        <p className="mt-2 text-sm leading-relaxed text-gray-400">
+        <h3 className="serif mt-4 text-2xl italic text-black">{t("title")}</h3>
+        <p className="mt-2 text-sm leading-relaxed text-black/50">
           {t("intro")}
         </p>
 
@@ -123,7 +123,7 @@ export default function CustomOrderModal({ onClose }: Props) {
           </p>
         ) : (
           <form onSubmit={handleSubmit} noValidate className="mt-6 flex flex-col gap-4">
-            <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-gray-400">
+            <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-black/50">
               {t("emailLabel")}
               <input
                 id="custom-order-email"
@@ -133,8 +133,8 @@ export default function CustomOrderModal({ onClose }: Props) {
                 placeholder={t("emailPlaceholder")}
                 aria-invalid={errors.email || undefined}
                 aria-describedby={errors.email ? "custom-order-email-error" : undefined}
-                className={`rounded-none border-b bg-transparent py-2 text-sm text-white outline-none placeholder:text-gray-600 focus:border-gold ${
-                  errors.email ? "border-red-500" : "border-white/20"
+                className={`rounded-none border-b bg-transparent py-2 text-sm text-black outline-none placeholder:text-black/30 focus:border-gold ${
+                  errors.email ? "border-red-500" : "border-black/20"
                 }`}
               />
               {errors.email && (
@@ -143,7 +143,7 @@ export default function CustomOrderModal({ onClose }: Props) {
                 </span>
               )}
             </label>
-            <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-gray-400">
+            <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-black/50">
               {t("formatLabel")}
               <input
                 id="custom-order-format"
@@ -152,8 +152,8 @@ export default function CustomOrderModal({ onClose }: Props) {
                 placeholder={t("formatPlaceholder")}
                 aria-invalid={errors.format || undefined}
                 aria-describedby={errors.format ? "custom-order-format-error" : undefined}
-                className={`rounded-none border-b bg-transparent py-2 text-sm text-white outline-none placeholder:text-gray-600 focus:border-gold ${
-                  errors.format ? "border-red-500" : "border-white/20"
+                className={`rounded-none border-b bg-transparent py-2 text-sm text-black outline-none placeholder:text-black/30 focus:border-gold ${
+                  errors.format ? "border-red-500" : "border-black/20"
                 }`}
               />
               {errors.format && (
@@ -162,7 +162,7 @@ export default function CustomOrderModal({ onClose }: Props) {
                 </span>
               )}
             </label>
-            <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-gray-400">
+            <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-black/50">
               {t("mediumLabel")}
               <input
                 id="custom-order-medium"
@@ -171,8 +171,8 @@ export default function CustomOrderModal({ onClose }: Props) {
                 placeholder={t("mediumPlaceholder")}
                 aria-invalid={errors.medium || undefined}
                 aria-describedby={errors.medium ? "custom-order-medium-error" : undefined}
-                className={`rounded-none border-b bg-transparent py-2 text-sm text-white outline-none placeholder:text-gray-600 focus:border-gold ${
-                  errors.medium ? "border-red-500" : "border-white/20"
+                className={`rounded-none border-b bg-transparent py-2 text-sm text-black outline-none placeholder:text-black/30 focus:border-gold ${
+                  errors.medium ? "border-red-500" : "border-black/20"
                 }`}
               />
               {errors.medium && (
@@ -181,7 +181,7 @@ export default function CustomOrderModal({ onClose }: Props) {
                 </span>
               )}
             </label>
-            <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-gray-400">
+            <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-black/50">
               {t("supportLabel")}
               <input
                 id="custom-order-support"
@@ -190,8 +190,8 @@ export default function CustomOrderModal({ onClose }: Props) {
                 placeholder={t("supportPlaceholder")}
                 aria-invalid={errors.support || undefined}
                 aria-describedby={errors.support ? "custom-order-support-error" : undefined}
-                className={`rounded-none border-b bg-transparent py-2 text-sm text-white outline-none placeholder:text-gray-600 focus:border-gold ${
-                  errors.support ? "border-red-500" : "border-white/20"
+                className={`rounded-none border-b bg-transparent py-2 text-sm text-black outline-none placeholder:text-black/30 focus:border-gold ${
+                  errors.support ? "border-red-500" : "border-black/20"
                 }`}
               />
               {errors.support && (
@@ -200,7 +200,7 @@ export default function CustomOrderModal({ onClose }: Props) {
                 </span>
               )}
             </label>
-            <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-gray-400">
+            <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-black/50">
               {t("pokemonsLabel")}
               <input
                 id="custom-order-pokemons"
@@ -209,8 +209,8 @@ export default function CustomOrderModal({ onClose }: Props) {
                 placeholder={t("pokemonsPlaceholder")}
                 aria-invalid={errors.pokemons || undefined}
                 aria-describedby={errors.pokemons ? "custom-order-pokemons-error" : undefined}
-                className={`rounded-none border-b bg-transparent py-2 text-sm text-white outline-none placeholder:text-gray-600 focus:border-gold ${
-                  errors.pokemons ? "border-red-500" : "border-white/20"
+                className={`rounded-none border-b bg-transparent py-2 text-sm text-black outline-none placeholder:text-black/30 focus:border-gold ${
+                  errors.pokemons ? "border-red-500" : "border-black/20"
                 }`}
               />
               {errors.pokemons && (
@@ -228,7 +228,7 @@ export default function CustomOrderModal({ onClose }: Props) {
                   "1x00000000000000000000AA"
                 }
                 options={{
-                  theme: "dark",
+                  theme: "light",
                   refreshExpired: "manual",
                 }}
                 onSuccess={(token) => {
@@ -261,7 +261,7 @@ export default function CustomOrderModal({ onClose }: Props) {
             >
               {submitting ? t("submitting") : t("submit")}
             </button>
-            <p className="text-center text-[0.6rem] uppercase tracking-[0.1em] text-gray-600">
+            <p className="text-center text-[0.6rem] uppercase tracking-[0.1em] text-black/30">
               {t("responseNote")}
             </p>
           </form>

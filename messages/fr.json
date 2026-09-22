@@ -30,19 +30,16 @@
     "fr": "FR"
   },
   "hero": {
-    "eyebrow": "Curation Exclusive Grim x François Poulat",
-    "titleLine1": "L’Œuvre Ultime du Setup.",
+    "eyebrow": "ÉDITION LIMITÉE • 100 EXEMPLAIRES NUMÉROTÉS",
+    "titleLine1": "L'œuvre légendaire du Setup de Grim.",
     "titleLine2": "« Pikapoulat »",
-    "description": "L’énergie contemporaine du stream et l’icône Pop Art réunies sur une toile physique magistrale. Sélectionnée par Grim pour habiller l’arrière-plan de son studio, l’œuvre originale de François Poulat est peinte à la main sur Alu-Dibond.",
+    "description": "Du virtuel au décor du studio. Le tableau de collection pensé pour l'arrière-plan de Grim.",
     "features": [
-      "7 Dimensions Physiques Sur-Mesure",
-      "Certificat Physiquement Scellé & Signé",
-      "Acompte 70 % sécurisé",
-      "Transport Assuré",
-      "Possibilité de commande personnalisée"
+      "100 Certificats Signés",
+      "Acompte 75 % Sécurisé",
+      "Transport Assuré"
     ],
     "ctaPrimary": "Sécuriser mon tirage (Acompte 75 %)",
-    "ctaSecondary": "Voir le Showcase Live",
     "badges": [
       "Garantie InRealArt"
     ],
@@ -50,10 +47,12 @@
     "tagSetup": "Setup Grim",
     "tagDetail": "Détail Toile",
     "formatOfficial": "Format Officiel Grim : 50 × 50 cm",
-    "technique": "Technique Mixte : sur Alu-Dibond",
-    "unboxingTitle": "Showcase Officiel en Live",
-    "unboxingSubtitle": "Présenté en direct par Grim",
-    "unboxingCta": "Réserver"
+    "technique": "Technique Mixte : sur Alu-Dibond"
+  },
+  "grimStory": {
+    "eyebrow": "// L'histoire d'une rencontre",
+    "title": "Grim × François Poulat : La rencontre de deux univers",
+    "body": "Depuis plus de 5 ans, Grim domine la scène gaming avec des statistiques d'audience incroyables. Reconnu par toute la communauté pour sa maîtrise ultime et sa technique de frag unique au monde, la technique de Grim sur Valorant consiste à utiliser la compétence de mur (Barrier Orb) de Sage de manière créative et non conventionnelle pour atteindre des positions inattendues, créer des angles de tir inédits (off-angles) et surprendre les adversaires. Il a su s'imposer comme une figure incontournable de YouTube et du streaming mondial.\n\nNous sommes fiers d'associer son univers visuel à la patte artistique du peintre François Poulat. De cette synergie est née « Pikapoulat », une œuvre physique sur Alu-Dibond pensée pour habiller le décor de son studio.\n\nAujourd'hui, Grim s'associe à InRealArt pour vous offrir l'opportunité d'acquérir une pièce personnalisée chez vous."
   },
   "genese": {
     "eyebrow": "Depuis le Setup de Grim",

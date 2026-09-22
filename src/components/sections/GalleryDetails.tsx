@@ -219,13 +219,13 @@ export default function GalleryDetails() {
   return (
     <section
       id="galerie"
-      className="border-b border-white/10 bg-background py-20 md:py-28"
+      className="border-b border-black/10 bg-background py-20 md:py-28"
     >
       <div className="mx-auto max-w-[1440px] px-3 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-2xl text-center">
           <span className="section-number mx-auto">{t("eyebrow")}</span>
           <h2 className="serif text-3xl italic sm:text-4xl">{t("title")}</h2>
-          <p className="mt-4 text-sm text-gray-400">{t("hint")}</p>
+          <p className="mt-4 text-sm text-black/50">{t("hint")}</p>
         </div>
 
         <Reveal className="mt-14">
@@ -265,7 +265,7 @@ export default function GalleryDetails() {
                     className="artwork-container group h-full w-[78%] text-left sm:w-[62%]"
                     tabIndex={index === active ? 0 : -1}
                   >
-                    <div className="artwork-image relative h-[calc(100%-4.5rem)] w-full overflow-hidden rounded-sm border-white/10 bg-card shadow-[0_30px_60px_-15px_rgba(0,0,0,0.6)]">
+                    <div className="artwork-image relative h-[calc(100%-4.5rem)] w-full overflow-hidden rounded-sm border-black/10 bg-card shadow-[0_30px_60px_-15px_rgba(0,0,0,0.15)]">
                       <Image
                         src={item.image}
                         alt={t(`items.${item.id}.title`)}
@@ -275,10 +275,10 @@ export default function GalleryDetails() {
                         priority={index === 0}
                       />
                     </div>
-                    <p className="serif mt-3 text-base italic text-white sm:text-lg">
+                    <p className="serif mt-3 text-base italic text-black sm:text-lg">
                       {t(`items.${item.id}.title`)}
                     </p>
-                    <p className="mt-1 text-xs leading-relaxed text-gray-400">
+                    <p className="mt-1 text-xs leading-relaxed text-black/50">
                       {t(`items.${item.id}.caption`)}
                     </p>
                   </button>
@@ -294,7 +294,7 @@ export default function GalleryDetails() {
                 prev();
               }}
               aria-label={t("prevLabel")}
-              className="absolute left-0 top-[calc(50%-2.25rem)] z-40 flex h-10 w-10 -translate-x-1 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/40 text-white/80 backdrop-blur-sm transition-colors hover:border-[var(--gold-accent)] hover:text-[var(--gold-accent)] sm:left-2"
+              className="absolute left-0 top-[calc(50%-2.25rem)] z-40 flex h-10 w-10 -translate-x-1 -translate-y-1/2 items-center justify-center rounded-full border border-black/20 bg-white/70 text-black/70 backdrop-blur-sm transition-colors hover:border-[var(--gold-accent)] hover:text-[var(--gold-accent)] sm:left-2"
             >
               <svg
                 viewBox="0 0 24 24"
@@ -315,7 +315,7 @@ export default function GalleryDetails() {
                 next();
               }}
               aria-label={t("nextLabel")}
-              className="absolute right-0 top-[calc(50%-2.25rem)] z-40 flex h-10 w-10 translate-x-1 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/40 text-white/80 backdrop-blur-sm transition-colors hover:border-[var(--gold-accent)] hover:text-[var(--gold-accent)] sm:right-2"
+              className="absolute right-0 top-[calc(50%-2.25rem)] z-40 flex h-10 w-10 translate-x-1 -translate-y-1/2 items-center justify-center rounded-full border border-black/20 bg-white/70 text-black/70 backdrop-blur-sm transition-colors hover:border-[var(--gold-accent)] hover:text-[var(--gold-accent)] sm:right-2"
             >
               <svg
                 viewBox="0 0 24 24"
@@ -347,7 +347,7 @@ export default function GalleryDetails() {
                   className={`block rounded-full transition-all duration-500 ${
                     index === active
                       ? "h-1.5 w-6 bg-[var(--gold-accent)]"
-                      : "h-1.5 w-1.5 bg-white/30 group-hover:bg-white/60"
+                      : "h-1.5 w-1.5 bg-black/30 group-hover:bg-black/60"
                   }`}
                 />
               </button>
