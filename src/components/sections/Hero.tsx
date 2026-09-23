@@ -52,9 +52,9 @@ export default async function Hero() {
                 <Image
                   src="/images/hero/french_flag.svg"
                   alt="Made in France"
-                  width={32}
+                  width={24}
                   height={24}
-                  className="inline-block h-6 w-auto rounded-[2px]"
+                  className="inline-block h-6 w-6 rounded-[2px]"
                 />
               </span>
             ))}

@@ -57,6 +57,7 @@ export default async function LocaleLayout({
       lang={locale}
       className={`${cormorant.variable} ${montserrat.variable} ${unbounded.variable} h-full antialiased`}
       data-theme="dark"
+      data-scroll-behavior="smooth"
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <NextIntlClientProvider locale={locale}>{children}</NextIntlClientProvider>

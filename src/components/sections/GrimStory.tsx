@@ -32,6 +32,9 @@ export default async function GrimStory() {
             <Reveal>
               <span className="section-number">{t("eyebrow")}</span>
               <h2 className="serif text-3xl italic sm:text-4xl">{t("title")}</h2>
+              <p className="mt-3 text-xs uppercase tracking-[0.2em] text-[var(--light-text-muted)]">
+                {t("subtitle")}
+              </p>
             </Reveal>
 
             <Reveal
