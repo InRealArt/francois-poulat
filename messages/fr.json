@@ -145,6 +145,7 @@
         "tag": "Le Format Officiel du Studio",
         "features": [
           "Peinture acrylique sur plaque Alu-Dibond réalisée par François Poulat.",
+          "Édition limitée à 100 exemplaires signés.",
           "Livré avec Certificat d'Authenticité.",
           "Emballage sécurisé & transport assuré à 100%."
         ]
@@ -228,7 +229,7 @@
     "items": {
       "origin": {
         "question": "Où les œuvres sont-elles fabriquées ?",
-        "answer": "Toutes les éditions physiques sont fabriquées et assemblées à 100 % en France. Chaque tirage est encadré, verni et inspecté localement afin de garantir le plus haut niveau d'exigence de l'artisanat d'art français."
+        "answer": "Toutes les œuvres sont réalisées à la main en France, directement sur aluminium Dibond. Chaque pièce est vernie et inspectée à l'atelier afin de garantir le plus haut niveau d'exigence de l'artisanat d'art français."
       },
       "payment": {
         "question": "Comment fonctionne l'acompte de 75 % ?",
