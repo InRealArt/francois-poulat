@@ -43,9 +43,6 @@ export default async function Genese() {
                     {t("replaySource")}
                   </span>
                 </div>
-                <span className="font-mono text-[0.6rem] uppercase tracking-[0.1em] text-white/65">
-                  {t("videoFormat")}
-                </span>
               </div>
             </div>
           </Reveal>

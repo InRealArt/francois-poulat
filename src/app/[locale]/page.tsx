@@ -6,7 +6,7 @@ import Hero from "@/components/sections/Hero";
 import GrimStory from "@/components/sections/GrimStory";
 import Genese from "@/components/sections/Genese";
 import Process from "@/components/sections/Process";
-import Artist from "@/components/sections/Artist";
+// import Artist from "@/components/sections/Artist";
 import Formats from "@/components/sections/Formats";
 import Guarantees from "@/components/sections/Guarantees";
 import GalleryDetails from "@/components/sections/GalleryDetails";
@@ -26,7 +26,7 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
         <Genese />
         <GalleryDetails />
         <Process />
-        <Artist />
+        {/* <Artist /> */}
         <Formats />
         <Guarantees />
         <Faq />
