@@ -14,7 +14,6 @@ export default async function Hero() {
     >
       <div className="mx-auto grid max-w-[1440px] gap-14 px-3 sm:px-6 lg:grid-cols-2 lg:px-10 lg:gap-20">
         <Reveal direction="up">
-          <span className="section-number">{t("eyebrow")}</span>
           <h1 className="serif text-4xl italic leading-[1.1] sm:text-5xl md:text-6xl">
             {t("titleLine1")}
             <br />

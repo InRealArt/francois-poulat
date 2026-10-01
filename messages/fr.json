@@ -30,16 +30,15 @@
     "fr": "FR"
   },
   "hero": {
-    "eyebrow": "ÉDITION LIMITÉE • 100 EXEMPLAIRES NUMÉROTÉS",
-    "titleLine1": "L'œuvre légendaire du Setup de Grim.",
+    "titleLine1": "L'œuvre légendaire du Setup Valorant de Grim.",
     "titleLine2": "« Pikapoulat »",
-    "description": "Du virtuel au décor du studio. Le tableau de collection pensé pour l'arrière-plan de Grim.",
+    "description": "L'incroyable rencontre entre la culture gaming et le savoir-faire d'art contemporain. Une pièce de collection unique, gravée dans l'histoire du streaming.",
     "features": [
       "100 Certificats Signés",
       "Acompte 75 % Sécurisé",
       "Transport Assuré"
     ],
-    "ctaPrimary": "Sécuriser mon tirage (Acompte 75 %)",
+    "ctaPrimary": "Sécuriser 1 des 99 pièces restantes",
     "badges": [
       "Garantie InRealArt"
     ],
@@ -50,7 +49,6 @@
     "technique": "Technique Mixte : sur Alu-Dibond"
   },
   "grimStory": {
-    "eyebrow": "// L'histoire d'une rencontre",
     "title": "GRIM : UNE ICÔNE DE VALORANT",
     "subtitle": "Créateur & figure mondiale du gaming",
     "body": "Figure incontournable de la scène Valorant, Grim a marqué le jeu par sa maîtrise singulière de Sage et ses angles de tir inédits. Créateur phare de l’organisation esport FlyQuest et ambassadeur Logitech G, il fédère des millions de passionnés sur YouTube et Twitch autour de contenus toujours plus inventifs.\n\nExposé à l’international, le peintre François Poulat s’est imposé par sa maîtrise des contrastes colorés et sa relecture poétique des icônes de la pop culture. Ses toiles conjuguent rigueur graphique et énergie brute de la peinture au couteau pour donner naissance à des œuvres percutantes et vibrantes.\n\nDe la rencontre entre l’icône de l’esport et l’artiste peintre est née une collaboration inédite, orchestrée par InRealArt. Spécialisée dans les passerelles entre art contemporain et univers numériques, la galerie a accompagné la création d’une œuvre unique sur Dibond, réalisée spécialement pour Grim et pensée pour son studio.",
@@ -59,7 +57,6 @@
     "photoAlt3": "Grim face à la compétence Barrier Orb de Sage pendant une partie"
   },
   "genese": {
-    "eyebrow": "Découvrez l'œuvre",
     "titleAccent": "L'ascension de Pikapoulat",
     "intro": "Devant des milliers de passionnés, la toile « PikaPoulat » de François Poulat a fait une entrée spectaculaire sur le stream de Grim. Dès ses premiers instants à l’écran jusqu’à son installation finale sous les projecteurs, cette œuvre contemporaine de 50 × 50 cm a envahi le plateau, transformant à jamais l’atmosphère du décor.",
     "replayBadge": "Replay",
@@ -104,7 +101,6 @@
     }
   },
   "artist": {
-    "eyebrow": "// Artiste Plasticien",
     "title": "La Matière Pop Art de François Poulat",
     "body": "Exposé à l’échelle internationale, François Poulat s’impose par sa maîtrise des contrastes de couleurs et son réagencement poétique des icônes Pop Culture. Ses toiles allient la rigueur graphique à l’énergie brute de la peinture au couteau.",
     "quote": "« Réinventer l’iconographie Pop pour le studio de Grim était un défi captivant : insuffler l’énergie gaming et la culture pop à une œuvre sur Dibond conçue sur mesure pour son univers. »",
@@ -128,7 +124,6 @@
     }
   },
   "formats": {
-    "eyebrow": "// Sélection des Dimensions & Acompte",
     "title": "Choisissez Votre Format",
     "description": "Réservation sécurisée avec acompte de 75 % à la commande. Le solde de 25 % est réglé uniquement avant l’expédition de votre pièce.",
     "featuredBadge": "Le Format Officiel du Studio",
@@ -164,7 +159,6 @@
     }
   },
   "guarantees": {
-    "eyebrow": "// Excellence & Engagement",
     "title": "Garanties & Confiance InRealArt",
     "description": "Chaque tirage physique est une pièce de collection préparée avec une rigueur d’ingénierie et d’artisanat d’art.",
     "items": {
@@ -187,7 +181,6 @@
     }
   },
   "gallery": {
-    "eyebrow": "// Galerie d'œuvres d'art réalisées sur commande",
     "title": "Créations sur mesure par François Poulat",
     "hint": "Parcourez nos réalisations personnalisées précédentes — sélectionnez n'importe quelle œuvre pour la visualiser en haute résolution",
     "ariaLabel": "Galerie détaillée de l’œuvre",
@@ -223,7 +216,6 @@
     }
   },
   "faq": {
-    "eyebrow": "// Des Questions ?",
     "title": "Foire Aux Questions Client",
     "cta": "Commander mon œuvre",
     "items": {

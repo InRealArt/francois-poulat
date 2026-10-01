@@ -20,7 +20,6 @@ export default function Formats() {
     >
       <div className="mx-auto max-w-[1440px] px-3 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="section-number mx-auto">{t("eyebrow")}</span>
           <h2 className="serif text-3xl italic sm:text-4xl">{t("title")}</h2>
           <p className="mt-4 text-sm leading-loose text-black/60 md:text-base">
             {t("description")}

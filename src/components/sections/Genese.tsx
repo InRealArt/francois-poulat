@@ -13,7 +13,6 @@ export default async function Genese() {
     >
       <div className="mx-auto max-w-[1600px] px-3 sm:px-6 lg:px-12">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="section-number mx-auto">{t("eyebrow")}</span>
           <h2 className="serif text-3xl italic sm:text-4xl">
             {t("titleMain")}{" "}
             <span className="text-gold">{t("titleAccent")}</span>

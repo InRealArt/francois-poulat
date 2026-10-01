@@ -15,7 +15,6 @@ export default function Faq() {
     >
       <div className="mx-auto max-w-3xl px-3 sm:px-6 lg:px-10">
         <div className="text-center">
-          <span className="section-number mx-auto">{t("eyebrow")}</span>
           <h2 className="serif text-3xl italic sm:text-4xl">{t("title")}</h2>
         </div>
 

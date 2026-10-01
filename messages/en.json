@@ -30,16 +30,15 @@
     "fr": "FR"
   },
   "hero": {
-    "eyebrow": "LIMITED EDITION • 100 NUMBERED PRINTS",
-    "titleLine1": "The Legendary Artwork of Grim's Setup.",
+    "titleLine1": "The Legendary Artwork of Grim's Valorant Setup.",
     "titleLine2": "\"Pikapoulat\"",
-    "description": "From the virtual screen to the studio's decor. The collector's artwork designed for Grim's background.",
+    "description": "The incredible encounter between gaming culture and contemporary art craftsmanship. A unique collector's piece, etched into streaming history.",
     "features": [
-      "100 Signed Certificate",
+      "100 Signed Certificates",
       "75% Deposit Secured",
       "Insured Transport"
     ],
-    "ctaPrimary": "Secure my print (75% Deposit)",
+    "ctaPrimary": "Secure 1 of the 99 remaining pieces",
     "badges": [
       "InRealArt Guarantee"
     ],
@@ -50,7 +49,6 @@
     "technique": "Mixed Technique: Painting on Alu-Dibond"
   },
   "grimStory": {
-    "eyebrow": "// The story of an encounter",
     "title": "GRIM: A VALORANT ICON",
     "subtitle": "Creator & Global Gaming Figure",
     "body": "A leading figure of the Valorant scene, Grim has left his mark on the game with his singular mastery of Sage and his never-before-seen angles. A flagship creator for the esports organization FlyQuest and a Logitech G ambassador, he brings together millions of fans on YouTube and Twitch around ever more inventive content.\n\nExhibited internationally, painter François Poulat has made his name through his mastery of color contrasts and his poetic reinterpretation of pop culture icons. His canvases combine graphic rigor with the raw energy of palette-knife painting, giving rise to striking, vibrant works.\n\nFrom the meeting between the esports icon and the painter came a unique collaboration, orchestrated by InRealArt. Specializing in bridges between contemporary art and digital worlds, the gallery guided the creation of a one-of-a-kind artwork on Dibond, made especially for Grim and designed for his studio.",
@@ -59,7 +57,6 @@
     "photoAlt3": "Grim facing Sage's Barrier Orb ability mid-match"
   },
   "genese": {
-    "eyebrow": "Discover the artwork",
     "titleAccent": "The Rise of PikaPoulat",
     "intro": "Before thousands of enthusiasts, François Poulat’s \"PikaPoulat\" canvas made a spectacular entrance on Grim’s stream. From its very first moments on screen to its final installation under the spotlight, this 50×50 cm contemporary piece took over the set, transforming the atmosphere of the setup forever.",
     "replayBadge": "Replay",
@@ -104,7 +101,6 @@
     }
   },
   "artist": {
-    "eyebrow": "// Visual Artist",
     "title": "The Pop Art Material of François Poulat",
     "body": "Exhibited internationally, François Poulat stands out for his mastery of color contrasts and his poetic rearrangement of Pop Culture icons. His canvases combine graphic rigor with the raw energy of palette-knife painting.",
     "quote": "\"Reinventing Pop iconography for Grim's studio was a captivating challenge: infuse gaming energy and pop culture into a custom-made Dibond artwork designed for its world.\"",
@@ -128,7 +124,6 @@
     }
   },
   "formats": {
-    "eyebrow": "// Dimension & Deposit Selection",
     "title": "Choose Your Format",
     "description": "Secure reservation with a 75% deposit at order. The remaining 25% balance is charged only before your piece ships.",
     "featuredBadge": "The Studio's Official Format",
@@ -164,7 +159,6 @@
     }
   },
   "guarantees": {
-    "eyebrow": "// Excellence & Commitment",
     "title": "InRealArt Guarantees & Trust",
     "description": "Every physical print is a collector's piece prepared with engineering rigor and artisanal craftsmanship.",
     "items": {
@@ -187,7 +181,6 @@
     }
   },
   "gallery": {
-    "eyebrow": "// Commissioned Artworks Gallery",
     "title": "Custom Creations by François Poulat",
     "hint": "Browse through past custom pieces — select any artwork to view it in high resolution",
     "ariaLabel": "Detailed gallery of the artwork",
@@ -223,7 +216,6 @@
     }
   },
   "faq": {
-    "eyebrow": "// Questions?",
     "title": "Customer FAQ",
     "cta": "Ordering my artwork",
     "items": {
