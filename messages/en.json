@@ -102,7 +102,7 @@
   },
   "artist": {
     "title": "The Pop Art Material of François Poulat",
-    "body": "Exhibited internationally, François Poulat stands out for his mastery of color contrasts and his poetic rearrangement of Pop Culture icons. His canvases combine graphic rigor with the raw energy of palette-knife painting.",
+    "body": "François Poulat is a contemporary painter who has kept his childlike soul intact, guided by his grandchildren and his love of manga culture. A fan from day one, this grandpa was already watching Grim's videos back in his very early days. Their meeting revealed an instant connection and the same creative mental age, fusing the brushstroke of a passionate artist with the world of a star creator.",
     "quote": "\"Reinventing Pop iconography for Grim's studio was a captivating challenge: infuse gaming energy and pop culture into a custom-made Dibond artwork designed for its world.\"",
     "imageAlt": "François Poulat in his studio",
     "name": "François Poulat",
@@ -122,6 +122,9 @@
         "label": "InRealArt Certificate"
       }
     }
+  },
+  "inrealart": {
+    "body": "InRealArt is the leading contemporary art studio bringing the worlds of the greatest creators to life. In partnership with giants like Logitech G, international galleries and major web figures, InRealArt offers exceptional physical artworks custom-made for your favorite streamers. Its approach guarantees unique, certified collector pieces, crafted with surgical precision to elevate your spaces and stand the test of time."
   },
   "formats": {
     "title": "Choose Your Format",

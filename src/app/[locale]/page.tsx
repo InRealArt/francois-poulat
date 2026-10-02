@@ -11,6 +11,8 @@ import Formats from "@/components/sections/Formats";
 import Guarantees from "@/components/sections/Guarantees";
 import GalleryDetails from "@/components/sections/GalleryDetails";
 import Faq from "@/components/sections/Faq";
+import Artist from "@/components/sections/Artist";
+import InRealArt from "@/components/sections/InRealArt";
 
 export default async function Home({ params }: PageProps<"/[locale]">) {
   const { locale } = await params;
@@ -23,10 +25,11 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
       <main>
         <Hero />
         <GrimStory />
+        <Artist />
+        <InRealArt />
         <Genese />
         <GalleryDetails />
         <Process />
-        {/* <Artist /> */}
         <Formats />
         <Guarantees />
         <Faq />
