@@ -84,19 +84,19 @@
   "process": {
     "items": {
       "01": {
-        "eyebrow": "Concept",
-        "title": "The Studio's Standard",
-        "description": "A balanced Pop Art composition designed to stand out vividly under Grim's stream lighting."
+        "value": "100",
+        "title": "100% Grim's setup",
+        "description": "The original piece sits live on his stream. You can display the exact same collector piece at home."
       },
       "02": {
-        "eyebrow": "Creation",
-        "title": "Poulat's Gesture",
-        "description": "Layers of material, coats of acrylic and meticulous stenciling applied by hand in the studio."
+        "value": "100",
+        "title": "100 copies worldwide",
+        "description": "An ultra-limited edition, certified and hand-numbered. Once the last print is reserved, it's gone forever."
       },
       "03": {
-        "eyebrow": "Certification",
-        "title": "Physical Certificate",
-        "description": "Each artwork comes with an official numbered certificate hand-signed by François Poulat."
+        "value": "100",
+        "title": "100 studio hours",
+        "description": "Over 100 hours of meticulous work by François Poulat to paint, varnish and shape each artwork."
       }
     }
   },

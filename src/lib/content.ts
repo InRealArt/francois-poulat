@@ -17,9 +17,9 @@ export const nav = [
 ] as const;
 
 export const processSteps = [
-  { number: "01" },
-  { number: "02" },
-  { number: "03" },
+  { id: "01" },
+  { id: "02" },
+  { id: "03" },
 ] as const;
 
 export const artistStats = [

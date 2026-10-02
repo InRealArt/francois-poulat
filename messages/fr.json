@@ -84,19 +84,19 @@
   "process": {
     "items": {
       "01": {
-        "eyebrow": "Conception",
-        "title": "L’Exigence du Studio",
-        "description": "Une composition Pop Art équilibrée pensée pour ressortir avec éclat sous l’éclairage de stream de Grim."
+        "value": "100",
+        "title": "100 % décor de Grim",
+        "description": "L'exemplaire original trône en direct sur son stream. Tu peux afficher exactement la même pièce collector chez toi."
       },
       "02": {
-        "eyebrow": "Réalisation",
-        "title": "Le Geste de Poulat",
-        "description": "Superposition de matière, couches d’acrylique et pochoirs minutieux appliqués à la main en atelier."
+        "value": "100",
+        "title": "100 exemplaires dans le monde",
+        "description": "Une édition ultra-limitée, certifiée et numérotée à la main. Une fois le dernier tirage réservé, c'est terminé à jamais."
       },
       "03": {
-        "eyebrow": "Certification",
-        "title": "Certificat Physique",
-        "description": "Chaque œuvre est fournie avec un certificat officiel numéroté et signé à la main par François Poulat."
+        "value": "100",
+        "title": "100 heures d'atelier",
+        "description": "Plus de 100 heures de création minutieuse par François Poulat pour peindre, vernir et façonner chaque tableau."
       }
     }
   },

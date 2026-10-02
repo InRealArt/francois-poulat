@@ -10,16 +10,13 @@ export default async function Process() {
       <div className="mx-auto max-w-[1440px] px-3 sm:px-6 lg:px-10">
         <Reveal stagger className="grid gap-12 sm:grid-cols-3">
           {processSteps.map((step) => (
-            <div key={step.number} className="flex flex-col">
-              <span className="step-number">{step.number}</span>
-              <span className="section-number mt-4">
-                {t(`items.${step.number}.eyebrow`)}
-              </span>
-              <h3 className="serif text-2xl italic text-black">
-                {t(`items.${step.number}.title`)}
+            <div key={step.id} className="flex flex-col">
+              <span className="step-number">{t(`items.${step.id}.value`)}</span>
+              <h3 className="serif mt-4 text-2xl italic text-black">
+                {t(`items.${step.id}.title`)}
               </h3>
               <p className="mt-3 text-sm leading-loose text-black/50">
-                {t(`items.${step.number}.description`)}
+                {t(`items.${step.id}.description`)}
               </p>
             </div>
           ))}
