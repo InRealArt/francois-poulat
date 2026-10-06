@@ -22,12 +22,6 @@ export const processSteps = [
   { id: "03" },
 ] as const;
 
-export const artistStats = [
-  { id: "handmade" },
-  { id: "canvas" },
-  { id: "certificate" },
-] as const;
-
 export const formats: Format[] = [
   {
     id: "standard",
