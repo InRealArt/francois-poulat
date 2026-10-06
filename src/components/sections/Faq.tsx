@@ -42,7 +42,7 @@ export default function Faq() {
                   </span>
                 </button>
                 <div className={`accordion-content ${isOpen ? "open" : ""}`}>
-                  <p className="text-sm leading-loose text-[var(--light-text-muted)]">
+                  <p className="text-[15px] leading-loose md:text-base text-[var(--light-text-muted)]">
                     {t(`items.${item.id}.answer`)}
                   </p>
                   <a

@@ -34,7 +34,7 @@ export default async function Artist() {
 
         <Reveal direction="right" delay={0.15}>
           <h2 className="serif text-3xl italic sm:text-4xl">{t("title")}</h2>
-          <p className="mt-5 text-sm leading-loose text-[var(--light-text-muted)] md:text-base">
+          <p className="mt-5 text-[15px] leading-loose text-[var(--light-text-muted)] md:text-[17px]">
             {t("body")}
           </p>
         </Reveal>

@@ -95,7 +95,7 @@ export default function CustomOrderModal({ onClose }: Props) {
           type="button"
           onClick={onClose}
           aria-label={t("closeLabel")}
-          className="absolute right-4 top-4 text-black/50 transition-colors hover:text-black"
+          className="absolute right-4 top-4 text-black/70 transition-colors hover:text-black"
         >
           <svg
             viewBox="0 0 24 24"
@@ -113,17 +113,17 @@ export default function CustomOrderModal({ onClose }: Props) {
           {t("badge")}
         </span>
         <h3 className="serif mt-4 text-2xl italic text-black">{t("title")}</h3>
-        <p className="mt-2 text-sm leading-relaxed text-black/50">
+        <p className="mt-2 text-[15px] leading-relaxed text-black/70">
           {t("intro")}
         </p>
 
         {submitted ? (
-          <p className="mt-6 text-sm leading-relaxed text-gold">
+          <p className="mt-6 text-[15px] leading-relaxed text-gold">
             {t("success")}
           </p>
         ) : (
           <form onSubmit={handleSubmit} noValidate className="mt-6 flex flex-col gap-4">
-            <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-black/50">
+            <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-black/70">
               {t("emailLabel")}
               <input
                 id="custom-order-email"
@@ -143,7 +143,7 @@ export default function CustomOrderModal({ onClose }: Props) {
                 </span>
               )}
             </label>
-            <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-black/50">
+            <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-black/70">
               {t("formatLabel")}
               <input
                 id="custom-order-format"
@@ -162,7 +162,7 @@ export default function CustomOrderModal({ onClose }: Props) {
                 </span>
               )}
             </label>
-            <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-black/50">
+            <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-black/70">
               {t("mediumLabel")}
               <input
                 id="custom-order-medium"
@@ -181,7 +181,7 @@ export default function CustomOrderModal({ onClose }: Props) {
                 </span>
               )}
             </label>
-            <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-black/50">
+            <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-black/70">
               {t("supportLabel")}
               <input
                 id="custom-order-support"
@@ -200,13 +200,12 @@ export default function CustomOrderModal({ onClose }: Props) {
                 </span>
               )}
             </label>
-            <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-black/50">
+            <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-black/70">
               {t("pokemonsLabel")}
               <input
                 id="custom-order-pokemons"
                 name="pokemons"
                 type="text"
-                placeholder={t("pokemonsPlaceholder")}
                 aria-invalid={errors.pokemons || undefined}
                 aria-describedby={errors.pokemons ? "custom-order-pokemons-error" : undefined}
                 className={`rounded-none border-b bg-transparent py-2 text-sm text-black outline-none placeholder:text-black/30 focus:border-gold ${

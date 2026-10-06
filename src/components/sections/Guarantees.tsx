@@ -24,7 +24,7 @@ export default async function Guarantees() {
       <div className="mx-auto max-w-[1440px] px-3 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="serif text-3xl italic sm:text-4xl">{t("title")}</h2>
-          <p className="mt-4 text-sm leading-loose text-[var(--light-text-muted)] md:text-base">
+          <p className="mt-4 text-[15px] leading-loose text-[var(--light-text-muted)] md:text-[17px]">
             {t("description")}
           </p>
         </div>
@@ -50,7 +50,7 @@ export default async function Guarantees() {
               <h3 className="serif mt-4 text-lg italic text-[var(--light-text)]">
                 {t(`items.${item.id}.title`)}
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-[var(--light-text-muted)]">
+              <p className="mt-2 text-[15px] leading-relaxed text-[var(--light-text-muted)]">
                 {t(`items.${item.id}.description`)}
               </p>
             </div>

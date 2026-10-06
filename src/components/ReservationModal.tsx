@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
+import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import { formatPrice, formatSizes, type Format } from "@/lib/content";
 import { useModalBehavior } from "@/hooks/useModalBehavior";
 
@@ -13,6 +14,11 @@ type Props = {
 
 export default function ReservationModal({ format, currency, onClose }: Props) {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
+  const [captchaError, setCaptchaError] = useState(false);
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+  const turnstileRef = useRef<TurnstileInstance | null>(null);
   const [selectedSize, setSelectedSize] = useState(
     () => formatSizes.find((size) => size.id === format.id) ?? formatSizes[0]
   );
@@ -21,9 +27,45 @@ export default function ReservationModal({ format, currency, onClose }: Props) {
   const tFormats = useTranslations("formats");
   const locale = useLocale();
 
-  function handleSubmit(event: React.FormEvent) {
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    setSubmitted(true);
+
+    if (!captchaToken) {
+      setCaptchaError(true);
+      return;
+    }
+
+    const formData = new FormData(event.currentTarget);
+    setSubmitError(false);
+    setSubmitting(true);
+
+    try {
+      const response = await fetch("/api/reservation", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.get("name"),
+          email: formData.get("email"),
+          address: formData.get("address"),
+          formatId: format.id,
+          sizeId: selectedSize.id,
+          currency,
+          captchaToken,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("request_failed");
+      }
+
+      setSubmitted(true);
+    } catch {
+      setSubmitError(true);
+      setCaptchaToken(null);
+      turnstileRef.current?.reset();
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   return (
@@ -42,7 +84,7 @@ export default function ReservationModal({ format, currency, onClose }: Props) {
           type="button"
           onClick={onClose}
           aria-label={t("closeLabel")}
-          className="absolute right-4 top-4 text-black/50 transition-colors hover:text-black"
+          className="absolute right-4 top-4 text-black/70 transition-colors hover:text-black"
         >
           <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth={1.5} aria-hidden>
             <path d="M6 6l12 12M18 6L6 18" strokeLinecap="round" />
@@ -60,7 +102,7 @@ export default function ReservationModal({ format, currency, onClose }: Props) {
           <p className="text-sm text-black">{tFormats(`items.${format.id}.name`)}</p>
 
           <fieldset className="mt-3">
-            <legend className="text-[0.65rem] uppercase tracking-[0.15em] text-black/50">
+            <legend className="text-[0.65rem] uppercase tracking-[0.15em] text-black/70">
               {t("sizeLabel")}
             </legend>
             <div className="mt-2 flex flex-wrap gap-2">
@@ -73,7 +115,7 @@ export default function ReservationModal({ format, currency, onClose }: Props) {
                   className={`rounded-full border px-3 py-1.5 font-mono text-xs uppercase tracking-[0.05em] transition-colors ${
                     selectedSize.id === size.id
                       ? "border-gold bg-gold text-black"
-                      : "border-black/20 text-black/60 hover:border-black/40"
+                      : "border-black/20 text-black/70 hover:border-black/40"
                   }`}
                 >
                   {size.size}
@@ -83,7 +125,7 @@ export default function ReservationModal({ format, currency, onClose }: Props) {
           </fieldset>
 
           <div className="mt-3 flex items-center justify-between border-t border-black/10 pt-3 text-xs uppercase tracking-[0.1em]">
-            <span className="text-black/50">
+            <span className="text-black/70">
               {t("totalWithAmount", {
                 amount: formatPrice(selectedSize.priceTotal, currency, locale),
               })}
@@ -97,12 +139,12 @@ export default function ReservationModal({ format, currency, onClose }: Props) {
         </div>
 
         {submitted ? (
-          <p className="mt-6 text-sm leading-relaxed text-gold">
+          <p className="mt-6 text-[15px] leading-relaxed text-gold">
             {t("success")}
           </p>
         ) : (
           <form onSubmit={handleSubmit} className="mt-6 flex flex-col gap-4">
-            <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-black/50">
+            <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-black/70">
               {t("nameLabel")}
               <input
                 required
@@ -113,7 +155,7 @@ export default function ReservationModal({ format, currency, onClose }: Props) {
                 className="rounded-none border-b border-black/20 bg-transparent py-2 text-sm text-black outline-none focus:border-gold"
               />
             </label>
-            <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-black/50">
+            <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-black/70">
               {t("emailLabel")}
               <input
                 required
@@ -124,7 +166,7 @@ export default function ReservationModal({ format, currency, onClose }: Props) {
                 className="rounded-none border-b border-black/20 bg-transparent py-2 text-sm text-black outline-none focus:border-gold"
               />
             </label>
-            <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-black/50">
+            <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-black/70">
               {t("addressLabel")}
               <input
                 required
@@ -140,8 +182,46 @@ export default function ReservationModal({ format, currency, onClose }: Props) {
               {t("paymentPreview")}
             </div>
 
-            <button type="submit" className="btn-action mt-2">
-              {t("submit")}
+            <div className="flex flex-col gap-1">
+              <Turnstile
+                ref={turnstileRef}
+                siteKey={
+                  process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY ??
+                  "1x00000000000000000000AA"
+                }
+                options={{
+                  theme: "light",
+                  refreshExpired: "manual",
+                }}
+                onSuccess={(token) => {
+                  setCaptchaToken(token);
+                  setCaptchaError(false);
+                }}
+                onExpire={() => {
+                  setCaptchaToken(null);
+                  turnstileRef.current?.reset();
+                }}
+                onError={() => setCaptchaToken(null)}
+              />
+              {captchaError && (
+                <span className="text-xs normal-case tracking-normal text-red-400">
+                  {t("captchaError")}
+                </span>
+              )}
+            </div>
+
+            {submitError && (
+              <p className="text-xs normal-case tracking-normal text-red-400">
+                {t("submitError")}
+              </p>
+            )}
+
+            <button
+              type="submit"
+              disabled={submitting}
+              className="btn-action mt-2 disabled:cursor-not-allowed disabled:opacity-50"
+            >
+              {submitting ? t("submitting") : t("submit")}
             </button>
             <p className="text-center text-[0.6rem] uppercase tracking-[0.1em] text-black/30">
               {t("sslNote")}

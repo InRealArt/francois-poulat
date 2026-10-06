@@ -1,20 +1,22 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { BrevoClient } from "@getbrevo/brevo";
+import { formatSizes } from "@/lib/content";
 import { verifyTurnstileToken } from "@/lib/turnstile";
 
-const customOrderRequestSchema = z.object({
+const reservationRequestSchema = z.object({
+  name: z.string().trim().min(2).max(200),
   email: z.email(),
-  format: z.string().trim().min(2).max(200),
-  medium: z.string().trim().min(2).max(200),
-  support: z.string().trim().min(2).max(200),
-  pokemons: z.string().trim().min(2).max(500),
+  address: z.string().trim().min(2).max(500),
+  formatId: z.string().trim().min(1).max(50),
+  sizeId: z.string().trim().min(1).max(50),
+  currency: z.enum(["EUR", "USD"]),
   captchaToken: z.string().min(1),
 });
 
 const RECIPIENT_EMAIL = "teaminrealart@gmail.com";
 const SENDER_EMAIL = "no-reply@inrealart.com";
-const SENDER_NAME = "InRealArt — Custom Orders";
+const SENDER_NAME = "InRealArt — Reservations";
 
 function escapeHtml(value: string) {
   return value
@@ -27,14 +29,20 @@ function escapeHtml(value: string) {
 
 export async function POST(request: Request) {
   const json = await request.json().catch(() => null);
-  const parsed = customOrderRequestSchema.safeParse(json);
+  const parsed = reservationRequestSchema.safeParse(json);
 
   if (!parsed.success) {
     return NextResponse.json({ error: "invalid_request" }, { status: 400 });
   }
 
-  const { email, format, medium, support, pokemons, captchaToken } =
+  const { name, email, address, formatId, sizeId, currency, captchaToken } =
     parsed.data;
+
+  // Prices come from the server-side catalog, never from the client.
+  const size = formatSizes.find((item) => item.id === sizeId);
+  if (!size) {
+    return NextResponse.json({ error: "invalid_size" }, { status: 400 });
+  }
 
   const remoteIp = request.headers.get("x-forwarded-for");
 
@@ -63,11 +71,13 @@ export async function POST(request: Request) {
   const brevo = new BrevoClient({ apiKey });
 
   const rows = [
+    { label: "Client name", value: name },
     { label: "Client email", value: email },
-    { label: "Desired format", value: format },
-    { label: "Desired medium", value: medium },
-    { label: "Desired support", value: support },
-    { label: "Desired Characters", value: pokemons },
+    { label: "Shipping address", value: address },
+    { label: "Format", value: formatId },
+    { label: "Size", value: size.size },
+    { label: "Total", value: `${size.priceTotal} ${currency}` },
+    { label: "Deposit (75%)", value: `${size.priceDeposit} ${currency}` },
   ];
 
   const htmlRows = rows
@@ -95,13 +105,13 @@ export async function POST(request: Request) {
                   <td style="background:#131313;padding:24px 32px;">
                     <span style="font-family:Arial,sans-serif;font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:#b89c72;">InRealArt Agency</span>
                     <h1 style="margin:8px 0 0;font-family:Georgia,serif;font-style:italic;font-weight:400;font-size:22px;color:#ffffff;">
-                      New Custom Order Request
+                      New Grim Edition Reservation
                     </h1>
                   </td>
                 </tr>
                 <tr>
                   <td style="padding:24px 32px 8px;font-family:Arial,sans-serif;font-size:14px;line-height:1.6;color:#444444;">
-                    A visitor submitted a custom project request from the "Dedicated Project" card on the Formats section. Details below — reply directly to the client's email.
+                    A visitor reserved a print from the Formats section. Contact them within 24h to finalize the deposit payment — reply directly to the client's email.
                   </td>
                 </tr>
                 <tr>
@@ -113,7 +123,7 @@ export async function POST(request: Request) {
                 </tr>
                 <tr>
                   <td style="padding:16px 32px 32px;font-family:Arial,sans-serif;font-size:11px;color:#999999;border-top:1px solid #eeeeee;">
-                    Sent automatically from the InRealArt website custom order form.
+                    Sent automatically from the InRealArt website reservation form.
                   </td>
                 </tr>
               </table>
@@ -125,7 +135,7 @@ export async function POST(request: Request) {
   `;
 
   const textContent = [
-    "New custom order request",
+    "New Grim Edition reservation",
     "",
     ...rows.map(({ label, value }) => `${label}: ${value}`),
   ].join("\n");
@@ -134,8 +144,8 @@ export async function POST(request: Request) {
     await brevo.transactionalEmails.sendTransacEmail({
       sender: { name: SENDER_NAME, email: SENDER_EMAIL },
       to: [{ email: RECIPIENT_EMAIL, name: "InRealArt Team" }],
-      replyTo: { email },
-      subject: `Custom Order Request — ${format}`,
+      replyTo: { email, name },
+      subject: `Reservation — ${size.size} — ${name}`,
       htmlContent,
       textContent,
     });

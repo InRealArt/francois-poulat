@@ -36,7 +36,7 @@ export default async function Footer() {
                 InRealArt
               </span>
             </div>
-            <p className="footer-link mt-4 max-w-xs !text-black/50">
+            <p className="footer-link mt-4 max-w-xs !text-black/70">
               {t("description")}
             </p>
           </div>
@@ -60,7 +60,7 @@ export default async function Footer() {
             <p className="text-xs uppercase tracking-[0.2em] text-black">
               {t("contactHeading")}
             </p>
-            <p className="mt-4 text-sm text-black/50">
+            <p className="mt-4 text-sm text-black/70">
               {t("contactQuestion")}
             </p>
             <a
@@ -83,7 +83,7 @@ export default async function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={social.name}
-                    className="flex h-10 w-10 items-center justify-center rounded-full border border-black/15 text-black/50 transition-colors hover:border-gold hover:text-gold"
+                    className="flex h-10 w-10 items-center justify-center rounded-full border border-black/15 text-black/70 transition-colors hover:border-gold hover:text-gold"
                   >
                     <svg
                       viewBox="0 0 24 24"

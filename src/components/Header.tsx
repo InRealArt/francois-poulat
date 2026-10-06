@@ -69,7 +69,7 @@ export default function Header() {
         >
           <span className="flex flex-col leading-tight normal-case">
             <span className="tracking-[0.2em] sm:tracking-[0.4em] uppercase">{t("header.brand")}</span>
-            <span className="hidden font-montserrat text-[0.55rem] tracking-[0.3em] uppercase text-black/50 sm:block">
+            <span className="hidden font-montserrat text-[0.55rem] tracking-[0.3em] uppercase text-black/70 sm:block">
               {t("header.tagline")}
             </span>
           </span>
@@ -106,7 +106,7 @@ export default function Header() {
                 onClick={() => switchLocale(loc)}
                 aria-current={locale === loc}
                 className={`relative z-10 w-9 cursor-pointer py-1.5 uppercase tracking-[0.1em] transition-colors ${
-                  locale === loc ? "text-white" : "text-black/60 hover:text-black"
+                  locale === loc ? "text-white" : "text-black/70 hover:text-black"
                 }`}
               >
                 {t(`languageSwitcher.${loc}`)}
@@ -208,7 +208,7 @@ export default function Header() {
                     }}
                     aria-current={locale === loc}
                     className={`relative z-10 w-10 cursor-pointer py-2 uppercase tracking-[0.1em] transition-colors ${
-                      locale === loc ? "text-white" : "text-black/60"
+                      locale === loc ? "text-white" : "text-black/70"
                     }`}
                   >
                     {t(`languageSwitcher.${loc}`)}

@@ -19,7 +19,7 @@ export default async function Hero() {
             <br />
             <span className="text-gold">{t("titleLine2")}</span>
           </h1>
-          <p className="mt-6 max-w-xl text-sm leading-loose text-black/70 md:text-base">
+          <p className="mt-6 max-w-xl text-[15px] leading-loose text-black/70 md:text-[17px]">
             {t("description")}
           </p>
 
@@ -44,7 +44,7 @@ export default async function Hero() {
             </a>
           </div>
 
-          <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-[0.6rem] uppercase tracking-[0.2em] text-black/50">
+          <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-[0.6rem] uppercase tracking-[0.2em] text-black/70">
             {badges.map((badge) => (
               <span key={badge} className="flex items-center gap-2">
                 {badge}

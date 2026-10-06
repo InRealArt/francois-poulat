@@ -17,7 +17,7 @@ export default async function Genese() {
             {t("titleMain")}{" "}
             <span className="text-gold">{t("titleAccent")}</span>
           </h2>
-          <p className="mt-4 text-sm leading-loose text-[var(--light-text-muted)] md:text-base">
+          <p className="mt-4 text-[15px] leading-loose text-[var(--light-text-muted)] md:text-[17px]">
             {t("intro")}
           </p>
         </div>
@@ -61,7 +61,7 @@ export default async function Genese() {
               />
             </div>
 
-            <p className="mt-4 text-sm leading-loose text-[var(--light-text-muted)] md:text-base">
+            <p className="mt-4 text-[15px] leading-loose text-[var(--light-text-muted)] md:text-[17px]">
               {t("body")}
             </p>
 

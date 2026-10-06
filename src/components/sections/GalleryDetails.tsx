@@ -224,7 +224,7 @@ export default function GalleryDetails() {
       <div className="mx-auto max-w-[1440px] px-3 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="serif text-3xl italic sm:text-4xl">{t("title")}</h2>
-          <p className="mt-4 text-sm text-black/50">{t("hint")}</p>
+          <p className="mt-4 text-sm text-black/70">{t("hint")}</p>
         </div>
 
         <Reveal className="mt-14">
@@ -277,7 +277,7 @@ export default function GalleryDetails() {
                     <p className="serif mt-3 text-base italic text-black sm:text-lg">
                       {t(`items.${item.id}.title`)}
                     </p>
-                    <p className="mt-1 text-xs leading-relaxed text-black/50">
+                    <p className="mt-1 text-xs leading-relaxed text-black/70">
                       {t(`items.${item.id}.caption`)}
                     </p>
                   </button>

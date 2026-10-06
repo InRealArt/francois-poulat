@@ -21,7 +21,7 @@ export default function Formats() {
       <div className="mx-auto max-w-[1440px] px-3 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="serif text-3xl italic sm:text-4xl">{t("title")}</h2>
-          <p className="mt-4 text-sm leading-loose text-black/60 md:text-base">
+          <p className="mt-4 text-[15px] leading-loose text-black/70 md:text-[17px]">
             {t("description")}
           </p>
 
@@ -34,7 +34,7 @@ export default function Formats() {
                 className={`rounded-full px-4 py-1.5 transition-colors ${
                   currency === c
                     ? "bg-black text-white"
-                    : "text-black/50 hover:text-black"
+                    : "text-black/70 hover:text-black"
                 }`}
               >
                 {c === "EUR" ? "€" : "$"}
@@ -60,7 +60,7 @@ export default function Formats() {
                   className={`mb-4 self-start rounded-full px-3 py-1 text-[0.6rem] uppercase tracking-[0.15em] ${
                     format.featured
                       ? "bg-gold text-black"
-                      : "border border-black/20 text-black/60"
+                      : "border border-black/20 text-black/70"
                   }`}
                 >
                   {t(`items.${format.id}.tag`)}
@@ -68,13 +68,13 @@ export default function Formats() {
                 <h3 className="serif text-2xl italic text-black">
                   {t(`items.${format.id}.name`)}
                 </h3>
-                <p className="mt-1 font-mono text-xs uppercase tracking-[0.1em] text-black/50">
+                <p className="mt-1 font-mono text-xs uppercase tracking-[0.1em] text-black/70">
                   {t.has(`items.${format.id}.size`)
                     ? t(`items.${format.id}.size`)
                     : format.size}
                 </p>
 
-                <ul className="mt-5 flex flex-1 flex-col gap-3 text-sm leading-relaxed text-black/60">
+                <ul className="mt-5 flex flex-1 flex-col gap-3 text-[15px] leading-relaxed text-black/70">
                   {features.map((feature) => (
                     <li key={feature} className="flex gap-2.5">
                       <span

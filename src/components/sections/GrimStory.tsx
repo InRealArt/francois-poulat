@@ -38,7 +38,7 @@ export default async function GrimStory() {
 
             <Reveal
               delay={0.1}
-              className="mt-8 flex flex-col gap-5 text-sm leading-loose text-[var(--light-text-muted)] md:text-base"
+              className="mt-8 flex flex-col gap-5 text-[15px] leading-loose text-[var(--light-text-muted)] md:text-[17px]"
             >
               {paragraphs.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>

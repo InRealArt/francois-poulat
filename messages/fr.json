@@ -108,7 +108,22 @@
     "role": "Artiste Plasticien Partenaire"
   },
   "inrealart": {
-    "body": "InRealArt est le studio d'art contemporain de référence qui donne vie aux univers des plus grands créateurs. En partenariat avec des géants comme Logitech G, des galeries internationales et les figures majeures du web, InRealArt vous propose des œuvres physiques d'exception créées sur-mesure pour vos streamers préférés. La démarche garantit des pièces de collection uniques, certifiées et conçues avec une précision chirurgicale pour sublimer vos espaces et traverser le temps."
+    "imageAlt": "Galerie d'art contemporain InRealArt",
+    "body": "InRealArt est le studio d'art contemporain de référence qui donne vie aux univers des plus grands créateurs. En partenariat avec des géants comme Logitech G, des galeries internationales et les figures majeures du web, InRealArt vous propose des œuvres physiques d'exception créées sur-mesure pour vos streamers préférés. La démarche garantit des pièces de collection uniques, certifiées et conçues avec une précision chirurgicale pour sublimer vos espaces et traverser le temps.",
+    "screens": {
+      "artist": {
+        "label": "Page artiste",
+        "alt": "Capture de la page artiste de François Poulat sur InRealArt"
+      },
+      "media": {
+        "label": "Média",
+        "alt": "Capture de la page Média d'InRealArt, l'Observatoire de la Création"
+      },
+      "store": {
+        "label": "Store",
+        "alt": "Capture du Store InRealArt présentant des œuvres disponibles"
+      }
+    }
   },
   "formats": {
     "title": "Choisissez Votre Format",
@@ -476,7 +491,10 @@
     "addressLabel": "Adresse de Livraison",
     "paymentPreview": "Paiement sécurisé (aperçu) : •••• •••• •••• 4242",
     "submit": "Valider & Commander mon œuvre d'art",
-    "sslNote": "Transaction chiffrée SSL 256 bits"
+    "sslNote": "Transaction chiffrée SSL 256 bits",
+    "captchaError": "Merci de valider la vérification ci-dessous.",
+    "submitError": "Une erreur est survenue. Merci de réessayer dans un instant.",
+    "submitting": "Envoi en cours…"
   },
   "customOrderModal": {
     "ariaLabel": "Demander un projet sur-mesure",
@@ -490,8 +508,7 @@
     "mediumPlaceholder": "ex. Acrylique, huile, technique mixte",
     "supportLabel": "Support Souhaité",
     "supportPlaceholder": "ex. Châssis bois, Alu-Dibond, toile",
-    "pokemonsLabel": "Pokémons Souhaités",
-    "pokemonsPlaceholder": "ex. Pikachu, Dracaufeu, Lucario",
+    "pokemonsLabel": "Personnages Souhaités",
     "submit": "Envoyer Ma Demande",
     "responseNote": "Réponse de nos curateurs sous 24h",
     "success": "Demande envoyée ! Nos curateurs vous recontacteront sous 24h avec un devis personnalisé.",

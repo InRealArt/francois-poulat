@@ -108,7 +108,22 @@
     "role": "Partner Visual Artist"
   },
   "inrealart": {
-    "body": "InRealArt is the leading contemporary art studio bringing the worlds of the greatest creators to life. In partnership with giants like Logitech G, international galleries and major web figures, InRealArt offers exceptional physical artworks custom-made for your favorite streamers. Its approach guarantees unique, certified collector pieces, crafted with surgical precision to elevate your spaces and stand the test of time."
+    "imageAlt": "InRealArt contemporary art gallery",
+    "body": "InRealArt is the leading contemporary art studio bringing the worlds of the greatest creators to life. In partnership with giants like Logitech G, international galleries and major web figures, InRealArt offers exceptional physical artworks custom-made for your favorite streamers. Its approach guarantees unique, certified collector pieces, crafted with surgical precision to elevate your spaces and stand the test of time.",
+    "screens": {
+      "artist": {
+        "label": "Artist page",
+        "alt": "Screenshot of François Poulat's artist page on InRealArt"
+      },
+      "media": {
+        "label": "Media",
+        "alt": "Screenshot of the InRealArt Media page, the Creation Observatory"
+      },
+      "store": {
+        "label": "Store",
+        "alt": "Screenshot of the InRealArt Store showing available artworks"
+      }
+    }
   },
   "formats": {
     "title": "Choose Your Format",
@@ -476,7 +491,10 @@
     "addressLabel": "Shipping Address",
     "paymentPreview": "Secure payment (preview): •••• •••• •••• 4242",
     "submit": "Confirm & Ordering my artwork",
-    "sslNote": "256-bit SSL encrypted transaction"
+    "sslNote": "256-bit SSL encrypted transaction",
+    "captchaError": "Please complete the verification below.",
+    "submitError": "Something went wrong. Please try again in a moment.",
+    "submitting": "Sending…"
   },
   "customOrderModal": {
     "ariaLabel": "Request a custom project",
@@ -490,8 +508,7 @@
     "mediumPlaceholder": "e.g. Acrylic, oil, mixed media",
     "supportLabel": "Desired Support",
     "supportPlaceholder": "e.g. Wood frame, Alu-Dibond, canvas",
-    "pokemonsLabel": "Desired Pokémon",
-    "pokemonsPlaceholder": "e.g. Pikachu, Charizard, Lucario",
+    "pokemonsLabel": "Desired Characters",
     "submit": "Send My Request",
     "responseNote": "Our curators reply within 24h",
     "success": "Request received! Our curators will reach out within 24h with a personalized quote.",

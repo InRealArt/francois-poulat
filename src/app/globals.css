@@ -30,7 +30,7 @@
   /* Alternance de sections claires */
   --light-bg: #ffffff;
   --light-text: #131313;
-  --light-text-muted: #6b6b6b;
+  --light-text-muted: #474747;
   --light-border: rgba(19, 19, 19, 0.1);
   --light-card: #f7f6f4;
 }
@@ -61,7 +61,7 @@ body {
   background: var(--background);
   color: var(--text);
   font-family: var(--font-montserrat), sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-optical-sizing: auto;
   width: 100%;
   overflow-x: hidden;

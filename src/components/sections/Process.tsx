@@ -15,7 +15,7 @@ export default async function Process() {
               <h3 className="serif mt-4 text-2xl italic text-black">
                 {t(`items.${step.id}.title`)}
               </h3>
-              <p className="mt-3 text-sm leading-loose text-black/50">
+              <p className="mt-3 text-[15px] leading-loose md:text-base text-black/70">
                 {t(`items.${step.id}.description`)}
               </p>
             </div>
