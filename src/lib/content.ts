@@ -105,6 +105,14 @@ export const TERMS_VERSION = "2026-08-28";
 // Used when the live rate is unavailable (client before fetch, or FX API down).
 export const FALLBACK_EUR_TO_USD = 1.08;
 
+// Countries offered in Stripe Checkout's shipping address form (ISO 3166-1).
+// Must match the delivery zones of the CGV (article 7).
+export const SHIPPING_COUNTRIES = [
+  "FR", "MC", "BE", "LU", "DE", "NL", "AT", "IT", "ES", "PT", "IE", "DK",
+  "SE", "FI", "PL", "CZ", "SK", "HU", "SI", "HR", "RO", "BG", "GR", "CY",
+  "MT", "EE", "LV", "LT", "GB", "CH", "NO", "US", "CA",
+] as const;
+
 // Whole units in the target currency. Shared by the display and the
 // server-side Stripe amount so both always round the same way.
 export function convertFromEur(

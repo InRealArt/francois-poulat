@@ -17,7 +17,8 @@ Brancher l'action « réserver » des formats à prix fixe (`src/components/sect
 - **Taux de change** : `GET https://open.er-api.com/v6/latest/EUR` → `rates.USD` (gratuit, sans clé). Cache en mémoire 1h, fallback `1.08` en cas d'échec (ne jamais bloquer le checkout). Taux live **partout** (cartes `Formats.tsx` + modal), avec la mention « taux approximatif — montant définitif calculé au moment du paiement ».
 - Montant USD : `unit_amount = Math.round(depositEur * rate) * 100`.
 - Le serveur valide `formatId` contre `formats` dans `content.ts` — **jamais de prix venant du client**. Rejet des formats `contactOnly`.
-- `metadata` de la session : `formatId`, `name`, `address`, `depositEur` (référence EUR pour la compta).
+- `metadata` de la session : `formatId`, `name`, `depositEur` (référence EUR pour la compta).
+- Adresse de livraison : collectée par Stripe Checkout (`shipping_address_collection`, pays limités à `SHIPPING_COUNTRIES` dans `content.ts`), lue dans `session.collected_information.shipping_details` pour les emails. Doit rester cohérente avec l'article 7 des CGV.
 
 ## Déjà fait
 
@@ -104,7 +105,7 @@ Compte Stripe : celui de l'entité qui **reçoit** l'argent (InRealArt) — IBAN
 
 ### Au quotidien
 
-- Les paiements reçus sont visibles dans *Payments*. Le format, le nom et l'adresse sont dans les **metadata** du paiement.
+- Les paiements reçus sont visibles dans *Payments*. Le format et le nom sont dans les **metadata** du paiement ; l'adresse de livraison est sur la session Checkout (section *Shipping*).
 - **Si un client a payé mais que l'équipe n'a pas reçu l'email** (onglet fermé avant la redirection), le paiement est quand même dans *Payments* : c'est là qu'on vérifie.
 
 ## Implémentation (réalisée)

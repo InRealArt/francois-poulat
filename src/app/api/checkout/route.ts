@@ -6,6 +6,7 @@ import {
   convertFromEur,
   formats,
   formatSizes,
+  SHIPPING_COUNTRIES,
   TERMS_VERSION,
 } from "@/lib/content";
 import { getEurToUsd } from "@/lib/fxRate";
@@ -17,7 +18,6 @@ import { routing } from "@/i18n/routing";
 const checkoutRequestSchema = z.object({
   name: z.string().trim().min(2).max(200),
   email: z.email().max(200),
-  address: z.string().trim().min(2).max(500),
   formatId: z.string().trim().min(1).max(50),
   sizeId: z.string().trim().min(1).max(50),
   currency: z.enum(["EUR", "USD"]),
@@ -39,7 +39,6 @@ export async function POST(request: Request) {
   const {
     name,
     email,
-    address,
     formatId,
     sizeId,
     currency,
@@ -99,7 +98,6 @@ export async function POST(request: Request) {
     size: size.size,
     name,
     email,
-    address,
     locale,
     depositEur: String(size.priceDeposit),
     totalEur: String(size.priceTotal),
@@ -134,6 +132,10 @@ export async function POST(request: Request) {
         // both test and live modes (Dashboard settings are per mode).
         excluded_payment_method_types: ["eps"],
         customer_email: email,
+        // Stripe collects a structured, country-validated shipping address.
+        shipping_address_collection: {
+          allowed_countries: [...SHIPPING_COUNTRIES],
+        },
         locale,
         metadata,
         payment_intent_data: {

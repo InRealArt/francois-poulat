@@ -30,6 +30,28 @@ function formatMoney(amount: number, currency: string, locale: string) {
   }).format(amount);
 }
 
+// Shipping address collected by Stripe Checkout, one line per element.
+function formatShippingAddress(session: Stripe.Checkout.Session, locale: string) {
+  const details = session.collected_information?.shipping_details;
+  if (!details) {
+    return "";
+  }
+  const { line1, line2, postal_code, city, state, country } = details.address;
+  const countryName = country
+    ? (new Intl.DisplayNames([locale], { type: "region" }).of(country) ?? country)
+    : "";
+  return [
+    details.name,
+    line1,
+    line2,
+    [postal_code, city].filter(Boolean).join(" "),
+    state,
+    countryName,
+  ]
+    .filter(Boolean)
+    .join("\n");
+}
+
 // Re-reads the session from Stripe (never trusts the redirect), then sends the
 // team email and the customer confirmation once each. No DB: markers live in
 // the PaymentIntent's metadata (fulfilled_at = team, customer_notified_at =
@@ -96,7 +118,10 @@ export async function fulfillCheckoutSession(
         rows: [
           { label: "Client name", value: name },
           { label: "Client email", value: email },
-          { label: "Shipping address", value: meta.address ?? "" },
+          {
+            label: "Shipping address",
+            value: formatShippingAddress(session, "en"),
+          },
           { label: "Format", value: meta.formatId ?? "" },
           { label: "Size", value: meta.size ?? "" },
           { label: "Deposit paid", value: formatMinor(amount, currency) },
@@ -212,7 +237,10 @@ async function sendCustomerEmail({
           ? formatMoney(balance, currency, locale)
           : "—",
       },
-      { label: t("shippingAddress"), value: meta.address ?? "" },
+      {
+        label: t("shippingAddress"),
+        value: formatShippingAddress(session, locale),
+      },
       ...(invoice?.number
         ? [{ label: t("invoiceNumber"), value: invoice.number }]
         : []),

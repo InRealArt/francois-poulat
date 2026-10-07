@@ -67,7 +67,7 @@ export async function sendEmail({
             ${escapeHtml(label)}
           </td>
           <td style="padding:10px 16px;border-bottom:1px solid #eeeeee;font-family:Arial,sans-serif;font-size:14px;color:#131313;">
-            ${escapeHtml(value)}
+            ${textToHtml(value)}
           </td>
         </tr>`
     )

@@ -13,7 +13,6 @@ import { Link } from "@/i18n/navigation";
 const reservationSchema = z.object({
   name: z.string().trim().min(2).max(200),
   email: z.email().max(200),
-  address: z.string().trim().min(2).max(500),
   acceptTerms: z.literal(true),
 });
 
@@ -70,7 +69,6 @@ export default function ReservationModal({
     const result = reservationSchema.safeParse({
       name: formData.get("name"),
       email: formData.get("email"),
-      address: formData.get("address"),
       acceptTerms: formData.get("acceptTerms") === "on",
     });
 
@@ -272,31 +270,6 @@ export default function ReservationModal({
                 className="normal-case tracking-normal text-red-400"
               >
                 {t("emailError")}
-              </span>
-            )}
-          </label>
-          <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-black/70">
-            {t("addressLabel")}
-            <input
-              required
-              id="reservation-address"
-              name="address"
-              type="text"
-              autoComplete="street-address"
-              aria-invalid={errors.address || undefined}
-              aria-describedby={
-                errors.address ? "reservation-address-error" : undefined
-              }
-              className={`rounded-none border-b bg-transparent py-2 text-sm text-black outline-none focus:border-gold ${
-                errors.address ? "border-red-500" : "border-black/20"
-              }`}
-            />
-            {errors.address && (
-              <span
-                id="reservation-address-error"
-                className="normal-case tracking-normal text-red-400"
-              >
-                {t("requiredError")}
               </span>
             )}
           </label>
