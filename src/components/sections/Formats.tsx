@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { formats, formatPrice, type Format } from "@/lib/content";
 import ReservationModal from "@/components/ReservationModal";
+import { useEurToUsd } from "@/hooks/useEurToUsd";
 import CustomOrderModal from "@/components/CustomOrderModal";
 
 export default function Formats() {
@@ -12,6 +13,7 @@ export default function Formats() {
   const [customOrderOpen, setCustomOrderOpen] = useState(false);
   const t = useTranslations("formats");
   const locale = useLocale();
+  const eurToUsd = useEurToUsd();
 
   return (
     <section
@@ -41,6 +43,11 @@ export default function Formats() {
               </button>
             ))}
           </div>
+          {currency === "USD" && (
+            <p className="mt-3 text-[0.65rem] uppercase tracking-[0.1em] text-black/40">
+              {t("approxRate")}
+            </p>
+          )}
         </div>
 
         <div className="mx-auto mt-14 grid max-w-4xl gap-6 sm:grid-cols-2">
@@ -98,14 +105,20 @@ export default function Formats() {
                   <>
                     <div className="mt-6 border-t border-black/10 pt-4">
                       <p className="serif text-2xl italic text-black">
-                        {formatPrice(format.priceTotal!, currency, locale)}
+                        {formatPrice(
+                          format.priceTotal!,
+                          currency,
+                          locale,
+                          eurToUsd
+                        )}
                       </p>
                       <p className="mt-1 text-[0.65rem] uppercase tracking-[0.15em] text-black/40">
                         {t("depositWithAmount", {
                           amount: formatPrice(
                             format.priceDeposit!,
                             currency,
-                            locale
+                            locale,
+                            eurToUsd
                           ),
                         })}
                       </p>
@@ -131,6 +144,7 @@ export default function Formats() {
         <ReservationModal
           format={selected}
           currency={currency}
+          eurToUsd={eurToUsd}
           onClose={() => setSelected(null)}
         />
       )}

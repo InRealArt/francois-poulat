@@ -158,7 +158,8 @@
           "Emballage sécurisé & transport assuré à 100%."
         ]
       }
-    }
+    },
+    "approxRate": "Taux approximatif — montant définitif calculé au moment du paiement"
   },
   "guarantees": {
     "title": "Garanties & Confiance InRealArt",
@@ -485,16 +486,19 @@
     "depositLabel": "Acompte",
     "totalWithAmount": "Total : {amount}",
     "depositWithAmount": "Acompte : {amount}",
-    "success": "Réservation enregistrée ! Notre équipe reviendra vers vous sous 24h pour finaliser le paiement de l’acompte.",
     "nameLabel": "Nom Complet",
     "emailLabel": "Email de Confirmation",
     "addressLabel": "Adresse de Livraison",
-    "paymentPreview": "Paiement sécurisé (aperçu) : •••• •••• •••• 4242",
-    "submit": "Valider & Commander mon œuvre d'art",
-    "sslNote": "Transaction chiffrée SSL 256 bits",
+    "submit": "Payer l'acompte & commander mon œuvre",
     "captchaError": "Merci de valider la vérification ci-dessous.",
     "submitError": "Une erreur est survenue. Merci de réessayer dans un instant.",
-    "submitting": "Envoi en cours…"
+    "approxRate": "Taux approximatif — montant définitif calculé au moment du paiement",
+    "paymentNote": "Vous serez redirigé vers la page sécurisée Stripe pour régler l'acompte de {amount}. Le solde est dû avant l'expédition.",
+    "redirecting": "Redirection vers le paiement sécurisé…",
+    "acceptTerms": "J'accepte les <terms>Conditions Générales de Vente</terms> et j'ai pris connaissance de mon <withdrawal>droit de rétractation de 14 jours</withdrawal>.",
+    "requiredError": "Merci de renseigner ce champ (2 caractères minimum).",
+    "emailError": "Merci de saisir une adresse email valide.",
+    "termsError": "Merci d'accepter les Conditions Générales de Vente pour continuer."
   },
   "customOrderModal": {
     "ariaLabel": "Demander un projet sur-mesure",
@@ -519,5 +523,48 @@
     "emailError": "Merci de saisir une adresse email valide.",
     "submitting": "Envoi en cours…",
     "submitError": "Une erreur est survenue. Merci de réessayer dans un instant."
+  },
+  "checkout": {
+    "productName": "{format} — {size}",
+    "productDescription": "Acompte de 75 % — peinture acrylique originale de François Poulat",
+    "invoiceDescription": "Facture d'acompte (75 %). Solde restant de {balance}, dû avant l'expédition de l'œuvre.",
+    "invoiceFooter": "InRealArt — 6 rue du château d'eau, 37260 Artannes-sur-Indre — teaminrealart@gmail.com"
+  },
+  "orderConfirmation": {
+    "metaTitle": "Commande confirmée — InRealArt",
+    "kicker": "Édition Grim",
+    "paidTitle": "Merci, votre commande est confirmée",
+    "paidBody": "Votre acompte de {amount} pour le format {size} a bien été reçu. Notre équipe vous contactera sous 24h pour lancer la réalisation de votre œuvre.",
+    "pendingTitle": "Paiement en cours de traitement",
+    "pendingBody": "Votre paiement n'est pas encore confirmé. Actualisez cette page dans quelques instants ; si le problème persiste, contactez-nous à teaminrealart@gmail.com.",
+    "invalidTitle": "Commande introuvable",
+    "invalidBody": "Nous ne retrouvons pas ce paiement. Si vous avez été débité, contactez-nous à teaminrealart@gmail.com et nous réglerons cela rapidement.",
+    "backHome": "Retour à l'accueil",
+    "confirmationEmailNote": "Un email de confirmation récapitulant votre commande, nos CGV et votre droit de rétractation a été envoyé à {email}.",
+    "invoiceLink": "Voir ma facture d'acompte"
+  },
+  "orderCancelled": {
+    "metaTitle": "Paiement annulé — InRealArt",
+    "kicker": "Édition Grim",
+    "title": "Paiement annulé",
+    "body": "Aucun montant n'a été débité. Vous pouvez reprendre votre réservation quand vous le souhaitez.",
+    "backToFormats": "Retour aux formats"
+  },
+  "orderEmail": {
+    "subject": "Confirmation de votre commande — Édition Grim {size}",
+    "title": "Votre commande est confirmée",
+    "intro": "Bonjour {name},\n\nMerci pour votre commande. Votre acompte a bien été reçu et la réalisation de votre œuvre va pouvoir commencer. Notre équipe vous contactera sous 24h. Vous trouverez ci-dessous le récapitulatif de votre commande ainsi que les informations relatives à vos droits.",
+    "orderDate": "Date de commande",
+    "artwork": "Œuvre",
+    "artworkValue": "Édition Grim — {size}",
+    "depositPaid": "Acompte réglé (75 %)",
+    "balanceDue": "Solde dû avant expédition",
+    "shippingAddress": "Adresse de livraison",
+    "invoiceNumber": "Facture n°",
+    "terms": "CGV acceptées",
+    "invoiceLink": "Voir ma facture d'acompte",
+    "invoicePdfLink": "Télécharger la facture (PDF)",
+    "termsLink": "Consulter les Conditions Générales de Vente",
+    "footer": "Vendeur : INREALART — 6 rue du château d'eau, 37260 Artannes-sur-Indre.\nPour toute question ou pour exercer votre droit de rétractation, répondez à cet email ou écrivez à {email}."
   }
 }

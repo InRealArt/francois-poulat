@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
-import { getTranslations } from "next-intl/server";
-import { Link } from "@/i18n/navigation";
+import { getLocale, getTranslations } from "next-intl/server";
+import { homeAnchorHref, Link } from "@/i18n/navigation";
 import { footerLinks } from "@/lib/content";
 
 const socials: { name: string; href: string; icon: ReactNode }[] = [
@@ -22,6 +22,7 @@ const socials: { name: string; href: string; icon: ReactNode }[] = [
 
 export default async function Footer() {
   const t = await getTranslations("footer");
+  const locale = await getLocale();
 
   return (
     <footer className="bg-background pt-16 pb-8">
@@ -48,7 +49,14 @@ export default async function Footer() {
             <ul className="mt-4 flex flex-col">
               {footerLinks.agency.map((link) => (
                 <li key={link.id}>
-                  <a href={link.href} className="footer-link">
+                  <a
+                    href={
+                      link.href.startsWith("#")
+                        ? homeAnchorHref(locale, link.href)
+                        : link.href
+                    }
+                    className="footer-link"
+                  >
                     {t(`agencyLinks.${link.id}`)}
                   </a>
                 </li>

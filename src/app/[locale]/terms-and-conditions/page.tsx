@@ -72,7 +72,7 @@ export default async function TermsPage({ params }: TermsPageProps) {
 
           <div className="mt-16 flex flex-col gap-14">
             {sections.map((id) => (
-              <section key={id}>
+              <section key={id} id={id} className="scroll-mt-28">
                 <h2 className="serif text-xl uppercase tracking-[0.2em] text-gold">
                   {t(`${id}.heading`)}
                 </h2>

@@ -158,7 +158,8 @@
           "Secure packaging & fully insured transport."
         ]
       }
-    }
+    },
+    "approxRate": "Approximate rate — final amount calculated at payment"
   },
   "guarantees": {
     "title": "InRealArt Guarantees & Trust",
@@ -485,16 +486,19 @@
     "depositLabel": "Deposit",
     "totalWithAmount": "Total: {amount}",
     "depositWithAmount": "Deposit: {amount}",
-    "success": "Reservation recorded! Our team will get back to you within 24h to finalize the deposit payment.",
     "nameLabel": "Full Name",
     "emailLabel": "Confirmation Email",
     "addressLabel": "Shipping Address",
-    "paymentPreview": "Secure payment (preview): •••• •••• •••• 4242",
-    "submit": "Confirm & Ordering my artwork",
-    "sslNote": "256-bit SSL encrypted transaction",
+    "submit": "Pay Deposit & Order My Artwork",
     "captchaError": "Please complete the verification below.",
     "submitError": "Something went wrong. Please try again in a moment.",
-    "submitting": "Sending…"
+    "approxRate": "Approximate rate — final amount calculated at payment",
+    "paymentNote": "You will be redirected to Stripe's secure page to pay the {amount} deposit. The balance is due before shipping.",
+    "redirecting": "Redirecting to secure payment…",
+    "acceptTerms": "I accept the <terms>Terms and Conditions of Sale</terms> and acknowledge my <withdrawal>14-day right of withdrawal</withdrawal>.",
+    "requiredError": "Please fill in this field (at least 2 characters).",
+    "emailError": "Please enter a valid email address.",
+    "termsError": "Please accept the Terms and Conditions of Sale to continue."
   },
   "customOrderModal": {
     "ariaLabel": "Request a custom project",
@@ -519,5 +523,48 @@
     "emailError": "Please enter a valid email address.",
     "submitting": "Sending…",
     "submitError": "Something went wrong. Please try again in a moment."
+  },
+  "checkout": {
+    "productName": "{format} — {size}",
+    "productDescription": "75% deposit — original acrylic painting by François Poulat",
+    "invoiceDescription": "Deposit invoice (75%). Remaining balance of {balance}, due before the artwork ships.",
+    "invoiceFooter": "InRealArt — 6 rue du château d'eau, 37260 Artannes-sur-Indre, France — teaminrealart@gmail.com"
+  },
+  "orderConfirmation": {
+    "metaTitle": "Order confirmed — InRealArt",
+    "kicker": "Grim Edition",
+    "paidTitle": "Thank you, your order is confirmed",
+    "paidBody": "Your {amount} deposit for the {size} format has been received. Our team will contact you within 24h to launch the production of your artwork.",
+    "pendingTitle": "Payment being processed",
+    "pendingBody": "Your payment has not been confirmed yet. Refresh this page in a few moments; if the problem persists, contact us at teaminrealart@gmail.com.",
+    "invalidTitle": "Order not found",
+    "invalidBody": "We could not find this payment. If you were charged, contact us at teaminrealart@gmail.com and we will sort it out quickly.",
+    "backHome": "Back to home",
+    "confirmationEmailNote": "A confirmation email with your order summary, our terms and your right of withdrawal has been sent to {email}.",
+    "invoiceLink": "View my deposit invoice"
+  },
+  "orderCancelled": {
+    "metaTitle": "Payment cancelled — InRealArt",
+    "kicker": "Grim Edition",
+    "title": "Payment cancelled",
+    "body": "No amount has been charged. You can resume your reservation whenever you like.",
+    "backToFormats": "Back to formats"
+  },
+  "orderEmail": {
+    "subject": "Your order confirmation — Grim Edition {size}",
+    "title": "Your order is confirmed",
+    "intro": "Hello {name},\n\nThank you for your order. Your deposit has been received and the creation of your artwork can begin. Our team will contact you within 24h. Below is your order summary and information about your rights.",
+    "orderDate": "Order date",
+    "artwork": "Artwork",
+    "artworkValue": "Grim Edition — {size}",
+    "depositPaid": "Deposit paid (75%)",
+    "balanceDue": "Balance due before shipping",
+    "shippingAddress": "Shipping address",
+    "invoiceNumber": "Invoice no.",
+    "terms": "Terms accepted",
+    "invoiceLink": "View my deposit invoice",
+    "invoicePdfLink": "Download the invoice (PDF)",
+    "termsLink": "Read the Terms and Conditions of Sale",
+    "footer": "Seller: INREALART — 6 rue du château d'eau, 37260 Artannes-sur-Indre, France.\nFor any question or to exercise your right of withdrawal, reply to this email or write to {email}."
   }
 }

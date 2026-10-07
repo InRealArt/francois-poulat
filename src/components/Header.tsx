@@ -2,7 +2,11 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { Link, usePathname, useRouter } from "@/i18n/navigation";
+import {
+  homeAnchorHref,
+  usePathname,
+  useRouter,
+} from "@/i18n/navigation";
 import { nav } from "@/lib/content";
 import { useModalBehavior } from "@/hooks/useModalBehavior";
 
@@ -61,8 +65,8 @@ export default function Header() {
     <>
       <header className="fixed inset-x-0 top-0 z-[70] h-16 md:h-[90px] border-b border-black/10 bg-[rgb(var(--background-rgb))]/95 backdrop-blur-md">
       <div className="mx-auto flex h-full max-w-[1536px] items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link
-          href="#top"
+        <a
+          href={homeAnchorHref(locale, "#top")}
           aria-hidden={menuOpen}
           tabIndex={menuOpen ? -1 : undefined}
           className="serif flex shrink-0 items-center uppercase tracking-[0.2em] text-sm md:text-lg"
@@ -73,13 +77,13 @@ export default function Header() {
               {t("header.tagline")}
             </span>
           </span>
-        </Link>
+        </a>
 
         <nav className="hidden 2xl:flex items-center gap-5 ml-6">
           {nav.map((item) => (
             <a
               key={item.href}
-              href={item.href}
+              href={homeAnchorHref(locale, item.href)}
               className="whitespace-nowrap text-[13px] uppercase tracking-[0.25em] text-black/70 transition-colors hover:text-gold"
             >
               {t(`nav.${item.id}`)}
@@ -115,7 +119,7 @@ export default function Header() {
           </div>
 
           <a
-            href="#formats"
+            href={homeAnchorHref(locale, "#formats")}
             aria-hidden={menuOpen}
             tabIndex={menuOpen ? -1 : undefined}
             className="btn-cta inline-flex whitespace-nowrap px-3 text-[0.55rem] md:px-[1.8rem] md:text-[0.6rem]"
@@ -170,7 +174,7 @@ export default function Header() {
             {nav.map((item, index) => (
               <a
                 key={item.href}
-                href={item.href}
+                href={homeAnchorHref(locale, item.href)}
                 onClick={() => setMenuOpen(false)}
                 className="group flex items-baseline gap-5 border-b border-black/10 py-4 transition-colors first:border-t hover:text-gold md:py-6"
               >
@@ -220,7 +224,7 @@ export default function Header() {
 
           <div className="mt-auto shrink-0 border-t border-black/10 px-6 py-6">
             <a
-              href="#formats"
+              href={homeAnchorHref(locale, "#formats")}
               onClick={() => setMenuOpen(false)}
               className="btn-cta w-full"
             >

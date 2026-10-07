@@ -98,15 +98,32 @@ export const footerLinks = {
   ],
 } as const;
 
+// Must match the date in messages cgv.reference; stored with each order as
+// proof of which CGV the customer accepted.
+export const TERMS_VERSION = "2026-08-28";
+
+// Used when the live rate is unavailable (client before fetch, or FX API down).
+export const FALLBACK_EUR_TO_USD = 1.08;
+
+// Whole units in the target currency. Shared by the display and the
+// server-side Stripe amount so both always round the same way.
+export function convertFromEur(
+  amountEur: number,
+  currency: "EUR" | "USD",
+  eurToUsd: number
+) {
+  return currency === "EUR" ? amountEur : Math.round(amountEur * eurToUsd);
+}
+
 export function formatPrice(
   amount: number,
   currency: "EUR" | "USD",
-  locale: string
+  locale: string,
+  eurToUsd: number = FALLBACK_EUR_TO_USD
 ) {
-  const value = currency === "EUR" ? amount : Math.round(amount * 1.08);
   return new Intl.NumberFormat(locale, {
     style: "currency",
     currency,
     maximumFractionDigits: 0,
-  }).format(value);
+  }).format(convertFromEur(amount, currency, eurToUsd));
 }
