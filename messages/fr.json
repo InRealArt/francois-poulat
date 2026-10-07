@@ -232,7 +232,7 @@
       },
       "delivery": {
         "question": "Quels sont les délais de production et de livraison ?",
-        "answer": "Chaque œuvre étant préparée individuellement, vernie à la main, comptez 2 à 3 semaines de production. La livraison express prend ensuite 48 à 72 heures via des transporteurs spécialisés en œuvres d'art, avec suivi prioritaire en temps réel."
+        "answer": "Chaque œuvre étant préparée individuellement, vernie à la main, comptez 2 à 3 semaines de production. Le transport, assuré par des transporteurs spécialisés en œuvres d'art avec suivi en temps réel, prend ensuite 2 à 3 jours ouvrés en France, 3 à 5 jours ouvrés en Europe et 5 à 10 jours ouvrés vers les États-Unis et le reste du monde, hors délais de dédouanement."
       },
       "packaging": {
         "question": "Comment l'œuvre est-elle emballée pour le transport ?",
@@ -309,7 +309,7 @@
     "metaDescription": "Conditions Générales de Vente applicables aux ventes de toiles et œuvres imprimées réalisées sur le site InRealArt.",
     "kicker": "Informations légales",
     "title": "Conditions Générales de Vente",
-    "reference": "Version en vigueur au 28 août 2026. Vente de toiles et œuvres imprimées aux consommateurs.",
+    "reference": "Version en vigueur au 7 octobre 2026. Vente de toiles et œuvres imprimées aux consommateurs.",
     "scope": {
       "heading": "Article 1 — Objet et champ d'application",
       "body": "Les présentes Conditions Générales de Vente (« CGV ») régissent exclusivement les ventes de produits conclues sur la page inrealart.com (« le Site ») entre la société INREALART (« le Vendeur ») et toute personne physique agissant à des fins n'entrant pas dans le cadre de son activité professionnelle (« le Client » ou « le Consommateur »).\n\nToute commande implique l'acceptation pleine et entière des présentes CGV, que le Client reconnaît avoir lues avant de valider sa commande, en cochant la case prévue à cet effet. Les CGV applicables sont celles en vigueur à la date de la commande.\n\nLe Vendeur se réserve le droit de modifier les présentes CGV à tout moment. La version applicable est archivée et peut être communiquée sur simple demande. Version en vigueur au : 28 août 2026."
@@ -336,7 +336,7 @@
     },
     "delivery": {
       "heading": "Article 7 — Livraison",
-      "body": "Zones desservies : France métropolitaine.\nDélai de livraison : 5 à 10 jours ouvrés à compter de la confirmation de la commande. Conformément à l'art. L216-1 du Code de la consommation, à défaut d'indication, la livraison intervient au plus tard 30 jours après la conclusion du contrat.\nFrais de livraison : indiqués avant la validation de la commande.\n\nEn cas de retard de livraison, le Client peut, après avoir enjoint le Vendeur de livrer dans un délai supplémentaire raisonnable resté sans effet, résoudre le contrat par lettre recommandée ou par écrit sur un autre support durable. Les sommes versées lui sont alors remboursées au plus tard dans les 14 jours suivant la résolution (art. L216-6 et L216-7).\n\nÀ réception, le Client est invité à vérifier l'état du colis et du produit et à signaler toute avarie ou non-conformité apparente au transporteur et au Vendeur dans les meilleurs délais."
+      "body": "Zones desservies : livraison internationale, en priorité vers les États-Unis, ainsi que vers la France, l'Union européenne et les autres pays proposés lors du paiement (hors pays soumis à sanctions internationales).\nDélais : chaque œuvre est réalisée à la commande. Production : 2 à 3 semaines à compter du paiement de l'acompte ; l'expédition intervient après paiement du solde. Transport : 2 à 3 jours ouvrés en France métropolitaine, 3 à 5 jours ouvrés vers l'Union européenne, 5 à 10 jours ouvrés vers les États-Unis et le reste du monde, hors éventuels délais de dédouanement. Conformément à l'art. L216-1 du Code de la consommation, à défaut d'indication, la livraison intervient au plus tard 30 jours après la conclusion du contrat.\nFrais de livraison : indiqués avant la validation de la commande.\nDroits et taxes à l'importation : pour toute livraison hors Union européenne (notamment aux États-Unis), les droits de douane, taxes d'importation et frais de dédouanement éventuels exigés par le pays de destination ne sont pas compris dans le prix et restent à la charge du Client.\n\nEn cas de retard de livraison, le Client peut, après avoir enjoint le Vendeur de livrer dans un délai supplémentaire raisonnable resté sans effet, résoudre le contrat par lettre recommandée ou par écrit sur un autre support durable. Les sommes versées lui sont alors remboursées au plus tard dans les 14 jours suivant la résolution (art. L216-6 et L216-7).\n\nÀ réception, le Client est invité à vérifier l'état du colis et du produit et à signaler toute avarie ou non-conformité apparente au transporteur et au Vendeur dans les meilleurs délais."
     },
     "ownership": {
       "heading": "Article 8 — Transfert de propriété et des risques",

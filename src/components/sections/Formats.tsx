@@ -8,11 +8,14 @@ import { useEurToUsd } from "@/hooks/useEurToUsd";
 import CustomOrderModal from "@/components/CustomOrderModal";
 
 export default function Formats() {
-  const [currency, setCurrency] = useState<"EUR" | "USD">("EUR");
-  const [selected, setSelected] = useState<Format | null>(null);
-  const [customOrderOpen, setCustomOrderOpen] = useState(false);
   const t = useTranslations("formats");
   const locale = useLocale();
+  // US clients are the primary target: the English site opens in USD.
+  const [currency, setCurrency] = useState<"EUR" | "USD">(
+    locale === "en" ? "USD" : "EUR"
+  );
+  const [selected, setSelected] = useState<Format | null>(null);
+  const [customOrderOpen, setCustomOrderOpen] = useState(false);
   const eurToUsd = useEurToUsd();
 
   return (

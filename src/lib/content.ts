@@ -100,17 +100,35 @@ export const footerLinks = {
 
 // Must match the date in messages cgv.reference; stored with each order as
 // proof of which CGV the customer accepted.
-export const TERMS_VERSION = "2026-08-28";
+export const TERMS_VERSION = "2026-10-07";
 
 // Used when the live rate is unavailable (client before fetch, or FX API down).
 export const FALLBACK_EUR_TO_USD = 1.08;
 
-// Countries offered in Stripe Checkout's shipping address form (ISO 3166-1).
-// Must match the delivery zones of the CGV (article 7).
+// Countries offered in Stripe Checkout's shipping address form (ISO 3166-1):
+// every country Stripe supports, US first in the target, minus sanctioned
+// (RU, BY) and uninhabited territories. Must match the CGV (article 7).
 export const SHIPPING_COUNTRIES = [
-  "FR", "MC", "BE", "LU", "DE", "NL", "AT", "IT", "ES", "PT", "IE", "DK",
-  "SE", "FI", "PL", "CZ", "SK", "HU", "SI", "HR", "RO", "BG", "GR", "CY",
-  "MT", "EE", "LV", "LT", "GB", "CH", "NO", "US", "CA",
+  "AC", "AD", "AE", "AF", "AG", "AI", "AL", "AM", "AO", "AR", "AT", "AU",
+  "AW", "AX", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ",
+  "BL", "BM", "BN", "BO", "BQ", "BR", "BS", "BT", "BW", "BZ", "CA", "CD",
+  "CF", "CG", "CH", "CI", "CK", "CL", "CM", "CN", "CO", "CR", "CV", "CW",
+  "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "EH",
+  "ER", "ES", "ET", "FI", "FJ", "FK", "FO", "FR", "GA", "GB", "GD", "GE",
+  "GF", "GG", "GH", "GI", "GL", "GM", "GN", "GP", "GQ", "GR", "GT", "GU",
+  "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IM", "IN",
+  "IQ", "IS", "IT", "JE", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM",
+  "KN", "KR", "KW", "KY", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS",
+  "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MF", "MG", "MK", "ML",
+  "MM", "MN", "MO", "MQ", "MR", "MS", "MT", "MU", "MV", "MW", "MX", "MY",
+  "MZ", "NA", "NC", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NU", "NZ",
+  "OM", "PA", "PE", "PF", "PG", "PH", "PK", "PL", "PM", "PN", "PR", "PS",
+  "PT", "PY", "QA", "RE", "RO", "RS", "RW", "SA", "SB", "SC", "SD", "SE",
+  "SG", "SH", "SI", "SJ", "SK", "SL", "SM", "SN", "SO", "SR", "SS", "ST",
+  "SV", "SX", "SZ", "TA", "TC", "TD", "TG", "TH", "TJ", "TK", "TL", "TM",
+  "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ",
+  "VA", "VC", "VE", "VG", "VN", "VU", "WF", "WS", "XK", "YE", "YT", "ZA",
+  "ZM", "ZW",
 ] as const;
 
 // Whole units in the target currency. Shared by the display and the
