@@ -87,7 +87,7 @@ export async function fulfillCheckoutSession(
   if (!paymentIntent.metadata.fulfilled_at) {
     try {
       await sendTeamEmail({
-        senderName: "InRealArt — Reservations",
+        senderName: "PIKAPOULAT Reservations",
         subject: `Deposit paid — ${meta.size ?? ""} — ${name}`,
         title: "New Grim Edition Order — Deposit Paid",
         intro:
