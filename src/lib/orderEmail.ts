@@ -16,6 +16,8 @@ type Email = {
   subject: string;
   title: string;
   intro: string;
+  // Body text after the rows (closing / signature), same style as the intro.
+  outro?: string;
   footer: string;
   rows: EmailRow[];
   links?: EmailLink[];
@@ -24,6 +26,15 @@ type Email = {
 };
 
 type TeamEmail = Omit<Email, "to">;
+
+// Mail clients fetch the logo over the network, so it must be publicly hosted:
+// EMAIL_LOGO_URL overrides the site URL (e.g. when testing from localhost).
+function emailLogoUrl() {
+  const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "").replace(/\/$/, "");
+  return (
+    process.env.EMAIL_LOGO_URL ?? `${siteUrl}/images/inrealart/logo-email.png`
+  );
+}
 
 function escapeHtml(value: string) {
   return value
@@ -47,6 +58,7 @@ export async function sendEmail({
   title,
   intro,
   footer,
+  outro,
   rows,
   links = [],
   sections = [],
@@ -99,6 +111,15 @@ export async function sendEmail({
     )
     .join("");
 
+  const htmlOutro = outro
+    ? `
+                <tr>
+                  <td style="padding:0 32px 24px;font-family:Arial,sans-serif;font-size:14px;line-height:1.6;color:#444444;">
+                    ${textToHtml(outro)}
+                  </td>
+                </tr>`
+    : "";
+
   const htmlContent = `
     <html>
       <body style="margin:0;padding:0;background:#f7f6f4;">
@@ -108,7 +129,7 @@ export async function sendEmail({
               <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="background:#ffffff;border:1px solid #eeeeee;">
                 <tr>
                   <td style="background:#131313;padding:24px 32px;">
-                    <span style="font-family:Arial,sans-serif;font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:#b89c72;">InRealArt Agency</span>
+                    <img src="${escapeHtml(emailLogoUrl())}" width="240" height="28" alt="InRealArt" style="display:block;border:0;width:240px;height:auto;">
                     <h1 style="margin:8px 0 0;font-family:Georgia,serif;font-style:italic;font-weight:400;font-size:22px;color:#ffffff;">
                       ${escapeHtml(title)}
                     </h1>
@@ -125,7 +146,7 @@ export async function sendEmail({
                       ${htmlRows}
                     </table>
                   </td>
-                </tr>${htmlLinks}${htmlSections}
+                </tr>${htmlOutro}${htmlLinks}${htmlSections}
                 <tr>
                   <td style="padding:16px 32px 32px;font-family:Arial,sans-serif;font-size:11px;color:#999999;border-top:1px solid #eeeeee;">
                     ${textToHtml(footer)}
@@ -145,6 +166,7 @@ export async function sendEmail({
     intro,
     "",
     ...rows.map(({ label, value }) => `${label}: ${value}`),
+    ...(outro ? ["", outro] : []),
     ...(links.length ? ["", ...links.map(({ label, url }) => `${label}: ${url}`)] : []),
     ...sections.flatMap(({ heading, body }) => ["", heading, body]),
     "",

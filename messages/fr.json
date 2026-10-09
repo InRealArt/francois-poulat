@@ -111,17 +111,17 @@
     "imageAlt": "Galerie d'art contemporain InRealArt",
     "body": "InRealArt est le studio d'art contemporain de référence qui donne vie aux univers des plus grands créateurs. En partenariat avec des géants comme Logitech G, des galeries internationales et les figures majeures du web, InRealArt vous propose des œuvres physiques d'exception créées sur-mesure pour vos streamers préférés. La démarche garantit des pièces de collection uniques, certifiées et conçues avec une précision chirurgicale pour sublimer vos espaces et traverser le temps.",
     "screens": {
-      "artist": {
-        "label": "Page artiste",
-        "alt": "Capture de la page artiste de François Poulat sur InRealArt"
+      "agency": {
+        "label": "Agence",
+        "alt": "Capture de la page Agence d'InRealArt, l'agence artistique et d'influence"
       },
       "media": {
         "label": "Média",
         "alt": "Capture de la page Média d'InRealArt, l'Observatoire de la Création"
       },
       "store": {
-        "label": "Store",
-        "alt": "Capture du Store InRealArt présentant des œuvres disponibles"
+        "label": "Galerie",
+        "alt": "Capture de la galerie InRealArt présentant des œuvres disponibles"
       }
     }
   },
@@ -506,7 +506,7 @@
     "title": "Décrivez Votre Projet Sur-Mesure",
     "intro": "Partagez-nous votre vision — nos curateurs reviendront vers vous sous 24h avec un devis personnalisé.",
     "formatLabel": "Format Souhaité",
-    "formatPlaceholder": "ex. 90 × 90 cm, ou une dimension personnalisée",
+    "formatPlaceholder": "Sélectionnez un format",
     "mediumLabel": "Medium Souhaité",
     "mediumPlaceholder": "ex. Acrylique, huile, technique mixte",
     "supportLabel": "Support Souhaité",
@@ -565,5 +565,12 @@
     "invoicePdfLink": "Télécharger la facture (PDF)",
     "termsLink": "Consulter les Conditions Générales de Vente",
     "footer": "Vendeur : INREALART — 6 rue du château d'eau, 37260 Artannes-sur-Indre.\nPour toute question ou pour exercer votre droit de rétractation, répondez à cet email ou écrivez à {email}."
+  },
+  "customOrderEmail": {
+    "subject": "Pikapoulat Grim Valorant — Votre demande de projet sur-mesure — InRealArt",
+    "title": "Merci pour votre demande",
+    "intro": "Bonjour,\n\nNous vous remercions de l'intérêt que vous portez à notre travail. Nous avons bien reçu votre demande de projet sur-mesure, et nos curateurs l'étudient dès à présent. L'équipe InRealArt vous contactera très prochainement afin d'établir un devis personnalisé.",
+    "outro": "Pour toute question d'ici là, il vous suffit de répondre à cet email.\n\nBien cordialement,\nL'équipe InRealArt",
+    "footer": "Vous recevez cet email suite à votre demande de projet sur-mesure sur notre site. Contact : {email}"
   }
 }

@@ -2,9 +2,10 @@
 
 import { useRef, useState } from "react";
 import { z } from "zod";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import { useModalBehavior } from "@/hooks/useModalBehavior";
+import { customFormatSizes } from "@/lib/content";
 
 type Props = {
   onClose: () => void;
@@ -12,7 +13,7 @@ type Props = {
 
 const customOrderSchema = z.object({
   email: z.email(),
-  format: z.string().trim().min(2),
+  format: z.enum(customFormatSizes),
   medium: z.string().trim().min(2),
   support: z.string().trim().min(2),
   pokemons: z.string().trim().min(2),
@@ -30,6 +31,7 @@ export default function CustomOrderModal({ onClose }: Props) {
   const turnstileRef = useRef<TurnstileInstance | null>(null);
   useModalBehavior(true, onClose);
   const t = useTranslations("customOrderModal");
+  const locale = useLocale();
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -62,7 +64,7 @@ export default function CustomOrderModal({ onClose }: Props) {
       const response = await fetch("/api/custom-order", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(result.data),
+        body: JSON.stringify({ ...result.data, locale }),
       });
 
       if (!response.ok) {
@@ -145,17 +147,25 @@ export default function CustomOrderModal({ onClose }: Props) {
             </label>
             <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.15em] text-black/70">
               {t("formatLabel")}
-              <input
+              <select
                 id="custom-order-format"
                 name="format"
-                type="text"
-                placeholder={t("formatPlaceholder")}
+                defaultValue=""
                 aria-invalid={errors.format || undefined}
                 aria-describedby={errors.format ? "custom-order-format-error" : undefined}
-                className={`rounded-none border-b bg-transparent py-2 text-sm text-black outline-none placeholder:text-black/30 focus:border-gold ${
+                className={`rounded-none border-b bg-transparent py-2 text-sm normal-case tracking-normal text-black outline-none focus:border-gold ${
                   errors.format ? "border-red-500" : "border-black/20"
                 }`}
-              />
+              >
+                <option value="" disabled>
+                  {t("formatPlaceholder")}
+                </option>
+                {customFormatSizes.map((size) => (
+                  <option key={size} value={size}>
+                    {size}
+                  </option>
+                ))}
+              </select>
               {errors.format && (
                 <span id="custom-order-format-error" className="normal-case tracking-normal text-red-400">
                   {t("requiredError")}

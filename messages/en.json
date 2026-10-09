@@ -111,17 +111,17 @@
     "imageAlt": "InRealArt contemporary art gallery",
     "body": "InRealArt is the leading contemporary art studio bringing the worlds of the greatest creators to life. In partnership with giants like Logitech G, international galleries and major web figures, InRealArt offers exceptional physical artworks custom-made for your favorite streamers. Its approach guarantees unique, certified collector pieces, crafted with surgical precision to elevate your spaces and stand the test of time.",
     "screens": {
-      "artist": {
-        "label": "Artist page",
-        "alt": "Screenshot of François Poulat's artist page on InRealArt"
+      "agency": {
+        "label": "Agency",
+        "alt": "Screenshot of InRealArt's Agency page, the artistic and influence agency"
       },
       "media": {
         "label": "Media",
         "alt": "Screenshot of the InRealArt Media page, the Creation Observatory"
       },
       "store": {
-        "label": "Store",
-        "alt": "Screenshot of the InRealArt Store showing available artworks"
+        "label": "Gallery",
+        "alt": "Screenshot of the InRealArt gallery showing available artworks"
       }
     }
   },
@@ -506,7 +506,7 @@
     "title": "Describe Your Custom Project",
     "intro": "Tell us your vision — our curators will get back to you within 24h with a personalized quote.",
     "formatLabel": "Desired Format",
-    "formatPlaceholder": "e.g. 90 × 90 cm, or a custom dimension",
+    "formatPlaceholder": "Select a format",
     "mediumLabel": "Desired Medium",
     "mediumPlaceholder": "e.g. Acrylic, oil, mixed media",
     "supportLabel": "Desired Support",
@@ -565,5 +565,12 @@
     "invoicePdfLink": "Download the invoice (PDF)",
     "termsLink": "Read the Terms and Conditions of Sale",
     "footer": "Seller: INREALART — 6 rue du château d'eau, 37260 Artannes-sur-Indre, France.\nFor any question or to exercise your right of withdrawal, reply to this email or write to {email}."
+  },
+  "customOrderEmail": {
+    "subject": "Pikapoulat Grim Valorant — Your custom artwork request — InRealArt",
+    "title": "Thank you for your request",
+    "intro": "Hello,\n\nThank you for your interest in our work. We have received your custom artwork request, and our curators are now reviewing it. The InRealArt team will contact you shortly to prepare a personalised quote.",
+    "outro": "If you have any questions in the meantime, simply reply to this email.\n\nKind regards,\nThe InRealArt Team",
+    "footer": "You are receiving this email because you submitted a custom artwork request on our website. Contact: {email}"
   }
 }
