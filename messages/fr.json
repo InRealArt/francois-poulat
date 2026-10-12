@@ -39,9 +39,7 @@
       "Transport Assuré"
     ],
     "ctaPrimary": "Sécuriser 1 des 99 pièces restantes",
-    "badges": [
-      "Garantie InRealArt"
-    ],
+    "badges": ["Garantie InRealArt"],
     "imageAlt": "Pikapoulat dans le Setup de Grim",
     "tagSetup": "Setup Grim",
     "tagDetail": "Détail Toile",
@@ -96,7 +94,7 @@
       "03": {
         "value": "100",
         "title": "100 heures d'atelier",
-        "description": "Plus de 100 heures de création minutieuse par François Poulat pour peindre, vernir et façonner chaque tableau."
+        "description": "Plus de 100 heures de création minutieuse par François Poulat pour peindre, résiner et façonner chaque tableau."
       }
     }
   },
@@ -108,12 +106,12 @@
     "role": "Artiste Plasticien Partenaire"
   },
   "inrealart": {
-    "imageAlt": "Galerie d'art contemporain InRealArt",
+    "imageAlt": "Capture de la page Agence d'InRealArt, l'agence artistique et d'influence",
     "body": "InRealArt est le studio d'art contemporain de référence qui donne vie aux univers des plus grands créateurs. En partenariat avec des géants comme Logitech G, des galeries internationales et les figures majeures du web, InRealArt vous propose des œuvres physiques d'exception créées sur-mesure pour vos streamers préférés. La démarche garantit des pièces de collection uniques, certifiées et conçues avec une précision chirurgicale pour sublimer vos espaces et traverser le temps.",
     "screens": {
       "agency": {
         "label": "Agence",
-        "alt": "Capture de la page Agence d'InRealArt, l'agence artistique et d'influence"
+        "alt": "Galerie d'art contemporain InRealArt"
       },
       "media": {
         "label": "Média",
@@ -508,9 +506,9 @@
     "formatLabel": "Format Souhaité",
     "formatPlaceholder": "Sélectionnez un format",
     "mediumLabel": "Medium Souhaité",
-    "mediumPlaceholder": "ex. Acrylique, huile, technique mixte",
+    "mediumPlaceholder": "ex. Acrylique, technique mixte",
     "supportLabel": "Support Souhaité",
-    "supportPlaceholder": "ex. Châssis bois, Alu-Dibond, toile",
+    "supportPlaceholder": "ex. Châssis bois, Alu-Dibond résiné, toile",
     "pokemonsLabel": "Personnages Souhaités",
     "submit": "Envoyer Ma Demande",
     "responseNote": "Réponse de nos curateurs sous 24h",

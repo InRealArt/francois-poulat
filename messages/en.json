@@ -96,7 +96,7 @@
       "03": {
         "value": "100",
         "title": "100 studio hours",
-        "description": "Over 100 hours of meticulous work by François Poulat to paint, varnish and shape each artwork."
+        "description": "Over 100 hours of meticulous work by François Poulat to paint, resin and shape each artwork."
       }
     }
   },
@@ -108,12 +108,12 @@
     "role": "Partner Visual Artist"
   },
   "inrealart": {
-    "imageAlt": "InRealArt contemporary art gallery",
+    "imageAlt": "Screenshot of InRealArt's Agency page, the artistic and influence agency",
     "body": "InRealArt is the leading contemporary art studio bringing the worlds of the greatest creators to life. In partnership with giants like Logitech G, international galleries and major web figures, InRealArt offers exceptional physical artworks custom-made for your favorite streamers. Its approach guarantees unique, certified collector pieces, crafted with surgical precision to elevate your spaces and stand the test of time.",
     "screens": {
       "agency": {
         "label": "Agency",
-        "alt": "Screenshot of InRealArt's Agency page, the artistic and influence agency"
+        "alt": "InRealArt contemporary art gallery"
       },
       "media": {
         "label": "Media",
@@ -209,7 +209,7 @@
         "caption": "Signed on the back with certificate of authenticity"
       },
       "finition": {
-        "title": "Finish & Varnish",
+        "title": "Finish & Resin",
         "caption": ""
       },
       "elagant": {
@@ -508,9 +508,9 @@
     "formatLabel": "Desired Format",
     "formatPlaceholder": "Select a format",
     "mediumLabel": "Desired Medium",
-    "mediumPlaceholder": "e.g. Acrylic, oil, mixed media",
+    "mediumPlaceholder": "e.g. Acrylic, mixed media",
     "supportLabel": "Desired Support",
-    "supportPlaceholder": "e.g. Wood frame, Alu-Dibond, canvas",
+    "supportPlaceholder": "e.g. Wood frame, Resin-coated aluminum Dibond, canvas",
     "pokemonsLabel": "Desired Characters",
     "submit": "Send My Request",
     "responseNote": "Our curators reply within 24h",

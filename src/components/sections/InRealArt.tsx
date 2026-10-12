@@ -5,7 +5,7 @@ import Reveal from "@/components/Reveal";
 const screens = [
   {
     id: "agency",
-    image: { fr: "/images/inrealart/screen_agence.webp", en: "/images/inrealart/screen_agence_en.webp" },
+    image: { fr: "/images/inrealart/main_inrealart.webp", en: "/images/inrealart/main_inrealart_en.webp" },
   },
   {
     id: "media",
@@ -29,13 +29,13 @@ export default async function InRealArt() {
       <div className="mx-auto grid max-w-[1440px] gap-14 px-3 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-20 lg:px-10">
         <Reveal
           direction="left"
-          className="artwork-image relative aspect-[1920/1835] w-full overflow-hidden rounded-sm"
+          className="artwork-image relative aspect-[1440/900] w-full overflow-hidden rounded-sm"
         >
           <Image
             src={
               locale === "fr"
-                ? "/images/inrealart/main_inrealart.webp"
-                : "/images/inrealart/main_inrealart_en.webp"
+                ? "/images/inrealart/screen_agence.webp"
+                : "/images/inrealart/screen_agence_en.webp"
             }
             alt={t("imageAlt")}
             fill
