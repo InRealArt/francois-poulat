@@ -13,7 +13,7 @@ const screens = [
   },
   {
     id: "store",
-    image: { fr: "/images/inrealart/screen_store.webp", en: "/images/inrealart/screen_store_en.webp" },
+    image: { fr: "/images/inrealart/screen_presale.webp", en: "/images/inrealart/screen_presale_en.webp" },
   },
 ] as const;
 
